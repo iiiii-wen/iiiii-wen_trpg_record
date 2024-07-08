@@ -1,4 +1,4 @@
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/.html
+//https://iiiii-wen.github.io/iiiii-wen_trpg_record/.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/完整團錄_Post團_PC白雨熙_KP凌月_望君長留.html
 
