@@ -20,8 +20,7 @@ https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC林�
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC伊莉莎白·麥金塔夫_KP黑心麵包_萬聖節的面具.html
 
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔_1.html
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔_2.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC莉莉奈·格蘭特_ST嘎嘎_逃離糖果共和國.html
 
