@@ -1,10 +1,10 @@
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_文字團_PC溫狄_KP秋旭_契約者的悲歌.html
 
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_文字團_PC西園寺朝里_KPMio_東雲事記 2nd.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_文字團_PC西園寺朝里_KPMio_東雲事記2nd.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_文字團_PC村田千景_KP粒粒_給你一個機會和殺人鬼談戀愛.html
 
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_Post團_PC西園寺明里_KPMio_蛙館 3rd.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_Post團_PC西園寺明里_KPMio_蛙館3rd.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/筆記團錄_文字團_PC白雨熙_KP秋旭_怪物們與綺想教團.html
 
@@ -20,8 +20,7 @@ https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC林�
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC伊莉莎白·麥金塔夫_KP黑心麵包_萬聖節的面具.html
 
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔_1.html
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔_2.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC羅納德·卡靈頓_KP叮叮_腥紅文檔.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/閒聊團錄_語音團_PC莉莉奈·格蘭特_ST嘎嘎_逃離糖果共和國.html
 
