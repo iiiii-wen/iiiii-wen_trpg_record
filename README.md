@@ -39,3 +39,6 @@ https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC桐�
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC西園寺明里_KP黑心麵包_吶，和我一起.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/擲骰團錄_語音團_PC科林·肯特_KPJ_Missed-Dues-催債.html
+
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC阿布納‧奧利弗_KP摳摳那_入骨三分.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/擲骰團錄_語音團_PC阿布納‧奧利弗_KP摳摳那_入骨三分.html
