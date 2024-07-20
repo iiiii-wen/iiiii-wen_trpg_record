@@ -47,3 +47,5 @@ https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC阿�
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/擲骰團錄_語音團_PC阿布納‧奧利弗_KP摳摳那_入骨三分.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情+擲骰團錄_語音團_PC阿布納‧奧利弗_KP摳摳那_入骨三分.html
+
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/完整團錄_Post團_PC陳家恩_KPShining_請告訴我死亡的定義-實驗筆記-001.html
