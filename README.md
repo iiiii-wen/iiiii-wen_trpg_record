@@ -50,6 +50,6 @@ https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情+擲骰團錄_語音團_
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/完整團錄_Post團_PC陳家恩_KPShining_請告訴我死亡的定義-實驗筆記-001.html
 
-https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC讓 - 路易斯•薩洛奇喬治•班克斯_KP黑心麵包_東方快車上的恐怖-血色氈帽.html
+https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC讓-路易斯•薩洛奇喬治•班克斯_KP黑心麵包_東方快車上的恐怖-血色氈帽.html
 
 https://iiiii-wen.github.io/iiiii-wen_trpg_record/劇情團錄_語音團_PC宮本葵_KP黑心麵包_赤之窗.html
