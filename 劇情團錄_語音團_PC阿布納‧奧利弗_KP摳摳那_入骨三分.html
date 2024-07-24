@@ -1,716 +1,68 @@
+<!DOCTYPE html><html lang=en><head><title>機率學研討會 - 入骨三分</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube{border:0;border-radius:3px}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1092064877033570365/7fbe78be4bbd637cc1f79c9deb2f3d7d.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>機率學研討會</div><div class=preamble__entry>CoCoNa / 入骨三分</div></div></div>
+<div class="chatlog">
 
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>discord chat record</title>
-</head>
-<style>
-.chatTitle{
-    border-bottom: 1px solid #ccc;
-}
-.chatTitle img{
-    vertical-align: top;
-    margin-right: 10px;
-}
-.titleInfo{
-    display: inline-block;
-    width:80%;
-}
-.titleInfo p{
-    font-weight: 500;
-    margin: 0;
-}
-.chatContent{
-    padding: 0;
-    margin: 0;
-}
-.chatContent li{
-    list-style: none;
-    padding: 10px 0 ;
-    border-bottom: 1px solid #ccc;
-}
-.chatContent .titleImg{
-    border-radius: 50%;
-    vertical-align: top;
-}
-.chatName{
-    margin-right: 10px;
-    color: #000;
-    font-weight: 500;
-}
-.time{
-    color: rgb(154, 164, 172);
-    font-size: 12px;
-}
-.chatContent p {
-    font-weight: 500;
-    color: rgb(64, 62, 60);
-}
-.sameSender .titleImg{
-    visibility: hidden;
-}
-.sameSender .timeInfo{
-    display: none;
-}
-</style>
-<body>
-    <div class="chatTitle">
-        <img width="80px" height="80px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
-        <div class="titleInfo">
-            <p></p>
-            <p></p>
-            <p style="font-size: 15px;"></p>
-            <P style="font-size: 15px;">Between Sun Jul 07 2024 00:00:00 GMT+0800 (台北標準時間) and Wed Jul 17 2024 00:00:00 GMT+0800 (台北標準時間)</P>
-        </div>
-    </div>
-    <ul class="chatContent">
-    
-            <li >
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:05:49 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 杰米</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259842878390141052/1474fceb3521a15a.jpg?ex=66a0ee1c&is=669f9c9c&hm=5fcc80cd4307bdee89b1b59e32062eac33b15cc4ba2b5037d9d51c5b42fdf71c&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:08:32 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day1 晚上18：00 咖啡廳</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:15:31 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 杰米的室友 卡羅拉</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259845320033046538/ef495b4d8c1b2b75.jpg?ex=66a0f063&is=669f9ee3&hm=59509e94f3289a505c5c1684b8ab1b969ae899343d468cc23c94d76620645fd5&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:18:12 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day1 晚上19：30 案發現場</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:26:25 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 羅斯警官</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259848062797611089/0e9e9987ceb39658.jpg?ex=66a0f2f1&is=669fa171&hm=52ecb0053a9bd93e065ed312c511e5d5abf6924b593bf3c18d26935637a7b19c&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:33:22 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```在兼做臥室和辦公室的狹小房間裡，一張翻倒的椅子上和它周圍分佈有大量血跡。檯燈，垃圾廣告和帳單散落在地板上。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:37:53 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```整棟屋子裡只有地下室裡有強行闖入的跡象。在那裡，一次成功的偵查檢定將會發現，乾衣機後部的排氣軟管被撕下了。而在屋子外側，乾衣機排氣口蓋被從牆上翹下並被匆忙裝回。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:40:26 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```散在辦公室地板上的垃圾廣告中有一封來自河谷殯儀館的信。信上說：從下個月起，達弗林夫婦的葬禮計畫款項應當郵寄給新的業主——寧靜有限公司。達弗林夫婦得到保證，他們的計畫中的條款將由新的業主兌現。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:41:59 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```信用卡收據、醫療收據和保險聲明顯示，伊莉莎和霍華德兩人都曾去骨外科醫生蜜雪兒·特拉斯克醫生處看診，並且時間均已超過一年了。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:46:16 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```辦公室正對後院的那扇窗戶被砸碎了。打破窗戶的那台電腦就躺在後院的碎玻璃之間。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:50:20 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```與河谷殯儀館簽訂的合同被歸檔在一個櫃子裡。合同的簽約時間是 18 個月前，包含兩塊相鄰的地塊。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:54:02 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```保險櫃刻的亂碼SIAA ZQ LKBA```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 20:59:33 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```FLEE AT ONCE－立刻逃跑```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:05:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day1 晚上21：00 案發現場</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:14:02 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 早上9：00 咖啡廳</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:16:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 早上10：00 美國骨科</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:21:48 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```達弗林夫婦第一次就診是在一年前。紋狀骨瘤本身就十分罕見，但根據其病理學表現，這似乎是一種更加罕見的變種。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:22:58 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```特拉斯克醫生是為達弗林夫婦提供治療的骨外科醫生。她無法確定他們所患的骨骼條紋的原因，但她懷疑是環境因素所致。在最近五年裡，她見過十多個和他們相似的病例。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:33:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```特拉斯克醫生她現在還有兩個正在接受治療的病人：一個月之前首次就診的洛琳·哈斯克爾，以及唐·沃茨。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:39:18 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 下午 14：00 河谷殯儀館</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:40:19 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```河谷殯儀館坐落於鎮上一片日漸衰敗的地區，是一座相當典型的小型城市殯儀館。它維護得很好，但裝修過時了。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:40:49 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 溫蒂·弗爾茲</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259866789500813384/bafee8560ec1c80c.jpg?ex=66a10461&is=669fb2e1&hm=1601c4225b0d547e4e05f1d50ee8a6d5a2b1fd12aaf7de8e97e4b33302ba34f0&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:43:35 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 艾德琳·拉德福德</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259867485830643832/ed671986bf607b8e.jpg?ex=66a10507&is=669fb387&hm=ec957c38d58385cdf6f8ba0cf0d30f2db78999331c79bd0015f20ff4d2b51a03&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 21:54:25 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```調查員給了拉德福德張名片```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:00:40 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 下午 16：00 墓地</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:10:37 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```1)伊莉莎死於失血過多，致命傷是由一把骯髒而鋒利的刀具造成的。
+<div class=chatlog__message-group><div id=chatlog__message-container-1259842878587408507 class=chatlog__message-container data-message-id=1259842878587408507><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午8:05"><a href=#chatlog__message-container-1259842878587408507>2024/7/8 下午8:05</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>杰米</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259842878390141052/1474fceb3521a15a.jpg?ex=66a23f9c&amp;is=66a0ee1c&amp;hm=9fc1dcaa1820cfda3035f4707f5fe4df4db671914ea6ec80e0adf6b263b78d59&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259842878390141052/1474fceb3521a15a.jpg?ex=66a23f9c&amp;is=66a0ee1c&amp;hm=9fc1dcaa1820cfda3035f4707f5fe4df4db671914ea6ec80e0adf6b263b78d59&amp;" alt="Image attachment" title="Image: 1474fceb3521a15a.jpg (38.03 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1259843565396295740 class=chatlog__message-container data-message-id=1259843565396295740><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:08">下午8:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day1 晚上18：00 咖啡廳</span></div></div></div></div><div id=chatlog__message-container-1259845320297283645 class=chatlog__message-container data-message-id=1259845320297283645><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:15">下午8:15</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>杰米的室友 卡羅拉</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259845320033046538/ef495b4d8c1b2b75.jpg?ex=66a241e3&amp;is=66a0f063&amp;hm=3bd1474550768852f80bf90f3fc55316c3c459d90020d1424ff7b3eaea494f6c&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259845320033046538/ef495b4d8c1b2b75.jpg?ex=66a241e3&amp;is=66a0f063&amp;hm=3bd1474550768852f80bf90f3fc55316c3c459d90020d1424ff7b3eaea494f6c&amp;" alt="Image attachment" title="Image: ef495b4d8c1b2b75.jpg (40.07 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1259845998415581215 class=chatlog__message-container data-message-id=1259845998415581215><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:18">下午8:18</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day1 晚上19：30 案發現場</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259848062977708103 class=chatlog__message-container data-message-id=1259848062977708103><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午8:26"><a href=#chatlog__message-container-1259848062977708103>2024/7/8 下午8:26</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>羅斯警官</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259848062797611089/0e9e9987ceb39658.jpg?ex=66a24471&amp;is=66a0f2f1&amp;hm=8836b49a92867daeb9de4db51fbdfe43f7580b113ce5e4cd08a62b883a2f31fa&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259848062797611089/0e9e9987ceb39658.jpg?ex=66a24471&amp;is=66a0f2f1&amp;hm=8836b49a92867daeb9de4db51fbdfe43f7580b113ce5e4cd08a62b883a2f31fa&amp;" alt="Image attachment" title="Image: 0e9e9987ceb39658.jpg (38.43 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1259849815827812434 class=chatlog__message-container data-message-id=1259849815827812434><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:33">下午8:33</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">在兼做臥室和辦公室的狹小房間裡，一張翻倒的椅子上和它周圍分佈有大量血跡。檯燈，垃圾廣告和帳單散落在地板上。</code></span></div></div></div></div><div id=chatlog__message-container-1259850950915522671 class=chatlog__message-container data-message-id=1259850950915522671><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:37">下午8:37</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">整棟屋子裡只有地下室裡有強行闖入的跡象。在那裡，一次成功的偵查檢定將會發現，乾衣機後部的排氣軟管被撕下了。而在屋子外側，乾衣機排氣口蓋被從牆上翹下並被匆忙裝回。</code></span></div></div></div></div><div id=chatlog__message-container-1259851593826697371 class=chatlog__message-container data-message-id=1259851593826697371><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:40">下午8:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">散在辦公室地板上的垃圾廣告中有一封來自河谷殯儀館的信。信上說：從下個月起，達弗林夫婦的葬禮計畫款項應當郵寄給新的業主——寧靜有限公司。達弗林夫婦得到保證，他們的計畫中的條款將由新的業主兌現。</code></span></div></div></div></div><div id=chatlog__message-container-1259851984207614072 class=chatlog__message-container data-message-id=1259851984207614072><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:41">下午8:41</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">信用卡收據、醫療收據和保險聲明顯示，伊莉莎和霍華德兩人都曾去骨外科醫生蜜雪兒&#183;特拉斯克醫生處看診，並且時間均已超過一年了。</code></span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午8:46">(edited)</span></div></div></div></div><div id=chatlog__message-container-1259853059698200586 class=chatlog__message-container data-message-id=1259853059698200586><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:46">下午8:46</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">辦公室正對後院的那扇窗戶被砸碎了。打破窗戶的那台電腦就躺在後院的碎玻璃之間。</code></span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午8:46">(edited)</span></div></div></div></div><div id=chatlog__message-container-1259854083670540299 class=chatlog__message-container data-message-id=1259854083670540299><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:50">下午8:50</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">與河谷殯儀館簽訂的合同被歸檔在一個櫃子裡。合同的簽約時間是 18 個月前，包含兩塊相鄰的地塊。</code></span></div></div></div></div><div id=chatlog__message-container-1259855015833632809 class=chatlog__message-container data-message-id=1259855015833632809><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:54">下午8:54</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">保險櫃刻的亂碼SIAA ZQ LKBA</code></span></div></div></div></div><div id=chatlog__message-container-1259856403255005286 class=chatlog__message-container data-message-id=1259856403255005286><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午8:59">下午8:59</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">FLEE AT ONCE－立刻逃跑</code></span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午8:59">(edited)</span></div></div></div></div><div id=chatlog__message-container-1259858009778163774 class=chatlog__message-container data-message-id=1259858009778163774><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:05">下午9:05</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day1 晚上21：00 案發現場</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259860048394584084 class=chatlog__message-container data-message-id=1259860048394584084><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午9:14"><a href=#chatlog__message-container-1259860048394584084>2024/7/8 下午9:14</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 早上9：00 咖啡廳</span></div></div></div></div><div id=chatlog__message-container-1259860776483688499 class=chatlog__message-container data-message-id=1259860776483688499><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:16">下午9:16</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 早上10：00 美國骨科</span></div></div></div></div><div id=chatlog__message-container-1259862004324368520 class=chatlog__message-container data-message-id=1259862004324368520><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:21">下午9:21</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">達弗林夫婦第一次就診是在一年前。紋狀骨瘤本身就十分罕見，但根據其病理學表現，這似乎是一種更加罕見的變種。</code></span></div></div></div></div><div id=chatlog__message-container-1259862295325053008 class=chatlog__message-container data-message-id=1259862295325053008><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:22">下午9:22</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">特拉斯克醫生是為達弗林夫婦提供治療的骨外科醫生。她無法確定他們所患的骨骼條紋的原因，但她懷疑是環境因素所致。在最近五年裡，她見過十多個和他們相似的病例。</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259865054887677982 class=chatlog__message-container data-message-id=1259865054887677982><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午9:33"><a href=#chatlog__message-container-1259865054887677982>2024/7/8 下午9:33</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">特拉斯克醫生她現在還有兩個正在接受治療的病人：一個月之前首次就診的洛琳&#183;哈斯克爾，以及唐&#183;沃茨。</code></span></div></div></div></div><div id=chatlog__message-container-1259866406174986411 class=chatlog__message-container data-message-id=1259866406174986411><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:39">下午9:39</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 下午 14：00 河谷殯儀館</span></div></div></div></div><div id=chatlog__message-container-1259866662010617896 class=chatlog__message-container data-message-id=1259866662010617896><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:40">下午9:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">河谷殯儀館坐落於鎮上一片日漸衰敗的地區，是一座相當典型的小型城市殯儀館。它維護得很好，但裝修過時了。</code></span></div></div></div></div><div id=chatlog__message-container-1259866789807132763 class=chatlog__message-container data-message-id=1259866789807132763><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:40">下午9:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>溫蒂&#183;弗爾茲</span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午9:41">(edited)</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259866789500813384/bafee8560ec1c80c.jpg?ex=66a255e1&amp;is=66a10461&amp;hm=8a2dc76fa004bdfccafc72da58c0214783fd6a45f923d65c2b1becbbe89d585c&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259866789500813384/bafee8560ec1c80c.jpg?ex=66a255e1&amp;is=66a10461&amp;hm=8a2dc76fa004bdfccafc72da58c0214783fd6a45f923d65c2b1becbbe89d585c&amp;" alt="Image attachment" title="Image: bafee8560ec1c80c.jpg (36.5 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1259867486011134042 class=chatlog__message-container data-message-id=1259867486011134042><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午9:43">下午9:43</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>艾德琳&#183;拉德福德</span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午9:43">(edited)</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259867485830643832/ed671986bf607b8e.jpg?ex=66a25687&amp;is=66a10507&amp;hm=dc3fe7c7f30398e94ba2a51f066a11f2c977909c9c6b7f8b9dd9ec31ef088699&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259867485830643832/ed671986bf607b8e.jpg?ex=66a25687&amp;is=66a10507&amp;hm=dc3fe7c7f30398e94ba2a51f066a11f2c977909c9c6b7f8b9dd9ec31ef088699&amp;" alt="Image attachment" title="Image: ed671986bf607b8e.jpg (18.58 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259870209934889010 class=chatlog__message-container data-message-id=1259870209934889010><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午9:54"><a href=#chatlog__message-container-1259870209934889010>2024/7/8 下午9:54</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">調查員給了拉德福德張名片</code></span></div></div></div></div><div id=chatlog__message-container-1259871784438599872 class=chatlog__message-container data-message-id=1259871784438599872><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:00">下午10:00</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 下午 16：00 墓地</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259874287272071200 class=chatlog__message-container data-message-id=1259874287272071200><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午10:10"><a href=#chatlog__message-container-1259874287272071200>2024/7/8 下午10:10</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">1)伊莉莎死於失血過多，致命傷是由一把骯髒而鋒利的刀具造成的。
 2)經化驗確定，採集自辦公室的血液樣本來自伊莉莎以外的人，且與後院的血斑互相匹配
-3)X光檢測顯示伊莉莎腿骨與顱骨上均有類似紋狀骨瘤的條紋，但是這些紋路更明顯，也更規則。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:13:42 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 羅斯警官</p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259875064027807885/0e9e9987ceb39658.png?ex=66a10c16&is=669fba96&hm=a06e3d006bfb7f567cef79bf11975ccc6fb3f57fc12b54598e653db197d7fe77&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:15:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```洛琳·哈斯克爾，76 歲，退休薄記員：她在達弗林謀殺案的九天前從位於鎮上較差街區的家中失蹤。在她家的廚房裡發現了大量血跡。
+3)X光檢測顯示伊莉莎腿骨與顱骨上均有類似紋狀骨瘤的條紋，但是這些紋路更明顯，也更規則。</code></span></div></div></div></div><div id=chatlog__message-container-1259875064229138537 class=chatlog__message-container data-message-id=1259875064229138537><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:13">下午10:13</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>羅斯警官</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259875064027807885/0e9e9987ceb39658.png?ex=66a25d96&amp;is=66a10c16&amp;hm=a74c166f64e07f231902f04c3f941daf41af9d0adafeaf3ea3fa04f90a213e9f&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259875064027807885/0e9e9987ceb39658.png?ex=66a25d96&amp;is=66a10c16&amp;hm=a74c166f64e07f231902f04c3f941daf41af9d0adafeaf3ea3fa04f90a213e9f&amp;" alt="Image attachment" title="Image: 0e9e9987ceb39658.png (485.94 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1259875626048032820 class=chatlog__message-container data-message-id=1259875626048032820><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:15">下午10:15</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">洛琳&#183;哈斯克爾，76 歲，退休薄記員：她在達弗林謀殺案的九天前從位於鎮上較差街區的家中失蹤。在她家的廚房裡發現了大量血跡。
 
-泰勒·丹尼爾斯，35 歲，汽車修理工，離異：失蹤于達弗林謀殺案的六天前，在他店裡一輛屬於顧客的汽車下發現了一大灘血。兩個年輕人在將泰勒的一些工具銷贓後遭到逮捕。他們聲稱看到“兩個傢伙”帶著一個大袋子從店中沖出來，於是決定分一杯羹。他們無法指認出另外的那些 “賊”。
+泰勒&#183;丹尼爾斯，35 歲，汽車修理工，離異：失蹤于達弗林謀殺案的六天前，在他店裡一輛屬於顧客的汽車下發現了一大灘血。兩個年輕人在將泰勒的一些工具銷贓後遭到逮捕。他們聲稱看到“兩個傢伙”帶著一個大袋子從店中沖出來，於是決定分一杯羹。他們無法指認出另外的那些 “賊”。
 
-邁克爾·布希，57 歲，保險推銷員，喪偶：失蹤于達弗林謀殺案的三天前。他的車發現於一棟已被收回的房子外，乾涸的血覆蓋了汽車的內襯。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:28:26 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 晚上 19：30 咖啡廳</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:34:22 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```三人都曾去過河谷殯儀館辦理服務```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:43:32 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```擁有骨頭問題的幾人都是再去了河谷殯儀館後才出現問題```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:47:35 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 晚上 21：30 河谷殯儀館</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:54:07 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯給了溫蒂一張紙條，詢問關於洛琳·哈斯克爾的墓地位置```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:56:11 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day2 晚上 23：30 河谷殯儀館</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 22:56:32 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```殯儀館剛過晚上 10 點就關燈了，但沒有見到一名員工離開。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 08 2024 23:17:13 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> </p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1259891046557552733/4aa88d9efde655c3.png?ex=66a11af9&is=669fc979&hm=9fb13a700a486872f1f6a37f5b43423996cef3fd89997a2803d7a25e99400796&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 01:29:48 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> -------------------------------------------</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:17:43 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> </p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1262382591139512370/image.png?ex=66a0f0e7&is=669f9f67&hm=ed0e0e41c487b7a619712c421c5d8f00281edc60b3f6ddbd5aeb1f5f51cb4d67&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:24:41 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> .</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:26:16 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day3 凌晨 00：00 河谷殯儀館</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:29:54 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```阿布納打開了雜物間的鎖，但翹鎖工具有部分卡在鎖頭裡```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:45:20 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯擊倒了一名殯儀館的男性工作人員，隨後兩人拿走了錢包並將他放入屍櫃之中```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:51:11 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day3 凌晨 01：00 河谷殯儀館</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:55:25 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```阿布納用逆水平手刀二度擊暈了工作人員後在陳列室發現拉德福德和她的祖母長的幾乎一模一樣```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 20:58:10 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯發現拉德福德的文件櫃中有一個單獨的文件夾，其中列出了最近案件的受害者以及他們的聯繫方式。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:00:59 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯發現最大的那個抽屜裝有假抽屜底。藏在裡面的是的一本保存很差的典書籍。上面寫著《食屍鬼教團》```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:12:53 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯打暈了"派克"且發現雜物間有個向下的洞口```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:13:08 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day3 凌晨 02：00 河谷殯儀館附近</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:17:57 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day3 凌晨 04：30 酒吧</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:20:12 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```深入骨隨的知識
-摧毀你那不堪意志且侵蝕你那脆弱的精神
+邁克爾&#183;布希，57 歲，保險推銷員，喪偶：失蹤于達弗林謀殺案的三天前。他的車發現於一棟已被收回的房子外，乾涸的血覆蓋了汽車的內襯。</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259878772031754281 class=chatlog__message-container data-message-id=1259878772031754281><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午10:28"><a href=#chatlog__message-container-1259878772031754281>2024/7/8 下午10:28</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 晚上 19：30 咖啡廳</span> <span class=chatlog__edited-timestamp title="2024年7月8日 星期一 下午10:28">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259880266462269584 class=chatlog__message-container data-message-id=1259880266462269584><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__reply-symbol></div><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__reply><img class=chatlog__reply-avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy><div class=chatlog__reply-author style=color:rgb(233,30,99) title=goodococonut>CoCoNa</div><div class=chatlog__reply-content><span class=chatlog__reply-link onclick="scrollToMessage(event,'1259875626048032820')"> <code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">洛琳&#183;哈斯克爾，76 歲，退休薄記員：她在達弗林謀殺案的九天前從位於鎮上較差街區的家中失蹤。在她家的廚房裡發現了大量血跡。
+
+泰勒&#183;丹尼爾斯，35 歲，汽車修理工，離異：失蹤于達弗林謀殺案的六天前，在他店裡一輛屬於顧客的汽車下發現了一大灘血。兩個年輕人在將泰勒的一些工具銷贓後遭到逮捕。他們聲稱看到“兩個傢伙”帶著一個大袋子從店中沖出來，於是決定分一杯羹。他們無法指認出另外的那些 “賊”。
+
+邁克爾&#183;布希，57 歲，保險推銷員，喪偶：失蹤于達弗林謀殺案的三天前。他的車發現於一棟已被收回的房子外，乾涸的血覆蓋了汽車的內襯。</code> </span></div></div><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午10:34"><a href=#chatlog__message-container-1259880266462269584>2024/7/8 下午10:34</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">三人都曾去過河谷殯儀館辦理服務</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259882569638350909 class=chatlog__message-container data-message-id=1259882569638350909><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午10:43"><a href=#chatlog__message-container-1259882569638350909>2024/7/8 下午10:43</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">擁有骨頭問題的幾人都是再去了河谷殯儀館後才出現問題</code></span></div></div></div></div><div id=chatlog__message-container-1259883592071516230 class=chatlog__message-container data-message-id=1259883592071516230><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:47">下午10:47</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 晚上 21：30 河谷殯儀館</span></div></div></div></div><div id=chatlog__message-container-1259885233944400004 class=chatlog__message-container data-message-id=1259885233944400004><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:54">下午10:54</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯給了溫蒂一張紙條，詢問關於洛琳&#183;哈斯克爾的墓地位置</code></span></div></div></div></div><div id=chatlog__message-container-1259885753799016538 class=chatlog__message-container data-message-id=1259885753799016538><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:56">下午10:56</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day2 晚上 23：30 河谷殯儀館</span></div></div></div></div><div id=chatlog__message-container-1259885843431161907 class=chatlog__message-container data-message-id=1259885843431161907><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月8日 星期一 下午10:56">下午10:56</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">殯儀館剛過晚上 10 點就關燈了，但沒有見到一名員工離開。</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1259891046888767498 class=chatlog__message-container data-message-id=1259891046888767498><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月8日 星期一 下午11:17"><a href=#chatlog__message-container-1259891046888767498>2024/7/8 下午11:17</a></span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1259891046557552733/4aa88d9efde655c3.png?ex=66a26c79&amp;is=66a11af9&amp;hm=4df9459b94435e7cf1ec5456f429c067394316c3d38f273929d2b3d16437db24&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1259891046557552733/4aa88d9efde655c3.png?ex=66a26c79&amp;is=66a11af9&amp;hm=4df9459b94435e7cf1ec5456f429c067394316c3d38f273929d2b3d16437db24&amp;" alt="Image attachment" title="Image: 4aa88d9efde655c3.png (740.24 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262098742140731523 class=chatlog__message-container data-message-id=1262098742140731523><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 上午1:29"><a href=#chatlog__message-container-1262098742140731523>2024/7/15 上午1:29</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>-------------------------------------------</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262382591399432224 class=chatlog__message-container data-message-id=1262382591399432224><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午8:17"><a href=#chatlog__message-container-1262382591399432224>2024/7/15 下午8:17</a></span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1262382591139512370/image.png?ex=66a24267&amp;is=66a0f0e7&amp;hm=a2608e5ad5b36300e79796260c228ba362d1313890a65932992850809dc8078e&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1262382591139512370/image.png?ex=66a24267&amp;is=66a0f0e7&amp;hm=a2608e5ad5b36300e79796260c228ba362d1313890a65932992850809dc8078e&amp;" alt="Image attachment" title="Image: image.png (57.92 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262384344757043230 class=chatlog__message-container data-message-id=1262384344757043230><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__reply-symbol></div><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__reply><img class=chatlog__reply-avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy><div class=chatlog__reply-author style=color:rgb(233,30,99) title=goodococonut>CoCoNa</div><div class=chatlog__reply-content><span class=chatlog__reply-link onclick="scrollToMessage(event,'1259885843431161907')"> <code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">殯儀館剛過晚上 10 點就關燈了，但沒有見到一名員工離開。</code> </span></div></div><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午8:24"><a href=#chatlog__message-container-1262384344757043230>2024/7/15 下午8:24</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>.</span></div></div></div></div><div id=chatlog__message-container-1262384740204413010 class=chatlog__message-container data-message-id=1262384740204413010><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午8:26">下午8:26</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day3 凌晨 00：00 河谷殯儀館</span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午8:26">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262385656378687638 class=chatlog__message-container data-message-id=1262385656378687638><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午8:29">下午8:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">阿布納打開了雜物間的鎖，但翹鎖工具有部分卡在鎖頭裡</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262389538500640838 class=chatlog__message-container data-message-id=1262389538500640838><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午8:45"><a href=#chatlog__message-container-1262389538500640838>2024/7/15 下午8:45</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯擊倒了一名殯儀館的男性工作人員，隨後兩人拿走了錢包並將他放入屍櫃之中</code></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午8:45">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262391013775904790 class=chatlog__message-container data-message-id=1262391013775904790><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午8:51">下午8:51</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day3 凌晨 01：00 河谷殯儀館</span></div></div></div></div><div id=chatlog__message-container-1262392075958227039 class=chatlog__message-container data-message-id=1262392075958227039><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午8:55">下午8:55</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">阿布納用逆水平手刀二度擊暈了工作人員後在陳列室發現拉德福德和她的祖母長的幾乎一模一樣</code></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午9:13">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262392770325250139 class=chatlog__message-container data-message-id=1262392770325250139><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午8:58">下午8:58</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯發現拉德福德的文件櫃中有一個單獨的文件夾，其中列出了最近案件的受害者以及他們的聯繫方式。</code></span></div></div></div></div><div id=chatlog__message-container-1262393480953724929 class=chatlog__message-container data-message-id=1262393480953724929><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:00">下午9:00</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯發現最大的那個抽屜裝有假抽屜底。藏在裡面的是的一本保存很差的典書籍。上面寫著《食屍鬼教團》</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262396475103641622 class=chatlog__message-container data-message-id=1262396475103641622><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午9:12"><a href=#chatlog__message-container-1262396475103641622>2024/7/15 下午9:12</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯打暈了&quot;派克&quot;且發現雜物間有個向下的洞口</code></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午9:13">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262396534482272390 class=chatlog__message-container data-message-id=1262396534482272390><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:13">下午9:13</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day3 凌晨 02：00 河谷殯儀館附近</span></div></div></div></div><div id=chatlog__message-container-1262397747307348051 class=chatlog__message-container data-message-id=1262397747307348051><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:17">下午9:17</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day3 凌晨 04：30 酒吧</span></div></div></div></div><div id=chatlog__message-container-1262398313483862058 class=chatlog__message-container data-message-id=1262398313483862058><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:20">下午9:20</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline language-深入骨隨的知識">摧毀你那不堪意志且侵蝕你那脆弱的精神
 擺置一時...
 學者請取一張書庫所​​寫有知識庫名字，且曾被知識庫持有的紙張，置於餓鬼的頭骨中燃燒。接著，學者要將所得灰燼與人骨粉末混合調配，然後飲下。這將給你摧毀你的意志！，
 當“知識庫”死亡後，學者能取回它。
 
 “知識庫”的骨骼開始在知識即將消逝的那一刻存儲知識。在未來的數月中，“知識庫”將會被墮擊。 殘落之軀的知識庫，總會讓人失望，而他會永久性得到詛咒。
 學者可以通過向不死深淵之主祈禱）將一個知識庫從其職責中解放。這種做法對“知識庫”幾乎總是致命的，因為“知識庫”會接受在每個死於這一剎那的人的一切秘密，並受到可怕的殘害。當學者死去時，“知識庫”也會得到解放，儘管已造成的傷害和蝕刻都會保留。
-舊印能夠阻止蝕刻，但是不能治愈已有的病情。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:24:39 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯和阿布納曾給過拉德福德自己的名片，這代表調查員很有可能成為知識庫```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:30:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> day3 中午 11：30 殯儀館外的巷子</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:34:59 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯把潛入殯儀館所獲得的資訊都傳給羅斯警官```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:35:54 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```阿布納請杰米帶卡羅拉去紐約參加酷酷的幫派活動```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:40:40 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```調查員買了一桶汽油跟一支番仔火和一包菸```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:44:37 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```調查員拿雜物間外面的鎖頭鎖住了雜物間裡面的門```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:45:53 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```爬梯子的途中，調查員感到下方有輕微的氣流吹上，伴隨著似有似無的聲響。
-當他們的雙腳落地，前方則是狹長陰暗的洞穴通道，一股帶著惡臭的微風襲來 ```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:47:15 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```漢斯在下來後一路倒著汽油，並保留一部分的汽油```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:50:30 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```調查員來到了一個寬敞的空間，但眼前的景象讓你心裡一驚
+舊印能夠阻止蝕刻，但是不能治愈已有的病情。</code></span></div></div></div></div><div id=chatlog__message-container-1262399432935079956 class=chatlog__message-container data-message-id=1262399432935079956><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:24">下午9:24</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯和阿布納曾給過拉德福德自己的名片，這代表調查員很有可能成為知識庫</code></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午9:26">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262401017304191092 class=chatlog__message-container data-message-id=1262401017304191092><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:30">下午9:30</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>day3 中午 11：30 殯儀館外的巷子</span></div></div></div></div><div id=chatlog__message-container-1262402037266649160 class=chatlog__message-container data-message-id=1262402037266649160><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:34">下午9:34</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯把潛入殯儀館所獲得的資訊都傳給羅斯警官</code></span></div></div></div></div><div id=chatlog__message-container-1262402264161718283 class=chatlog__message-container data-message-id=1262402264161718283><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:35">下午9:35</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">阿布納請杰米帶卡羅拉去紐約參加酷酷的幫派活動</code></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午9:36">(edited)</span></div></div></div></div><div id=chatlog__message-container-1262403464034783262 class=chatlog__message-container data-message-id=1262403464034783262><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:40">下午9:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">調查員買了一桶汽油跟一支番仔火和一包菸</code></span></div></div></div></div><div id=chatlog__message-container-1262404459888382013 class=chatlog__message-container data-message-id=1262404459888382013><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:44">下午9:44</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">調查員拿雜物間外面的鎖頭鎖住了雜物間裡面的門</code></span></div></div></div></div><div id=chatlog__message-container-1262404778844229672 class=chatlog__message-container data-message-id=1262404778844229672><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:45">下午9:45</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">爬梯子的途中，調查員感到下方有輕微的氣流吹上，伴隨著似有似無的聲響。
+當他們的雙腳落地，前方則是狹長陰暗的洞穴通道，一股帶著惡臭的微風襲來 </code></span></div></div></div></div><div id=chatlog__message-container-1262405120470290514 class=chatlog__message-container data-message-id=1262405120470290514><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:47">下午9:47</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">漢斯在下來後一路倒著汽油，並保留一部分的汽油</code></span></div></div></div></div><div id=chatlog__message-container-1262405939550748754 class=chatlog__message-container data-message-id=1262405939550748754><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:50">下午9:50</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">調查員來到了一個寬敞的空間，但眼前的景象讓你心裡一驚
 地面中央有一個血跡斑斑的排水口。從某個裸身軀體引出一道血跡通向排水口，而一名被肢解後的屍體就躺在房間中央。三名名殯儀館工作人員靠牆席地而坐，
-每人手捧屍體四肢中的一條，正小心地剝下長條的皮膚。之前碰到的殯儀館顧問也在這裡，正在給霍華德·達弗林被斬下的頭顱剝皮。
+每人手捧屍體四肢中的一條，正小心地剝下長條的皮膚。之前碰到的殯儀館顧問也在這裡，正在給霍華德&#183;達弗林被斬下的頭顱剝皮。
 
 拉德福德以她的本來面貌，也即食屍鬼的樣子出現在你的面前。她的衣服整齊地疊放在一旁的架子上。她帶著兩隻食屍鬼。
 拉德福德和收藏者們小心翼翼地啃去受害者骨骼上的肌腱，並把潘斯語紋路舔舐乾淨。
-架子上也放著精心剔除血肉後用人皮包裹的人骨，每捆骨頭中附有蝕刻的不到一半。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:51:43 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> </p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1262406245323767889/d48a6b4358a22bec5f12c471bea37535.png?ex=66a106ef&is=669fb56f&hm=d9d3efcc83279c6c3c31845688a3e277d40d7e4f83ed3bb13a26532d6a55dad2&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:52:33 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> </p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1262406456544858132/ce1fe2c0c465bc2d.png?ex=66a10721&is=669fb5a1&hm=bf87dc9676070815a50360b9e317aff1ea178d207ed6cae7350da1a2908092fb&" alt="">
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 21:54:20 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 阿布納＞漢斯</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 22:45:35 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 擊敗拉德福德 1D4
-拯救唐 1D3</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 22:46:45 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> ```新法術：知識庫祭獻術
+架子上也放著精心剔除血肉後用人皮包裹的人骨，每捆骨頭中附有蝕刻的不到一半。</code></span></div></div></div></div><div id=chatlog__message-container-1262406245391011894 class=chatlog__message-container data-message-id=1262406245391011894><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:51">下午9:51</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1262406245323767889/d48a6b4358a22bec5f12c471bea37535.png?ex=66a2586f&amp;is=66a106ef&amp;hm=99045b5374d85922709d9e31ba36104bf0df2d0dd02337657a422377969d9f98&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1262406245323767889/d48a6b4358a22bec5f12c471bea37535.png?ex=66a2586f&amp;is=66a106ef&amp;hm=99045b5374d85922709d9e31ba36104bf0df2d0dd02337657a422377969d9f98&amp;" alt="Image attachment" title="Image: d48a6b4358a22bec5f12c471bea37535.png (757 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1262406456754442252 class=chatlog__message-container data-message-id=1262406456754442252><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:52">下午9:52</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1262406456544858132/ce1fe2c0c465bc2d.png?ex=66a258a1&amp;is=66a10721&amp;hm=97f2e08b8340d560372eb15e3ab240b34005e868b375dec41dc46b4154495821&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1262406456544858132/ce1fe2c0c465bc2d.png?ex=66a258a1&amp;is=66a10721&amp;hm=97f2e08b8340d560372eb15e3ab240b34005e868b375dec41dc46b4154495821&amp;" alt="Image attachment" title="Image: ce1fe2c0c465bc2d.png (321.81 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1262406904492068905 class=chatlog__message-container data-message-id=1262406904492068905><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午9:54">下午9:54</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>阿布納＞漢斯</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262419802736033893 class=chatlog__message-container data-message-id=1262419802736033893><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午10:45"><a href=#chatlog__message-container-1262419802736033893>2024/7/15 下午10:45</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>擊敗拉德福德 1D4
+拯救唐 1D3</span></div></div></div></div><div id=chatlog__message-container-1262420097742540873 class=chatlog__message-container data-message-id=1262420097742540873><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午10:46">下午10:46</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">新法術：知識庫祭獻術
 消耗：5點 POW；1D6點理智值
 施法用時：1小時
 施法者取一張目標​​寫有目標名字，且曾被目標持有的紙張，置於食屍鬼的頭骨中燃燒。接著，施法者要將所得灰燼與人骨粉末混合調配，然後飲下。該法術花費5點POW，當“知識庫”死亡後，施法者能取回它。 （譯註：本法術將目標標記為“知識庫”）
 “知識庫”的骨骼開始在知識即將消逝的那一刻存儲知識（例如當某本書的最後一冊副本毀於火中時，或是一起事件的最後一名目擊者死亡時）。在未來的數月中，“知識庫”會以隨機的間隔受到1D3點傷害（由守秘人自行決定，但不應超過每個模組一次）。 “知識庫”需進行體質檢定，檢定失敗時，他會永久性損失1點HP（現代醫學無法治愈）。
 施法者可以通過向莫爾迪吉安祈禱（使用莫爾迪吉安聯絡術）將一個儲藏庫從其職責中解放（並將5點POW返還給施法者）。這種做法對“知識庫”幾乎總是致命的，因為“知識庫”會接受在每個死於這一剎那的人的一切秘密，並受到6D6點傷害。當施法者死去時，“知識庫”也會得到解放，儘管已造成的傷害和蝕刻都會保留。
 舊印能夠阻止蝕刻，但是不能治愈已有的病情。
-發現一個人的骨頭被刻上了收藏的標記會導致1/1D6點理智值損失。```</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 22:57:13 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> </p>
-                <img width="80px" height="80px" src="https://cdn.discordapp.com/attachments/1255914687703421050/1262422730599432192/image.png?ex=66a11649&is=669fc4c9&hm=76c12ef988d6625464ad3b4bdbe1183873c6a52bd24f799bd5863245c85af44a&" alt="">
-            </div>
-        </li>
-              
-            <li >
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/423816341796028416/80cf3baa092797d3de18cf619377cf87.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">ka_u_don</span><span class="time">Mon Jul 15 2024 23:06:10 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 從醫院康復後，漢斯替傑米處理了遺產相關事務後，回到了日常生活當中。
+發現一個人的骨頭被刻上了收藏的標記會導致1/1D6點理智值損失。</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262422730863677460 class=chatlog__message-container data-message-id=1262422730863677460><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午10:57"><a href=#chatlog__message-container-1262422730863677460>2024/7/15 下午10:57</a></span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1255914687703421050/1262422730599432192/image.png?ex=66a267c9&amp;is=66a11649&amp;hm=8fc0a0d5949b6a1b7a5f6bb31bf555aa4e5956a48c778c68fe318fc6f260e879&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1255914687703421050/1262422730599432192/image.png?ex=66a267c9&amp;is=66a11649&amp;hm=8fc0a0d5949b6a1b7a5f6bb31bf555aa4e5956a48c778c68fe318fc6f260e879&amp;" alt="Image attachment" title="Image: image.png (562.48 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262424983280287845 class=chatlog__message-container data-message-id=1262424983280287845><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/423816341796028416/80cf3baa092797d3de18cf619377cf87.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=ka_u_don data-user-id=423816341796028416>漢斯/賀羽棠</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午11:06"><a href=#chatlog__message-container-1262424983280287845>2024/7/15 下午11:06</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>從醫院康復後，漢斯替傑米處理了遺產相關事務後，回到了日常生活當中。
 心裡暗自決定，縱火這種事情果然不適合他，下次要是還有誰說要縱火，說什麼都不會同意。
 在這一次的委託結束後，由於阿布納‧奧利弗出色的表現，漢斯留下了對方的聯絡方式，也許未來有機會繼續合作。
-事後在一天晚上，仔細看過了【食屍鬼教團】一書的內容，上面所記載的法術，在親身經歷後深信不疑，但也許永遠不會去實施。</p>
-                
-            </div>
-        </li>
-              
-            <li >
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Jul 15 2024 23:19:10 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 從醫院康復後，阿布納聽聞傑米因為要準備考試而漏接了電話，心中很是欣慰，特別叮囑了卡羅拉，水煙不要在傑米面前抽。
+事後在一天晚上，仔細看過了【食屍鬼教團】一書的內容，上面所記載的法術，在親身經歷後深信不疑，但也許永遠不會去實施。</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262428254812504064 class=chatlog__message-container data-message-id=1262428254812504064><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(52,152,219) title=iiiii_wen data-user-id=274908858970013696>_疑問</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午11:19"><a href=#chatlog__message-container-1262428254812504064>2024/7/15 下午11:19</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>從醫院康復後，阿布納聽聞傑米因為要準備考試而漏接了電話，心中很是欣慰，特別叮囑了卡羅拉，水煙不要在傑米面前抽。
 事件落幕，向漢斯到了別，下次不小心闖了什麼禍可以找這個傢伙，縱火這種事以前都是那個看起來輕浮的金髮男策劃的，沒想到還有點技術含量。
 在這一次的委託結束後，由於賺到了些錢，讓阿布納萌生了一點不作黑的好像也可以生存的希望，或許接下來奇怪的委託他也會毫不猶豫的接下？
-至於【食屍鬼教團】一書，看過是看過了，但上面所記載的東西好像跟耳朵上會跟我講話的這顆石頭一樣邪門，暫時是知道了就好吧！</p>
-                
-            </div>
-        </li>
-              
-            <li >
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 23:26:39 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 由食屍鬼拉德福德所編撰而出的神話筆記
+至於【食屍鬼教團】一書，看過是看過了，但上面所記載的東西好像跟耳朵上會跟我講話的這顆石頭一樣邪門，暫時是知道了就好吧！</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262430136800772140 class=chatlog__message-container data-message-id=1262430136800772140><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=goodococonut data-user-id=336340347917697024>CoCoNa</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午11:26"><a href=#chatlog__message-container-1262430136800772140>2024/7/15 下午11:26</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>由食屍鬼拉德福德所編撰而出的神話筆記
 深入骨隨的知識．摧毀你那不堪意志且侵蝕你那脆弱的精神．擺置一時...
 學者請取一張書庫所​​寫有知識庫名字，且曾被知識庫持有的紙張，置於餓鬼的頭骨中燃燒。接著，學者要將所得灰燼與人骨粉末混合調配，然後飲下。這將給你摧毀你的意志！
 當“知識庫”死亡後，學者能取回它。
@@ -722,39 +74,13 @@
 克蘇魯神話：+1%
 神話等級：8
 學時：3小時
-建議法術：知識庫祭獻術</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 23:26:56 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 忘記給你們書了</p>
-                
-            </div>
-        </li>
-              
-            <li class="sameSender">
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/336340347917697024/7b8ef366a6fc2401f31ee374bd1fa70a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">goodococonut</span><span class="time">Mon Jul 15 2024 23:26:57 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 诶嘿 😋</p>
-                
-            </div>
-        </li>
-              
-            <li >
-            <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.webp" alt="">
-            <div class="titleInfo">
-                <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Jul 15 2024 23:28:37 GMT+0800 (台北標準時間)</span></p>
-                <p><span style="color: skyblue;"></span> 诶嘿</p>
-                
-            </div>
-        </li>
-              
-    </ul>
-    <p>Export 71 message(s)</p>
-</body>
-</html>
+建議法術：知識庫祭獻術</span></div></div></div></div><div id=chatlog__message-container-1262430208980680825 class=chatlog__message-container data-message-id=1262430208980680825><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午11:26">下午11:26</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>忘記給你們書了</span></div></div></div></div><div id=chatlog__message-container-1262430214257119315 class=chatlog__message-container data-message-id=1262430214257119315><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2024年7月15日 星期一 下午11:26">下午11:26</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>诶嘿 <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="😋"
+    title="yum"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f60b.svg"></span> <span class=chatlog__edited-timestamp title="2024年7月15日 星期一 下午11:29">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1262430630042406926 class=chatlog__message-container data-message-id=1262430630042406926><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(52,152,219) title=iiiii_wen data-user-id=274908858970013696>_疑問</span> <span class=chatlog__timestamp title="2024年7月15日 星期一 下午11:28"><a href=#chatlog__message-container-1262430630042406926>2024/7/15 下午11:28</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>诶嘿</span></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 71 message(s)</div><div class=postamble__entry>Timezone: UTC+8</div></div>
