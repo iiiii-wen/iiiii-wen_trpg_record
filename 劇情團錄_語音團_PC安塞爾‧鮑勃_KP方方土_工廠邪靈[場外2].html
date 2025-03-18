@@ -1,0 +1,1126 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 106 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=96" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>118歲老奶奶</p>
+              <p style="font-size: 15px;">从 2025-02-27T04:15:36.094Z 到 2025-03-14T16:03:09.700Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Thu Feb 27 2025 12:15:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://tenor.com/view/anon-chihaya-chihaya-anon-mygo-togawa-gif-15701975466989339158</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:35:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0@arthur0824hao#0@stardreammoonlight#0</span> <@274908858970013696> <@368572601792069632>  <@1289935561087258749>  各位親愛的團員們你們好啊, 看來是沒有夢幻第四人了, 這次的團務的成員就是你們三位<:87:836670574579286059></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:36:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 為了防止大家忘記團務詳情, 我等等會再貼一次簡介</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:36:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ```
+【系統】：COC7
+【劇本】：工廠邪靈(復健團+測試團)
+【形式】：語音+ccfolia
+【時長】：大概2-3次團務
+【背景】：1928年12月-1929年1月美國麻州
+【難度】：中低
+【撕卡率】：中
+【招募人數】：2-4
+【故事介紹】：《阿卡姆廣告人報》的總編葛德尼最近收到了一封用古老，甚至顯得有些可疑的英語文法寫就的信件。信中講述了一個荒誕的故事：早在1806年，在一個鬧鬼的鋸木廠裏，一些小男孩被從頭到腳切成兩半。這封信的作者，敦威治的赫爾曼·布萊克聲稱，這座工廠幾年後就停業了，因為沒有人願意在那工作，似乎任何在那裏呆過一段時間的人都會噩夢纏身 。今天大多數當地居民仍然聲稱那裏鬧鬼。葛德尼指派兼職記者弗洛伊德·托比調查此事，而托比也希望從中獲得一篇好文章。
+
+調查員可能有多種方式參與事件。他們可能是《阿卡姆廣告人報》聘請的著名超自然調查員，負責陪同弗洛伊德·托比並協助他報道這個故事。他們甚至可能在《廣告人報》上讀到一篇前導預告，暗示即將發表一篇關於敦威治鄉鎮的一座鬧鬼工廠的文章，然後出於純粹的好奇心決定踏上旅程。也許某個調查員是記者弗洛伊德·托比的表親，關心他的親戚們希望有人在路上照應他。如果調查員出現並提出幫助弗洛伊德，他會高興的同意。
+
+【建議技能】：偵查,聆聽,交涉類技能
+【次要技能】：急救,醫學,戰鬥類技能,機械維修,鎖匠
+【建議職業】：無限制
+【建議攜帶物品】：合理的隨身物品
+【角色需求】：推薦能自備交通者的角色(非強制)
+```</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:38:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 工廠邪靈難度不高, 是一個位於1928年底美國麻州的模組, 看各位想要車什麼職業/帶什麼卡, 可以先在這裡和大家一起討論看看</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:38:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://docs.google.com/spreadsheets/d/1uQaAj_pOZvs6tq3_4TJwMv3wCEGPaYGjd_IdtBP93S0/edit?gid=1488615789#gid=1488615789</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:40:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不愧是你, 很快的男人</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:41:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 鞭子狂魔加精神醫師</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:41:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 只是接個電話你就貼卡了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:41:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒錯   這位腦白質切除術的傭護者等不及前往治療工廠中的病患了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:41:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我還沒細看, 不過你可能要稍微想一下導入的方式</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:42:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 傳說他的診所沒有負評  從診所出來的病患都十分健康 精神良好</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:42:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如同簡介當中所說的一樣, 這個模組開場的重點是有關於一個工廠的都市傳說</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:42:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 經過多個神祕事件後  加入英國心靈研究學會與美國心靈研究學會
+並成為菜鳥外派員</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:43:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@arthur0824hao#0</span> 你可能誤會了什麼, 那個工廠並不是outlast或是什麼精神病院, 當中應該沒有病患<:a1a2t2m5gq:1032703973515341914></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:43:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 日前因拍攝過長滿尖刺的大蛞蝓而有了三秒鐘熱度</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:44:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 磨刀霍霍的他等待著再次揚名立萬的機會
+弗洛依德可能聯繫了當時頗有名氣的另一事件相關組織:心靈研究學會尋求協助
+而學會就順手把任務丟給艾蒂安</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:45:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 那就是你聽到傳聞深感興趣毛遂自薦加入調查團隊<:697393292219777044:844586995627196479></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:45:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 嗎</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:45:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 也行</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:46:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 太棒了, 我們調查軍團就需要你這樣的砲灰...不好意思我說錯了我是說人才</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:46:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒錯 沒有魔法 沒有獵象搶 沒有巴雷特 只有滿腔熱血與新鮮的靈魂</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:47:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 那讓我們期待你那還沒有散發著腐臭味, 新鮮的靈魂</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:48:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 順帶一提你從巴黎飛過來的機票應該是沒人報銷了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:50:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒關係  我有過去非常多病人給我的||~~遺產~~||看診費
+加上拍完大蛞蝓  心靈研究學會給了我不少錢</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:52:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 話說你的交際類和職業興趣這兩個框怎麼那麼大啊, 然後你的模組經歷是不是還沒有更新</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:53:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我看你遭遇過的模組只有馬賽之謎, 然後你曾經和麥克米倫在第十九洞中相遇, 又在海妖的呼喚中遭遇神話生物</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:53:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 因為要讓圖片完整呈現</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:54:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 區區交際類跟職業興趣框都得為我艾蒂安的帥臉讓開</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 12:54:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ||(經歷忘了||</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 12:59:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 所以大蛞蝓是在什麼時候拍的啊?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:04:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 海X的X喚</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:04:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 除此之外基本上沒什麼問題了, 只不過你是調查員老鳥, 所以要提醒一下這本可能沒有什麼特別豐厚的寶阿</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:04:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒事  他也挺沒料的(X</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:05:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ||↑by一個到現在都還沒放過法術的人||</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:05:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@cskun#0</span> 讓我拍到東西再加油添醋一下不就是第三桶金了嗎</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:06:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 那你可以多拍幾張賣給阿卡姆廣告人報</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:07:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我彷彿看到一箱箱的美金就在眼前</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:10:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://docs.google.com/spreadsheets/d/1OMuIUS17q0dy1tmEMt_MPncvnSYq-cpfakuzWRTZmEY/edit?usp=sharing</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:11:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我就用之前的考古学家了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:11:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 虽然完全没有战斗力</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:11:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 那你有什麼想到什麼特別的導入方式嗎?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:12:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 放心交給我吧</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:12:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 打不過我一定跑得掉！</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:12:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 畢竟沒意外的話你現在還在埃及, 應該不會無緣無故跑到美國麻州調查和你專業無關的都市傳說</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:13:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 也对，我看我从新车卡吧🤔</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:13:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不然感觉八竿子打不上</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:14:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好啊, 我推薦你可以車個麻州本地人</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:14:48 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 畢竟這個都市傳說有點年代了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:15:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 車個本地人的話在當地有些人脈說不定能幫上你們</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:15:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 推薦是密斯卡托尼克河域附近的居民</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:16:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我可能车一个不相信这个世界上有鬼怪的搏击手就算是有也相信世界上没什么是肌肉无法解决的本地人</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Mon Mar 03 2025 13:17:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 到时候我就要无脑冲，战斗爽了<:689774016067928066:844587031702798366></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:17:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 哇</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:18:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這是最希望有的隊友</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Mon Mar 03 2025 13:18:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ||最有效果的隊友：兩手空空，咒文表都是請神術||</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:20:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好啊, 那看你具體要住麻州哪個城市</p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1344523300604215357/1345989223127191634/image.png?ex=67d65fa6&is=67d50e26&hm=6fb01431ac9283b4528a99bd5d268bdd05713ff48764a6d6620f970bb61064c0&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:21:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒有特別想法的話就是模組開場的地點阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:23:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 然後作為阿卡姆廣告人報特派記者托比的保鑣加入隊伍</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 13:24:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 或者作為托比的親戚, 覺得他要拍什麼工廠中的邪靈是被人騙了, 打算去打爆騙他的人或是所有說有鬼怪的人</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:37:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我有兩個別的報社的記者啦</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:37:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不知道方方覺得哪個比較合適🤔</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:37:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 或是如果別的報社記者不合適，我還有一個喜歡rush的學生</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:37:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://docs.google.com/spreadsheets/d/1e2LY09yRapAKtiArWZZlCCZhJxeZHz-HcwB4wlDEXoM/edit?usp=drivesdk</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:38:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://docs.google.com/spreadsheets/d/1_yjbVRLyReoYoIi9bBVfN_4HBpxpDzpub2sDjlXFpMI/edit?usp=drivesdk</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 14:38:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://docs.google.com/spreadsheets/d/1bfKIpwLG1C8bfdQx47qLJwAKfKFMYQTm-aQsU-QbAe8/edit?usp=drivesdk</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 14:46:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> 還是安塞爾吧, 我可以安排讓他帶著小多蒂和破戒僧覺青重逢的彩蛋<:1029688485155704843:1040996516980072458></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 14:50:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我和風暴系列的模組不熟, 不過你可以透過之前在風暴系列中的表現榮獲「帶著小女孩的偵探」這個稱號, 藉此讓阿卡姆廣告人報的總編葛德尼聽聞你的事蹟並不知為何出於什麼原因下定決心聘用你一起調查, 希望你務必替他還原這件事情的真相</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Mon Mar 03 2025 15:03:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我跟小多蒂說我要去出差就跑出去happy了，所以可能只有阿卡姆的人知道我是帶著小女孩的變態記者</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 15:07:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 那這個稱號就是阿卡姆周邊限定</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Mon Mar 03 2025 15:09:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 既然大家都已經敲定角色卡的大致方向了, 那看大家要不要之後找個時間一起拉個關係, 不然就是開場導入之後大家再各自辣許</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Wed Mar 05 2025 11:25:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 再次提醒大家如果有空的話可以先拉一下調查員關係喔, 順便還沒提交角色卡的玩家記得在周五早上之前交卡<:thumbcat:876070236569370624></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Wed Mar 05 2025 13:03:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我會被知道的點就是之前拍到殭屍，巨型尖刺蛞蝓 而聲名大燥的前精神科醫師</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Wed Mar 05 2025 13:04:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 疑問用那張的話，美國英雄，報紙上多少看過</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Wed Mar 05 2025 14:17:15 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我的导入是作為阿卡姆廣告人報特派記者托比的保鑣加入隊伍</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Wed Mar 05 2025 14:30:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這裡告訴大家一個好消息, 阿卡姆廣告人工廠邪靈調查團隊的第四位夢幻隊友登場了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Wed Mar 05 2025 14:30:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@ericasso#0</span> 讓大家一起歡迎<@444307685635260417> <:a1a2t2m5gq:1032703973515341914></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Wed Mar 05 2025 14:31:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 喔贛</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Wed Mar 05 2025 14:33:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 歡迎super idle油土伯</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Wed Mar 05 2025 14:44:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 想问一下这里有开特征吗？如果有的话我应该怎样骰？</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Wed Mar 05 2025 14:48:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 是可以開, 骰1d6+1d20然後根據骰出的兩個數字決定是哪一個特徵; 不過我不建議開, 畢竟是針對煤氣燈時期的拓展, 即使開課能也會視情況禁止一些比較難處理的特徵</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Wed Mar 05 2025 14:49:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ||比如惡名昭彰的黑暗血統||</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Wed Mar 05 2025 14:50:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好吧，我现在才想起来我是不是已经问过你<:689774016067928066:844587031702798366></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Wed Mar 05 2025 14:50:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不好意思，记性不好了<:39:806792350843928576></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Wed Mar 05 2025 14:51:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒事沒事</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1289935561087258749/60675fb4b258907c54a744b8da593b97.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">stardreammoonlight</span><span class="time">Thu Mar 06 2025 13:05:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 对了，我的卡车好了麻烦你审卡了<:a1a2t2m5gq:1032703973515341914></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Thu Mar 06 2025 13:14:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好, 我還在看, 昨天比較忙, 最晚今天晚上開始審卡</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Thu Mar 06 2025 13:15:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 順帶一提德懷特有事跑不了, 最終隊伍還是三人成行</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 07 2025 19:14:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 07 2025 19:14:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 07 2025 19:54:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 提醒一下我們等等晚上8:30開團喔, 如果大家都沒問題的話我們待會見<:thumbcat:876070236569370624></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 07 2025 20:32:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://ccfolia.com/rooms/JNf1_qJhT</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 14 2025 14:13:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 提醒一下各位，今晚八點三十跑團喔</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 14 2025 18:13:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 今晚就入教<:a1a2t2m5gq:1032703973515341914></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 19:58:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我去拿送修的筆電，可能會晚一點</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/624168751444787200/7978f1f422af6dbb04b007fc73763120.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">cskun</span><span class="time">Fri Mar 14 2025 20:12:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 20:13:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 剛拿到筆電</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 20:13:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 正要回去</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 20:14:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 現在只能聽</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 20:14:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒事</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 21:15:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1344523300604215357/1350095089912909835/image.png?ex=67d62648&is=67d4d4c8&hm=39ba45f5896a9c28e85a6b9b8ff630c314e9b3c1ca89797ff08bc7b33ec84706&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 21:16:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1344523300604215357/1350095134011686953/image.png?ex=67d62653&is=67d4d4d3&hm=93f0fded2d44d95949103028c840923d4129c20f7600fa396bf8c1d2ca4ddea6&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 21:16:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1344523300604215357/1350095222088007700/image.png?ex=67d62668&is=67d4d4e8&hm=2680f273e61ce34b92e397564584550dd12893fa655f38e71dd5bcd3d2c79f6d&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Fri Mar 14 2025 22:30:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1344523300604215357/1350113791698010112/image.png?ex=67d637b3&is=67d4e633&hm=162ad1e92804a2619bef25c5e71655efa8680369c1af247693c6b026a3daa8ce&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/368572601792069632/2b81f75131d2d383db4df567717e74b3.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">arthur0824hao</span><span class="time">Sat Mar 15 2025 00:03:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> .2 1d4-1</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sat Mar 15 2025 00:03:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@arthur0824hao#0</span> <@368572601792069632> 
+#1： 1d4-1：4[4]-1 = 3
+#2： 1d4-1：4[4]-1 = 3</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
