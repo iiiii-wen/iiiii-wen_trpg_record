@@ -1,0 +1,437 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 31 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=96" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>骰子區</p>
+              <p style="font-size: 15px;">从 2025-03-20T15:44:09.798Z 到 2025-03-20T16:37:33.762Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Mar 20 2025 23:44:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> CC 50 心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Thu Mar 20 2025 23:44:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 50　
+19 → 困難成功：心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Mar 20 2025 23:47:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> CC 50 心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Thu Mar 20 2025 23:47:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 50　
+45 → 通常成功：心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:00:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> .sc 80 0/1d3</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:00:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:03:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 8 克</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:03:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 8　
+59 → 失敗：克</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:06:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 45 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:06:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 45　
+30 → 通常成功：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:11:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc1 59 說服</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:11:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 59　
+84、24 → 24 → 困難成功：說服</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:12:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 45 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:12:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 45　
+88 → 失敗：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Fri Mar 21 2025 00:15:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> dr 1d100</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:15:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@kerthos_0420#0</span> <@358254177434206208> 暗骰給自己</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:16:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 58 幸運</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:16:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 58　
+9 → 極限成功：幸運</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:19:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> .sc 80 1/1d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:19:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:20:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 80 int</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:20:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 80　
+71 → 通常成功：int</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:20:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ccrt</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:20:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:25:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 50 醫學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:25:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 50　
+68 → 失敗：醫學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:37:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 1d5 SAN 獎勵</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:37:15 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1d5：SAN
+5[5] = 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:37:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> .dp 58 幸運 50 心理學 59 說服 45 說服</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Fri Mar 21 2025 00:37:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Mar 21 2025 00:37:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 45是偵查</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    

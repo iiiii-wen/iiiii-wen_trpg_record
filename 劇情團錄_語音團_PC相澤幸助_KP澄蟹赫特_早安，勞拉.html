@@ -1,0 +1,198 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 6 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=96" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>致調查員</p>
+              <p style="font-size: 15px;">从 2025-03-20T14:13:53.170Z 到 2025-03-20T16:26:31.341Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Thu Mar 20 2025 22:13:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1346681527521775647/1352284013745803305/image.png?ex=67dd7421&is=67dc22a1&hm=a2c515b304a788afe8cd125286aa50f0670d46a78f01fbcc7fd9ceec383e942f&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Thu Mar 20 2025 22:14:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 早安-勞拉</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Thu Mar 20 2025 22:17:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 勞拉女士</p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1346681527521775647/1352284982852452522/Portrait_of_Jane_Goodall_by_Bee_Johnson.jpg?ex=67dd7508&is=67dc2388&hm=cd68cad399579f796cd4b5a49aef5703a3e2b39d0ad5e029f43566713cbbef93&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Thu Mar 20 2025 23:35:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 勞拉是一位友善的老太太，自從 17 年前她的丈夫失踪後她一直獨居於此。隨著年紀的增長她的身體漸漸的不太好了，於是決定今年搬家到鄉下療養。
+
+她的丈夫羅威是一位拉丁文教授，在研究一本古文籍時帶著書籍無故失踪，導致作為家人的勞拉在這些年裡一直都受到偷竊文物的詬病。但因為沒有足夠的證據，所以此事不了了之。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Thu Mar 20 2025 23:37:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 勞拉女士:‘‘是你們啊，剛剛真是謝謝你們了。很可惜今天那裡的負責人不在，我決定之後在去看看。對了，如果不介意的話來明天我家參加離別宴會吧？我在回程的路上買了許多食材’’</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/358254177434206208/e59e18d55571075e1be963469d6d13b0.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">kerthos_0420</span><span class="time">Fri Mar 21 2025 00:26:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> How to express,how lucky. If my eyes candoubt looking at you in the heart of the sunny day. If can't will youwatch, the life into darkness. If you appear inmy dream, night will into a durk. good morning，Laura</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    

@@ -1,0 +1,1340 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 118 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=96" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>水潺夢隨</p>
+              <p style="font-size: 15px;">从 2025-02-25T14:25:43.920Z 到 2025-03-18T15:19:51.112Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 22:25:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 【劇本名】──『幽暗之門-了卻幻夢(第五章)』
+ 
+舞台：美國-麻塞諸塞州-阿卡姆(1920年代)
+推薦人數：2~6人
+推薦技能：戰鬥類技能、偵查類技能、社交類技能、英語、藥學
+次要推薦：神秘學、克蘇魯神話、醫學
+推薦職業：神秘學者、私家偵探、記者、驗屍官、警察、黑幫
+開團時間：3月11日(二)晚上八點半開團，預計晚上十一點拉線，固定禮拜二晚上跑。
+使用規則：COC 7th /部分房規/部分通俗克蘇魯
+團務時長：未知
+
+【前言】
+調查員被委託調查沃爾特·雷斯尼克的死亡事件，他的死因明顯的相當不單純。
+
+報名：水滴、安先生、疑問、鼻和尺</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 22:39:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 早上十點，美國，麻塞諸塞州，阿卡姆，密斯卡托尼克大學</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 22:43:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+安得烈‧亞力士-私家偵探(水滴)(70) > 黃瑾龍-中醫(安先生)(55) > 伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 23:00:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 調查員導入
+
+安得烈·亞力士-私家偵探(水滴)(70) 
+安得烈·亞力士將密斯卡托尼克大學的信封放回桌上，點燃了一支香煙。煙霧繚繞間，他再次翻看委託書，簡短而含糊的描述讓他皺起了眉。  
+
+大學方面聲稱，一名叫沃爾特·雷斯尼克的學生最近離奇死亡，事件細節模糊而詭異，警方也無法給出具體的調查結果。作為校方聘請的私家偵探，安得烈被要求挖掘真相，並確保不會給學校的聲譽帶來不良影響。  
+
+文件中附有沃爾特的基本信息和死亡細節，尤其提到了他在死亡前幾週的怪異行為：暴躁、孤僻，以及一連串難以解釋的健康惡化。還有那令人不寒而慄的死因——黑色的舌頭，深陷的眼窩，彷彿某種未知力量奪走了他的生命。  
+
+安得烈吐出一口煙，目光凝視著窗外昏暗的街道。他從不相信簡單的答案，尤其是阿卡姆這樣的地方。他拍了拍掛在椅背上的風衣，這件案子背後的真相，也許比他想像中更加陰暗。
+
+
+黃瑾龍-中醫(安先生)(55) 
+黃瑾龍站在聖瑪莉醫院的解剖室內，手中拿著一個裝著少量黑色液體的小瓶。他眉頭微皺，仔細觀察著這些來自死者沃爾特·雷斯尼克公寓的藥液樣本。  
+
+「黃醫師，這是我們唯一的線索了。」院長賈斯特·阿姆懷特博士輕聲說道「化驗室無法確定這些液體的成分，還希望您的專業知識能有所幫助。」  
+
+黃瑾龍是少數頗有聲望的中醫師，精通藥理學和傳統草藥。當聖瑪莉醫院在調查雷斯尼克離奇死亡的過程中一籌莫展時，他們想到向黃瑾龍求助，希望這位老練的中醫能發現西醫檢測儀器所忽略的線索。  
+
+瓶中液體散發著淡薄的腥氣，顏色深沉而詭異。黃瑾龍仔細嗅聞後，眉頭微蹙，低聲道：「這氣息古怪，像是混進了些陰濁之物……有傷陰陽，實在不正。」
+
+在場的醫護人員目光投向他，等待著更多的解釋。而黃瑾龍的心中已隱隱感覺到，這種液體與傳統中藥的配方完全不同，它的來源和用途，可能遠比想像中複雜且危險。
+
+
+伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50) 
+伊麗莎白·麥金塔夫教授站在校園的湖邊，冬日的微風拂過她的臉頰。她的腦海中不斷浮現著沃爾特·雷斯尼克的模樣——那位聰穎、迷人、熱愛心理學的學生，曾經總是坐在第一排，提出銳利而深刻的問題。如今，他卻以駭人的方式結束了生命。
+
+警方提供的細節讓她無法平靜：沃爾特的舌頭變黑，眼窩深陷，死因不明。更讓她不安的是，那封未寄出的信中寫著簡短卻詭異的話語：
+
+「恐懼是真實的，它就在門後。」
+
+伊麗莎白記得最近一次見到他時，沃爾特看起來失魂落魄，說話顛三倒四，甚至在結束談話時留下了一句模糊的警告：「有些問題不該被解答。」當時她以為那是壓力所致，但現在，這些話語像警鐘一樣在她腦海中回響。
+
+作為他的導師，也是心理學家，伊麗莎白知道自己無法坐視不理。沃爾特的死或許隱藏著某種她尚未理解的恐怖真相，而她有責任去尋找答案——無論這意味著迎向怎樣的未知黑暗。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 23:02:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1343961399671394325/19.jpg?ex=67dadc97&is=67d98b17&hm=7496fb7ca58c8a750cae4694f24ba6c98126da7f062a19bd2609f7e8f4e900ca&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Feb 25 2025 23:02:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沃爾特·雷斯尼克，19歲，密大神祕學系學生</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:35:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 早上十點，美國，麻塞諸塞州，阿卡姆，密斯卡托尼克大學</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:41:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沃爾特·雷斯尼克的死亡
+沃爾特·雷斯尼克是當地一所大學的大二學生。雷斯尼克曾經是個討人喜歡的傢伙。他心地善良，不僅成績優異，還是個不折不扣的萬人迷。然而，幾周過去，他卻好似變了個人。一開始他每天都顯得極度興奮，有時甚至還妄自尊大，對他看到的一切都大放厥詞。可這只不過是他躁狂一面的萬中之一。很快地，他就連對待親密的家人朋友他也「一視同仁」，對家人肆意宣洩無名之火，對朋友做盡狂妄自大的蠢事。雷斯尼克開始天天翹課，整個人變得蓬頭垢面，連最基本的洗漱工作都不做。兩周多一點時間，他瘦了整整近二十磅，他一雙招子眼窩凸顯，皮膚顯得格外蒼白。整個人看起來丟了精氣神，完全無法同先前那個生龍活虎的人聯繫到一起。在上次見到還活著的雷斯尼克時，就意識到著實有些怪異的事：當雷斯尼克說話時，他的舌頭完完全全地黑了。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:44:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 卡羅爾·謝爾比</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:46:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 他們在一腳踢開雷斯尼克鎖住的房門後，發現了這一切並第一時間通報了警方。在雷斯尼克的屋內，他們發現他正癱倒在一張椅子上，但無疑他已經死了。他的死狀有些駭人，眼珠深陷於眼眶之中，變黑的舌頭耷拉著伸出嘴外。好幾個小玻璃瓶到處散在公寓的各個地方，甚至於死者手裡都還緊攥著一個小瓶。從那些藥水瓶裡，總共能找到一兩滴黑色液體。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:49:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 20 世紀 50 年代一個懸而未決的謀殺案的目擊者陳述，一名乘客對莫羅城堡號客輪沉沒的回憶，一名女運動員參與 1932 年夏季奧運會的詳細描述。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:50:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 早上十點，美國，麻塞諸塞州，阿卡姆，密斯卡托尼克大學，聖瑪麗醫院</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:50:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349001654174879824/a8e967e4437cd494.png?ex=67dabdb1&is=67d96c31&hm=1f7fa73d9b3288dce30b898b51b6331e0825376e4c55b573175f73be2f92c584&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:51:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雷斯尼克在他被發現時，已經死了有兩天了。
+
+他的舌頭被隱約染汙成了黑色。
+
+他存在營養不良及脫水的症狀。
+
+他的確切死因不明，所有器官完好無損，也沒有明顯外傷。由於缺少進一步證明死因的證據，死亡證明書登記了他自然死亡的死因。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 20:55:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 「這氣息古怪，像是混進了些陰濁之物……有傷陰陽，實在不正。」</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:05:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 染黑的舌頭
+在過去的兩周裡，還發現了其他兩具黑舌死狀的屍體。其一屍體是瑪麗·克勞森，另一具則是佛蘭克林·斯圖爾特。兩具屍體主人都是大學生，被認為是「壞分子」的一員。最後，兩者的死因同樣是被登記為自然死亡，他們的屍體也被船運回他們本州外的原家庭埋葬。
+
+由於這三位大學生的死亡時間過於接近，整個校園社區都沸騰起來，處於無法消散的大恐慌氣氛中。校領導盡力四處做工作，表達了他們會解決動亂源頭的決心，試圖安撫學生家長群體們的情緒，不只是出於領導自己的利益考量，更是亡羊補牢般挽回學校的聲譽。可終究不會有人願意在一所「惡靈詛咒」的校園裡聽課讀書。當調查員於校園內調查時，他們最好儘量做事放規矩些，不要給他們帶來不必要的麻煩，否則他們會面臨一堆嚴苛的質詢，乃至被拘留，或是被粗暴急躁的安保人員全部「請」出校園外。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:08:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 黑血
+如果調查成功取得了那些空瓶（自雷斯尼克的房間裡），之後調查員們就會從中取得幾滴「黑血」的殘餘液體。如果他們想要把這幾滴液體放在顯微鏡下檢查，通過一個成功的生物學、化學或者藥學檢定。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:09:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這種物質大部分構成是普通的酒精，但其餘的可能是乾皮或是血液。而這些成分，不像是來自於任何一種已知的生物體內，但黑血裡的確地有幾種類似死細胞的成分。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:10:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在研究的某一刻，某一團會自發地突然動一下。這會導致一個理智檢定（0/1D2 理智值損失），可能是由於那一點點組織會比剩餘部分要更活躍。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:11:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在過去的兩周裡，還發現了其他兩具黑舌死狀的屍體。其一屍體是瑪麗·克勞森，另一具則是佛蘭克林·斯圖爾特。兩具屍體主人都是大學生，被認為是「壞分子」的一員。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:23:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 中午十二點，美國，麻塞諸塞州，阿卡姆，密斯卡托尼克大學，陰暗角落</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:26:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 「墨水」</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:28:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 們會表示裝在這瓶子裡的是一種無與倫比爽上天的新玩意兒，稱之為「墨水」。他們表示，「這他媽讓你看見無比媽的..媽的瘋狂的東西，但都確確實實是發生在很久很久以前，極其遙遠的地方，或者那些事都甚至還沒發生呢！有時你看見那些玩意兒，真的能把自己嚇個半死，但只嗑一口..簡直能讓你嗨到感覺自己就是無所不能的上帝啊！！」</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:38:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349013496418795563/22.jpg?ex=67dac8b9&is=67d97739&hm=eb8f57e7bafcc71ad1e2ce73173cbbe051f4f8437ece56b944b471689c3af588&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:38:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 保羅·羅傑斯，22歲，販毒商</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:38:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 保羅·羅傑斯，他曾經也是這所大學的學生，但在一年前被開除了學籍。不過他仍舊時不時返回校園裡。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:38:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在那之後，癮君子會提供關於保羅·羅傑斯的身體外觀描述，如下「差不多四十歲左右，一百六十磅重，一頭莫西干紅髮，左眼旁有一塊微紅的酒漬狀胎記。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:39:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 「保羅曾經就讀於這所學校，但是他由於作弊被開除了。他在學校裡還算有幾個狐朋狗友，所以他一直會偷偷溜進學校跟他們碰頭，給他們鼓弄來幾瓶酒賣給他們，哥幾個一起開心開心。但是幾周前，他給他們溜了一批新貨「黑血」，自那之後就再沒有一個人關心私釀酒了，全都是黑血的緣故。現在他一周會回來校園一兩次，帶過來的「黑血」貨量也越來越多了。而且每次他過來，賣得價格都比之前高許多。」</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:41:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 一罐二十美元。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:44:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 下午一點，美國，麻塞諸塞州，阿卡姆，密斯卡托尼克大學，行政大樓</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:46:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 下午兩點，美國，麻塞諸塞州，阿卡姆，警察局</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:47:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 通過官方記錄來找到羅傑斯是十分困難的，他從未被逮捕過，也沒有駕駛執照，在他離開學校後，校方也未曾記錄過他的住址。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:48:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349016244904525964/42.png?ex=67dacb48&is=67d979c8&hm=9d376a2f5cd01d45c2beb628591facdc36527c2d3f14a0f18916d61130f85261&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:48:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 傑克森·布萊克·斯派羅，42歲，黑醫生</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:49:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 海洛因、大麻、鴉片、可卡因。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:50:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349016653702234122/37_.jpg?ex=67dacba9&is=67d97a29&hm=b2722cd81072860fb149708413ecf8f02c3c8eb15397ef99bc41dfe8774ee8c5&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:50:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 德克蘭·麥克布萊德，37 歲，黑幫老大</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:51:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 傑克森·布萊克·斯派羅為波士頓黑幫老大德克蘭·麥克布萊工作。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:57:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 地下酒吧
+加里森街北721號
+這家秘密的小酒館是為有身份的阿卡姆居民而開設的；勞工和其他吵鬧的人是不允許入內的。除此之外，它的營業時間也較為合適，這在很大程度上解釋了為什麼這片區域的人能夠容忍它的存在。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:59:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 下午三點，美國，麻塞諸塞州，阿卡姆，地下酒吧</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 21:59:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 必須敲四下門，然後說暗號（“撒哈拉”）。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:14:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 黑僕幫</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:14:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 奧班尼翁幫</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:21:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 亞歷克斯"十字螺絲起子"考克斯</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:22:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349024792954540083/32.png?ex=67dad33e&is=67d981be&hm=2098d960b26e79754b98c6639ab94d6031382bc4bb541620cdebe3227d1e8dc8&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:22:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 亞歷克斯"十字螺絲起子"考克斯，32歲，奧班尼翁幫成員</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:25:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 安東餐館
+炸藥廠街南689號
+這是阿卡姆最好的義大利餐館。這裡樸素而整潔；晚餐一頓飯 50-65 美分。這裡經常有奧班尼翁的幫派成員光顧。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:25:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 下午四點，美國，麻塞諸塞州，阿卡姆，安東餐館</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:27:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 黑僕幫</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:28:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349026087061159967/33_.jpg?ex=67dad472&is=67d982f2&hm=aa0bb159999e4800ee249a768746aebdda162abbbe5a3cfae752ee5b257defb9&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:28:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 謝默斯·奧謝，33 歲，奧班尼翁幫執行打手</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:28:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 奧謝是幫派的中層幹部。他被幫派頭目委派去處理接手這批毒品的銷售，如果沒法讓對方就範，就著手廢掉這條毒品銷售線。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:43:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 謝默斯·奧謝 答應 安得烈‧亞力士-私家偵探(水滴)(70) ，之後會讓「墨水」禁止進入密大校園。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:47:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 安得烈‧亞力士-私家偵探(水滴)(70) 打算去尋找 保羅·羅傑斯 的行蹤。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:50:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 下午四點半，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:53:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 晚上六點，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:53:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1349032479087923252/22.jpg?ex=67dada66&is=67d988e6&hm=3e9f4b70fd4a13faba3932312bfb661f6e9209e3aae263d645de3b0c962a63a5&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:53:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 保羅·羅傑斯，22歲，販毒商</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:53:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 調查員們一行人終於找到在暗巷販賣「墨水」的保羅·羅傑斯。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:56:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在那之後，癮君子會提供關於保羅·羅傑斯的身體外觀描述，如下「差不多四十歲左右，一百六十磅重，一頭莫西干紅髮，左眼旁有一塊微紅的酒漬狀胎記。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 11 2025 22:59:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 保羅的舌頭不是黑的。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 20:40:15 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 保羅·羅傑斯說黑僕幫會驅使惡魔，不聽話的人都成了灘爛泥。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 20:47:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 無面黑魔</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 20:49:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不聽黑僕幫老大雅各·多佛話的人，都會悽慘的死在寬闊的地方。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 20:51:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 無面黑魔飛行時安靜無聲，它們都是雅各·多佛的眼線，隨時都在盯著我們。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 20:57:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 晚上九點在阿卡姆郊區有黑僕幫的交易。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:01:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 晚上九點，美國，麻塞諸塞州，阿卡姆，郊區</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:04:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351541773213630497/D9C7C05F-220E-4821-B419-28C82094575D.jpg?ex=67dac0dd&is=67d96f5d&hm=0ad84a91d78ebddfba923f7a0a6b25ad34d6cbafa10c1a43ce70f54badbb2e3d&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:04:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 喪失 0/1D6 點理智。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:07:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 晚上十一點，美國，麻塞諸塞州，阿卡姆，郊區</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:15:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+安得烈‧亞力士-私家偵探(水滴)(70) > 無面黑魔(70) > 黃瑾龍-中醫(安先生)(55) > 伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:22:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年 2月1日 星期一 晚上十一點半，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:28:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+黑僕幫司機(70) > 安得烈‧亞力士-私家偵探(水滴)(70) > 無面黑魔(70) > 黃瑾龍-中醫(安先生)(55) > 伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:34:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351549353088520215/Leonardo_Phoenix_10_A_32yearold_American_man_with_a_vibrant_re_2.jpg?ex=67dac7ec&is=67d9766c&hm=beaad17dc438f0919438e4e2b231abb5a1e456d71342bb2f35a83cd201ca8bff&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:37:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 大河街 143號</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:38:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雅各·多佛</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:38:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 威利斯·卡特</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:39:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 午夜十二點，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:40:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 屠宰場坐落於大河街，靠近一條小溪。而過去那條小溪時常含有屠宰場傾倒的汙物，所以當地人也稱作「血溪」，那麼這條小溪將最終匯入密斯卡托尼克河。
+屠宰場坐落於一塊相當大的空地上，空置的籠子環繞著一幢龐大的，倉庫一般的建築。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:44:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 午夜十二點半，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:47:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 凌晨一點，美國，麻塞諸塞州，阿卡姆，大河街143號，黑血工廠</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:48:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351552753721151650/25e43642701a661c.png?ex=67dacb17&is=67d97997&hm=36ddac310271b84ad9eb8819aa7c4ab8f1979a8bbec98ca534d3e4b3cc7862aa&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:48:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:48:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雅各·多佛會在檔案室交易。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 21:50:51 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 毒血工廠大約有二三十人。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:09:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351558127308509235/27_.jpg?ex=67dad018&is=67d97e98&hm=53a2a6242227567aa32c6bb22fbdf86822ba3a60b8b390075fabf025713446cb&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:09:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雅各·多佛，27 歲，黑僕幫老大</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:09:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 身材高大、健康、英俊</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:10:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351558265875595284/20_.jpg?ex=67dad039&is=67d97eb9&hm=a99be7501ed261bb24b292a02b9e82d64661e04b509a81e11243c8e9b3f35472&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:10:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 威利斯·卡特，20 歲，保鏢</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:10:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雄偉的體格與力量</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:18:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351560461203669113/8398957f2511f4a2.png?ex=67dad244&is=67d980c4&hm=4048970870c541d89a6a0939020926b8fbcd184c1b1dd0f257d8ef2f1d10b859&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:19:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 損失 1/1D10 點理智值</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:19:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這只恐怖的怪物是一大堆骨骸、顱骨、角與蹄的聚合，由覆蓋其上的柏油一般的黑色物質黏合在一起。它以緩慢地拖拽自身的方式前進。如果忽略其體型，它的行動實際上相當隱蔽且幾乎無聲。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:22:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+安得烈‧亞力士-私家偵探(水滴)(70) > 黃瑾龍-中醫(安先生)(55) > 伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50) > 大怪物(35)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:36:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 凌晨一點半，美國，麻塞諸塞州，阿卡姆</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:40:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 亨利·阿米蒂奇博士及其夫人
+密斯卡托尼克大道西417號
+這棟優美的愛德華七世時期式建築屬於大學圖書館館長。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:40:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 凌晨一點半，美國，麻塞諸塞州，阿卡姆，阿米蒂奇家</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:41:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351566217718140938/721930.png?ex=67dad7a1&is=67d98621&hm=02e4fe95314570814093789d6d07ed59a0806a5ba4765949334e259aeb0be81e&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:41:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 亨利·阿米蒂奇博士，68歲，奧恩圖書館館長</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:43:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 耐心之神</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:44:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 不緊不慢的伊波·茲特爾之血</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:45:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 腥首烏骸(RawHeadandBlackBone)
+這只惡獸著實強而有力。由於雅各所呼喚出的黑血皆是活物。雖說它們被與酒精混合後製成了這個巫師販售的毒品，但它們仍然保有誕下它們的伊波-茲特爾那惡毒的意識。因此，如果某個黑血的儲藏罐上有裂紋，那之後會發生什麼？這污穢而帶有魔法的物質在重獲自由後將能接觸到屠宰場內剩下的大量動物骸骨與其他可怕的汙物，在那之後它將如何做？這最終的結果將是一隻由無數屠宰場內動物遺留下的骨、角、蹄與顱骨所集結而成的怪物的誕生，而將它們聚集起來並驅動它們的正是逃逸的黑血。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:45:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 流水（降雨、湍急的河流或消防水管）能對它傷害。諸如游泳池或平靜的池塘此類的靜水對它沒有任何作用。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:50:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day2 1926年 2月2日 星期二 凌晨兩點，美國，麻塞諸塞州，阿卡姆，大河街143號，黑血工廠</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 22:51:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+安得烈‧亞力士-私家偵探(水滴)(70) > 黃瑾龍-中醫(安先生)(55) > 伊麗莎白·麥金塔夫-密大心理學教授(疑問)(50) > 腥首烏骸(35)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:00:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351570869956120639/33_.jpg?ex=67dadbf6&is=67d98a76&hm=f5dec3c752b629ab5fec7d63ccb949ac17d2ce38690013d83bfb5c66fb771cfb&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:00:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 謝默斯·奧謝，33 歲，奧班尼翁幫執行打手</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:03:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 獎勵
+基於模組的結局與調查員們的行動，為存活的調查員提供如下獎勵
+制止黑血交易：+1D4 理智值
+解決了雅各·多佛：+1D4 理智值
+解決了夜魘：+1D6 理智值
+摧毀了腥首烏骸，那他們可以得到額外的 1D10 點理智值。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:05:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 最後，如果施法者有時間準備並在一塊威化餅上刻印一個名為「第六咒」（Sixth Sathlatta）的魔法符號，並用某種方法使得受害者吃下它，這道咒文的攻擊會自動成功（無法進行體質檢定，直接受到檢定失敗後的傷害）。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:07:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 黑質召集術〔召、害〕
+Call The Black
+消耗：20 點魔法值；10 點POW；2D6 點理智值
+施法用時：3 小時
+巫師對一名目標召喚伊波-茲特爾的活血液，又叫“黑質”。血液會以柔軟的薄片形態出現，粘附在目標身體上，且會積累極多，令人窒息或死亡。
+目標在被黑質覆蓋的第一輪必須進行一次CON 檢定；若成功，目標失去1D2 點耐久值，若失敗，失去1D4 點耐久值。第二輪需要進行一次困難CON 檢定（失去1D4/1D6 點耐久值）。
+第三輪起，目標必須通過極難CON 檢定（每輪失去1D6/1D8 點耐久值）。效果將持續到目標耐久值歸零（死亡）或法術被驅散。
+除了殺死施法者或說服施法者取消施法以外，據說只有大量的流水才能驅散黑質。
+別名：黑血術、黑血詛咒、鬱悶血質</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:08:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351572926780014682/ae4cb45abc6e5fe0c15261c2e362d520.jpg?ex=67dadde0&is=67d98c60&hm=d2006c8af91392188eb4d96b02ab250558038c56ea1878411d0e6542a4379f07&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:08:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351572952969253008/1443106458-3568660545.jpg?ex=67dadde6&is=67d98c66&hm=26fac88bb36db068fb186bd42fd77c5431be742f20e908c09f3ee8f08e1a4d36&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:08:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351572977539485746/697c78900e97453796a932e743345e8a.jpg?ex=67daddec&is=67d98c6c&hm=e44f7f002cdda7aeb8bd351c27365176c9b85fbc9d3d9b545cbbcf7b8bdaf5b3&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:08:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351573009168859206/047c21f470ce0e654109fe6ee93b2003.png?ex=67daddf4&is=67d98c74&hm=f3a4014a92f0341579e288fe7b694d55936f0a83d2cbe3a36a07a74ded31057e&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:09:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 圖鑑
+夜魘
+腥首烏骸</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:18:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 《喬納森·多佛的日誌》
+英文，喬納森·多佛，21世紀
+這本厚厚的皮面書籍中的大部分地方都是以不同顏色墨水與鉛筆所寫就的歪曲字跡。這本書中記載了喬納森多年以來環遊世界以探求如何掌控未來的歷程。推動他開始這次旅程的原因似乎是其妻子突如其來的意外身亡，這使得喬納森陷入了深深的自責中。但這位沉浸在悲傷中的父親卻完全忽略了對其子雅各的關心。他提及雅各經常抱怨由於他們從不在一個地方待很久，因此他完全沒有機會結交朋友，但喬納森總是以「為達目的可以不擇手段」作為自己的藉口。
+
+記錄中記載了大量喬納森與各類通靈者、吉普賽人、巫醫、神秘學家與其他人之間的會面。他似乎從中收穫不多。但隨後在西非（日誌並未記載更詳細的資訊）的某處，喬納森遇見了格瓦裡·庫耶（Gwari- Kuyu）部落並與他們成為了朋友。這個部落崇拜名為伊波·茲特爾的存在，將其描述為「他居於跨越了夢境之壁的克雷德叢林中，能窺見一切時間與空間。」日誌其後的記錄皆是在探討伊波·茲特爾，包括幾條記載在內的與該神祇有關的儀式。
+理智損失：1D6
+克蘇魯神話：+1/+2% 
+神話等級：9
+學時：2 周
+建議法術：呼喚黑血，與伊波·茲特爾交談，喚請無面者。
+
+其他利益與效果：
+考古學與神秘學+4%。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Mar 18 2025 23:19:51 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1343951364060872756/1351575838927224862/3e676e50879bf38c.png?ex=67dae097&is=67d98f17&hm=b662cd609ede8ad08d41ab036c0600f6489f4294e84a9c6261db49479e64f96d&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
