@@ -1,0 +1,1450 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 99 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=80&quality=lossless" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>靜噪獨行</p>
+              <p style="font-size: 15px;">从 2025-03-29T13:47:28.693Z 到 2025-03-30T06:46:35.551Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sat Mar 29 2025 21:47:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 明天下午1點來跑</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sat Mar 29 2025 21:48:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment file-attachment">
+              <a href="https://cdn.discordapp.com/attachments/1355504687243067462/1355539031924146186/--.pdf?ex=67e9f459&is=67e8a2d9&hm=ada343becdaddfbcd92d474be219ae77aee6d060461d110b298436a0d67fad98&" target="_blank" rel="noopener noreferrer">
+                📎 --.pdf?ex=67e9f459&is=67e8a2d9&hm=ada343becdaddfbcd92d474be219ae77aee6d060461d110b298436a0d67fad98&
+              </a>
+            </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sat Mar 29 2025 21:48:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 選一張預設卡</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sat Mar 29 2025 22:38:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雪音，這個本大概跑多久哇</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sat Mar 29 2025 22:39:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我明天四點有事<:63:844588614834192424> ，拍謝</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sat Mar 29 2025 22:41:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我選黑人查理(???</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 10:55:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 2到3個小時</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:04:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 3d6 幸運</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:04:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+3d6：幸運
+11[2+6+3] = 11</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:06:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “啧，”亚历克斯心不在焉地嘟囔着，两分钟内第
+十次开关着汽车的电动车窗。你磨着自己的牙。你们在
+卡车停靠站休息后才刚刚回到路上，亚历克斯就已经把
+能够得着的按钮玩了个遍。你一个人开着车，同时用一
+张大得不像话的地图找着下面的路。亚历克斯玩腻了车
+窗，叹了口气，转向你这边，“你就让我拿着地图吧，
+好吗？”
+ “不用，我能办得到，”你回复道。因为亚历克斯
+记错了走过的路，你们两个已经错过了一个出口。最好
+还是你一个人把所有事情都干好。
+时间已近傍晚，你们在南达科他州黑山峰的一条乡
+间道路上。太阳仍然高悬，但天气寒冷。你四下望去，
+所见只有高大的松树和连绵起伏的山谷。凉爽的秋风从
+亚历克斯打开的车窗中吹来。然后，你听到了一阵电流
+的嗡嗡声。这声音突然又出现，出现又消失，消失又出现。
+你咬着舌头没说话。亚历克斯打开了收音机。在她调台
+的时候，你听到的只有尖锐刺耳的雪花噪音。这一点意
+义都没有，你们已经超出信号范围了。唯一能收到的只
+有一首严重失真的尼尔·戴蒙德的歌</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:09:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 70 con</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:09:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 70　
+48 → 通常成功：con</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:09:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 太阳逐渐落山。车灯割破黑暗，却只能照亮你们车
+前几米的道路。终于，灯光扫过一间小屋的外墙，在前
+门两侧的玻璃窗上反射回来，就像两只眼睛警惕地盯着
+你。你把车停在路边。
+“终于到了。”亚历克斯叹着气下了车，站到碎石
+车道上。你把胳膊腿挪出车子，伸展了一下后背，然后
+走到后备箱前拿自己的包。天气很冷，夜里的寒气像钳
+子一样将你抓在中间。你没想到会这么冷。
+“饿了吗？”在你忍着不发抖时，亚历克斯问道。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:11:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 小屋并不大。小屋的主人，你哥哥马克，显然是夸
+张了它的豪华程度。它只是一个大开间，有一张双人床
+和一只抽屉式的衣柜，房间的一角安排成了厨房。小屋
+里没有微波炉，烤箱和灶台都是烧燃气的。另外还有两
+扇门：一扇通往小屋后面，另一扇通往一间小浴室。不
+想也知道，那里面一定要冻死人了。
+在床对面的墙边有一排橱柜，上面放着一台电视和
+一套磁带录像机。整个小屋只有一个暗淡的黄色灯泡照
+明。说不上暗，但也不亮堂。
+看到浴室，你一下想起你已经连着开了几小时的车。
+你和她说了一声就钻进浴室。在你洗手的时候，你看到
+镜中的自己。你的眼睛下面有黑眼圈。你停下来叹着气。
+一周末的远游……这真的能解决你和亚历克斯的问题
+吗</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:13:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:13:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+33 → 通常成功：心理學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:13:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 胡思乱想是没有意义的。你会来这里是有原因的。
+你爱亚历克斯，你希望这趟旅行有所收获。你可以一天
+到头猜测事情会怎样发展，但是瞎猜什么也改变不了。
+你能做的是尽量友善一点，表现出你的爱来。至于这样
+有没有用就不是你能左右的了。
+你走出浴室，试着微笑着开个玩笑。“呼……久等了。
+自打从皮尔出来我就一直憋着了。”
+亚历克斯哼了一声，但是你从她的脸上看出一丝笑
+意。她正在厨房里切着菜。你走过去尽量帮着干点活。
+过了一会儿，你们就一起坐在小桌边，一起吃着晚饭。
+亚历克斯的话很少。你不好说她在想什么。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:14:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 亚历克斯也在困惑。只有在这种时候她才会这样安
+静。你看着她心不在焉地戳着食物。她大概正在头脑里
+翻来覆去地想这些事情，就像你一样。尽管许多问题就
+要脱口而出，你很想把事情直白地说清楚，但你还是强
+迫自己闭上了嘴。亚历克斯不喜欢这种直白的对话。乱
+问问题只会让她厌烦。你最好的选择就是尽量放松，专
+注于你们夫妻喜欢的事情。这样能让她想起事情好的一
+面。这是最好的办法了。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:15:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 65 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:15:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 65　
+8 → 極限成功：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:15:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “嘿，你想看电影吗？”你问道。
+亚历克斯迟疑了。你们两个刚开始交往时，几乎每
+个晚上都会一起看着电影睡着。亚历克斯沉吟了一会儿，
+点了点头。
+“好。”
+亚历克斯去浴室梳洗，你把盘子端去水槽洗干净，
+然后，你走到电视前。
+这是 80 年代后期的一个便宜型号，放在一台全是
+灰尘的录像磁带播放器上。你把两台机器都打开，然后
+打开下面的橱柜找电影。
+“马克肯定很喜欢恐怖片，”你看着影片的标题说
+道。柜子里有十五盘磁带，显然是涵盖了过去十年几乎
+所有的主流恐怖电影。“天哪，这些看起来都不太妙。”
+ “连一部喜剧片都没有吗？”亚历克斯从浴室问道。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:20:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:20:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+33 → 通常成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:20:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 电影开始，屏幕上什么画面都没有。能听到有轻微
+的音乐，但是没有片头字幕。然后，屏幕上开始播放模
+糊的影像，明显是手持录像机拍摄的。
+“喔，这是马克的家庭影片吗？”你问道。
+亚历克斯笑着去拿遥控器。“哦吼，真抱歉。”
+ “稍等，这段看着有点眼熟，”你指着电视说道。
+亚历克斯迟疑了。
+在屏幕上是密得像墙壁的森林。树叶和松针被拍摄
+者踩得嘎吱作响。相机扫过地平线，画出一片绿色和棕
+色的虚影。突然，你看到了马克的小屋，孤零零地立在
+这一小片空地上。一辆暗红色的轿车停在门前。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:20:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “那是茱莉的车，”亚历克斯说道。
+“那这一定是他们婚礼之后拍的了。”
+录像机抖得厉害。风吹过麦克风时录下的可怕刮擦
+声从扬声器里放出。红色轿车旁边有动静。一位女士，
+看来是茱莉，正从后备箱往外拿包。她脸上带着微笑。
+“对，”亚历克斯说，“这至少是五六年前的了。”
+屋门打开，茱莉闻声转过身去。马克从屋里走了出
+来，从茱莉手里接过一个包。他们笑着说了些什么。你
+听不到对话的内容。
+你一个激灵坐起身。“什么鬼？”
+ “怎么了？只是马克而已。”
+ “对啊，那是谁在录像？”
+亚历克斯结结巴巴地眨着眼睛。
+屏幕上，马克和茱莉进了屋，关上了身后的门。录
+像机向窗户拉近。画面上净是模糊的色彩颗粒。你能看
+到小屋里有人活动。相机又拉得更近。这时，狂风吹起，</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:21:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 呼啸声从扬声器传出。画面破碎成一整幅雪花噪音。白
+噪音在房间里炸开，钻进你的头骨。你感觉脑子要炸开
+一样。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:25:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “亚历克斯？”你朝着黑暗中问了一声。
+“嗯？”
+ “这是怎么了？”
+ “停电了，我猜。”
+从黑暗中，你听到亚历克斯一只手扶着墙、拖着脚
+步挪动时碰到东西的杂乱声音。她来回拨了几次电灯开
+关。
+“我觉得这个地方是靠太阳能供电的？”
+ “他的确是这么说的。可能什么东西坏掉了。”
+ “有备用电源或者什么东西吗？”
+ “我不知道。我猜明天早上我得到镇里去给马克打
+电话问问。”
+ “哦，那可是太好了。”你握着拳顶着自己的眉心。
+“好吧，怎样都好。”
+你的心脏仍然因为刚才的噪音狂跳着。你把手从脸
+上拿开。小屋里漆黑一片。焦虑开始在你心中翻腾。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:27:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 当你醒来时，你发现身旁空无一人。
+你一个激灵从床上坐起来。“宝贝？”
+没有人回答你，只有窗外的风送来早晨轻柔的鸟鸣。
+你站起来走到厨房，看到笨重的冰箱上贴着一张便条。
+便条上用熟悉的笔迹写着：
+“要再对你说抱歉。只是想要这个周末特殊一点。
+去镇里找人修电源了，尽快回来。爱你。”
+你放下便条。看起来，你要独处几个小时了。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:29:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 屋外，空气清新、阳光暖人，天空也晴朗少云。你
+深吸一口气，让湿润泥土和松树的气息充满胸膛。往前
+走了几步，你朝着车道眺望过去。车道蜿蜒着消失在树
+林里。树木太密，比起看到你的车，听到它的声音还现
+实一点。
+你朝小屋旁边的一条步道走去。步道的地面已经被
+无数来游玩的家庭磨光了。
+越往里走树林就越密。小动物在你视线所不及的灌
+木里穿梭。鸟儿鸣叫着在头顶的枝条间掠过，让松针沙
+沙作响。
+你在小路旁遇到一丛蓝莓</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:29:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 10 博物學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:29:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 10　
+86 → 失敗：博物學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:32:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你打了个冷颤。你想起昨晚电视发疯前播放的影片，
+黑色记号笔写的标题犹在眼前：溪水中的落花。你看着
+这条溪流，看着岸边的花，看着被水流冲刷而下的落叶，
+记忆中刺耳的雪花噪音又在耳边想起。
+你抬起头环视四周。一切如常。只有你身后的小路
+和水边的两排松树。
+除了你，一个人也没有</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:33:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 是时候往下走了。你把清空杂念，一心一意沿着小
+路往黑山峰的密林深处走去。这段健走让人心旷神怡。
+阳光从松枝间漏出，在晨间的清爽空气中投下斑驳的光
+影。
+过了大约半个小时，你感觉人有三急，便走到一棵
+树后面去方便。
+完事之后，你正整理衣服，突然抬头看见了什么。
+在你面前，小路边上的一个狭谷中，有一座破旧的木头
+棚屋</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:35:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 棚屋中只有打开的门和凹凸不平的挡风板墙上的裂
+缝漏进光来。这里没有窗户，好像这个建筑故意设计得
+阴暗无光一样。
+你看到一个小工作台、一个壁挂的橱柜和一堆纸板
+箱。其他的家具都发霉了，没什么可看的。地板在你走
+过时发出嘎吱嘎吱的响声</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:35:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 要搜索橱柜
+要查看工作台
+要翻找纸板箱
+要离开棚屋</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:36:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 工作台>>櫥櫃>>紙板箱</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:37:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 工作台上放着各种工具，都是很多年没有人碰过了，
+被一层油腻的灰尘覆盖着。你看到一把暗灰色的锤子。
+也许它会有用？工具台上还有一套专用的微型螺丝刀</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:39:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 得到槌子與微型螺丝刀</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:40:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 65 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:40:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 65　
+80 → 失敗：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:40:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 橱柜摇摇欲坠地挂在破旧的墙上。它被重力牵引着
+朝前倾斜着，压在几个满是铁锈的钉子上。
+你小心地打开了柜门。
+在柜子里有两层架子，都摆放着录像磁带。这些都
+是家用磁带，就像马克小屋里的那种一样。在磁带盒正
+面贴着白色标签，用黑色记号笔写着字。这些磁带被苔
+藓和蜘蛛网覆盖着。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:43:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你把最顶上的箱子搬到一旁，打开了下面的第二个
+箱子。这个箱子并没有受到那么严重的损伤。
+在箱子里有一些脏兮兮的玻璃罐、一把装在皮革刀
+鞘里的长匕首和一台手持录像机。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:45:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 10 機械維修</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:45:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 10　
+24 → 失敗：機械維修</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:49:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 5 神祕學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:49:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 5　
+52 → 失敗：神祕學</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:51:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:51:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+48 → 通常成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:54:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 65 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:54:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 65　
+97 → 失敗：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:54:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你知道车里有一支强光手电，但是车已经开走了。
+你在小屋里有些什么呢？如果天黑了，你就会陷于黑暗</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:57:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在这样一座小屋里，你实在想不到什么好做，疲劳
+感也逐渐浮现。有一会儿，你躺在沙发上读一本在书架
+角落找到的陈旧破烂的平装书。你感觉这书写得挺好的，
+就是有点花哨、有点用力过度，而且用第二人称写散文
+实在有点刺耳。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 13:57:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 聆聽</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 13:57:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+41 → 通常成功：聆聽</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:58:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你听到脚步踩在碎石车道的声音从屋外传来，但并
+没有听到汽车接近的声音。你坐起身，然后紧张的站起，
+溜到窗边。
+一个秃头的中年男人站在前门外。他穿着一件很厚
+的冬大衣，双手插在兜里。你不认识他。
+他举起手，敲了敲门。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 13:58:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你等了一会儿，听到他从门口走开。
+你凑到窗边趴着看。你看到他离开了，但是并没有
+沿着车道走到公路上，而是从小路走进了森林。就是你
+去健走的那条路。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:02:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:02:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+56 → 通常成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:03:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:03:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+40 → 通常成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:04:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你关上门。小屋里的一丝丝暖意传来，让你意识到
+刚才外面有多冷。
+你回到厨房，沮丧地坐在没吃完的三明治旁边。
+坐了一会儿，你用手电筒照着走到床边，钻进被子
+里，搓着胳膊和腿让自己更暖和一点。
+在床脚对面的电视柜上，电视亮了起来。供电恢复
+了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:05:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你拿出之前在卡死的摄像机里找到的磁带。在磁带
+的一侧写着标题：《小屋中的伴侣》。
+你坐在电视前，把磁带放进放映机。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:08:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 60 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:08:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 60　
+93 → 失敗：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:09:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 录像带开始播放。一面木制墙出现在屏幕上。摄像
+机朝四周拍了一圈。你心里一沉：出现在屏幕上的正是
+你现在这间小屋的内部。
+拿着摄像机的人正在朝四周看，画面里出现了床铺
+和电视。然后，摄像机转向厨房，你看到一位金发的女
+子在拆杂货店的纸袋。
+你认出她是马克的妻子茱莉，不禁松了一口气。拿
+着摄像机的肯定是马克了。
+“嘿，美人儿，”他说道。
+茱莉笑着抬起头。“老天爷，把那玩意收起来吧。”
+ “我们现在是在达科他州的黑山峰，和茱莉·蒙哥马
+利一起，”他说着，把镜头拉近她的笑脸，“茱莉，这
+是你第一次来山里吗？”
+她翻了下白眼，继续拆着购物袋，但还是接着戏。
+“不，这是第二次了。我很肯定第一次的时候你也在，
+报道员马克。”
+ “好吧，好吧，”马克绕过厨房的小桌，离她更近
+了些，“据传您在上次来访时与本报的一位帅气的工作
+人员疯狂相爱，请问您有何评论？”
+茱莉摇了摇头。
+“不！这是毫无根据的谣言！”她咯咯笑着，从购
+物袋里拿出一只崭新的不锈钢煎锅轻轻敲着马克。马克</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:09:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 躲着平底锅，也咯咯笑着。茱莉用平底锅俏皮地挡着脸，
+就像是在躲狗仔队一样。
+“嗯，茱莉，我们只要——”
+摄像机突然转向，朝着小屋门。
+你听到茱莉从画面外问道：“刚才是有人敲门吗？”
+ “我想是的，”马克说着把摄像机放在一边，拍摄
+出茱莉大头朝下站在厨房，而他走去开门。“我能为您
+做什么？”
+你看不到他是在和谁讲话，只能看到一个倒着的茱
+莉在咬着指甲。
+“亚历克斯和查理在这里吗？”你听到一个声音问
+道。
+“呃，抱歉？”马克说。
+“亚历克斯和查理，他们在吗？”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:10:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “亚历克斯和查理，他们在吗？”
+ “……不，你找错门了吧。”“他们什么时候来这？”
+ “他们……他们不会来这儿。抱歉，但是你是谁？”
+一片寂静。茱莉从门边退到了厨房里。
+“嘿，”马克喊道，“回来——”
+影片结束了。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:11:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 1d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:11:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1d4：
+3[3] = 3</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:11:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 65 偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:11:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 65　
+47 → 通常成功：偵查</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:13:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 57 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:13:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 57　
+7 → 極限成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:13:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 当门打开时，你按下暂停，有什么东西引起了你的
+注意。你往回倒了几秒钟。
+在马克和茱莉的对话中间，她用平底锅挡住脸的时
+候，一个奇怪的形状闪过屏幕。
+平底锅是不锈钢制，打磨得像镜子一样亮。你能看
+到变了形的马克倒映在上面。他拿着摄像机。
+你还能看到门边窗户的倒影。外面阳光明媚。透过
+窗户，你看到一个邪恶的漆黑形状。那是一个若隐若现
+的头颅架在肩膀上，上面覆盖着可怕的头发，并且生着
+如荆棘般的粗枝。倒影扭曲变形，你认不出那是什么，
+但是你确信它一定不是人类。
+那只是一团漆黑。没有任何特征。
+就像一个影子。
+一只怪物。一只怪物在你现在所在小屋的外面。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:16:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你调整了一下轨道选择，画面上的锯齿条纹消失了。
+一个男人脸的特写显示出来。他没有看着镜头，而是摆
+弄着摄像机下面的什么东西。
+你想到他是在架三脚架，摄像机把这一幕录了下来。
+他蹲下去离开了画面，你听到他调整三脚架腿的声
+音。镜头拍到他身后的景象，是林间的一片空地，中间
+有一个营地。
+在树林间有一个模糊在像素中的人影，个子很高，
+但是只有漆黑的影子。
+摆弄三脚架的人又走回画面，挡住了人影。他穿着
+荧光色的狩猎夹克，戴着毛线帽。
+他退了一步，看着镜头，笑着转身朝着空地。空地
+上已经生起了一簇篝火，支起了一顶双人帐篷。
+他在火堆旁蹲下，一边看着相机，一边把木棍掰断
+扔进火里。他的嘴唇在动。
+你在树林边看到的影子已经消失无踪。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:20:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 男人举起文件夹，笑着。“这里的一切就像是昨天
+一样。我第一次梦到之后写下的一切。”他把文件夹放
+在腿上你看不到的地方，向下看着。你听到文件夹打开
+和翻页的声音。</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:20:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 57 san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:20:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 57　
+5 → 極限成功：san</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:20:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “我要再读一遍，”他说，“在我梦中所闻的话语。”
+他自豪地朝着镜头笑着，朝身后的空地打着手势。“就
+是这里，我每晚都会见到这里。每、一、晚。”男人现
+在显得欣喜若狂。他低头看着纸张，读道：“祂出现在
+选民的面前，将他们带入内环。当太阳升起，祂就隐去
+身形，隐于寻常的皮囊。”
+他清了清喉咙，继续读道：“当夜幕降临，祂就自
+由地行走，大地的爱徒，森林的毒与药。从土壤的深处
+萌生，黑山峰如今就要成为祂的血肉，每棵树都是祂的
+毛发。祂的使徒乃是由时间之法则所定：米哈伊尔、荷马、
+奥利维亚、达西，”他在这里停了一下，激动地指着纸张。
+“这就是我！”他加了一句，然后继续读道：“马库斯、
+查理、亚历克斯、拉切尔、伊萨克。”
+达西停了一下，直直地盯着镜头。
+“查理？”他问道，“亚历克斯？”
+他朝着摄像机靠过来。画面上只有他的眼睛和眼边
+的脓疱。
+“你们要回家了吗？”
+画面破碎，变成纷飞的雪花。房间里充满了炸裂的
+噪音。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:25:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你听到咔嚓一声巨响，陌生人发出破碎的咆哮，闯
+进小屋中。
+你在浴缸里趴得更低，竖着耳朵听着。男人四处游
+荡着，脚步在木地板上拖动。他寻找着你，不时发出嘶
+哑的尖啸。
+你听到他来到浴室门前。门把手转动了，他推了推
+门，门没有打开。
+一切停止了片刻，然后，脚步声离开了小屋。
+你等了几秒钟，然后探出浴缸，用手电筒照着浴室
+门。
+在你左边传来吱吱声。你转过身，把光移向浴室的
+窗户。
+陌生人正站在那里。从窗外看着里面。他死气沉沉
+的眼睛迎着你的视线，用手摸着窗框，寻找开口。他没
+找到突破口，咆哮着从你视线中消失了。
+你感到一阵轻松，感谢着过去的自己锁好了窗户。
+但是你现在还算不上安全……你确信他很快就会回来。
+你该怎么做？</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:26:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 30 潛行</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:26:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 30　
+81 → 失敗：潛行</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/24863a21050f23a6a863ae21e2af904a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 14:27:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> cc 55 鬥毆</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/544462904037081138/826b76664e4c68ff4d29076c48a02bed.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">HKTRPG</span><span class="time">Sun Mar 30 2025 14:27:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696> 
+1D100 ≦ 55　
+51 → 通常成功：鬥毆</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:30:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你一拳在他腮边，但他不为所动。你骂了一句。他
+的下巴好硬。你的指关节肯定淤血了。
+男人咆哮着：“你胆敢袭击幼子？你一定会遭惩
+罚！”
+他冲上来，巨大的体重把你撞翻在地。
+手电筒从你手中脱落，顺着地板滚进厨房。没了手
+电筒，你几乎什么都看不清。
+你胡乱摸索着手电筒，但只感觉他的大手抓住了你。
+你听到他嘟囔着，像唱歌一样呻吟着，就像受惊的大象
+或马匹。
+他正试着把你拖出小屋。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:32:05 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你心中的什么东西放弃了。放弃抵抗让你感到甜蜜
+的宁静。陌生人抓住你的手就像温暖的舌头，挂在你的
+身体上。
+你被提到半空，离开地板。几条圆柱形的长长舌头
+环绕着你。你被推着压到男人身前。你能感到他呼吸的
+温度、屋外夜晚的寒气、一切的声音与对森林的恐惧涌
+上你的心头。你感觉松针像毛发一样从自己的皮肤中生
+出，口腔、喉咙与肺被湿润的黑土填塞，草芽从你的眼
+白中颤抖着萌发。
+你只觉得安详。
+幼子已拥有了你。
+你终于可以休息了。
+你放弃思考，感受着最后片刻的美妙安详。没过几
+秒，陌生人的手便挤碎了你的头颅。但安详永恒回响。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:38:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “你好？”你喊道，努力不让恐惧或愤怒在你的声
+音中流露。男人向你走来。他微笑着。
+“别担心，”男人说着举起双手，把空空的手掌露
+给你看。“没事的。我是你的朋友。”他的声音很低，
+并且句尾很诡异。他的眼睛因兴奋而睁大。你向周围看
+着，但空地上没有什么能让你更明白些。
+“发生什么了？”你问。你并没有期待回答，但你
+居然得到了。
+“我是能听到祂的人，”男人说着放下了手。
+“听到什么？”
+ “幼子。”
+ “什么？”
+ “森林之子。你也听到过祂。我知道你听到过。当
+祂哭泣时，声音就像——”
+ “雪花噪音……”你说道。
+男人微笑着，“是的。我就知道。你也听到过祂。”
+你迟疑着。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:38:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “亚历克斯，”他说。
+你凝固了。“你怎么知道我的名字的？”
+ “幼子告知我。祂想要一个家庭，亚历克斯。我们
+可以给祂一个家。”
+ “雪花噪音里的声音？”你问。
+“幼子。是的。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:39:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 要问幼子是什么，转到 337 。
+要追问幼子想要什么，转到 338 。
+要问陌生人是如何得知这一切的，转到 339 。
+要询问他是否就是你在附近见过的男子，转到    
+340 。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:40:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “你总是说幼子，”你说，“它到底是什么？”
+男人微笑着，“一种古老的存在。是的，对于一个
+古老存在来说名字有些怪。我相信祂是地球母亲所生。
+祂在世界上各种荒野中孑孑独立，孤独而痛苦。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:40:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “幼子……”你说道，“它想要一个家？”
+男人点了点头。“祂独自度过了无可计数的岁月。
+祂能看到过去、现在和未来。祂努力想要适应我们的科</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:40:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 技，但没有成功。祂只是想要人们陪着祂，在这里，在
+祂的家。”他用手示意着周围。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:41:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “这是一种负担，这份知识。”男人微笑着。“我
+多年前来到这里，带着我的录像机。我想要记录野外的
+景色，但是我发现了更重要、更值得记录的存在。一种
+在我理解之外的存在。我发现幼子可以操纵录像带中的
+磁粒，向我展示未来的景象。”他的笑容变大。“目前，
+所有的一切都成真了。幼子就在大地之下，在土壤中，
+在树木中，在我们脚下的松针中。大地的力量让祂能闻
+到、尝到、摸到与祂相遇的每一个人——不管这相遇是
+不是已经发生了。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:42:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “你说什么？”你问，“它能看到未来？”
+ “对幼子来说，一切都是现在，现在就是永远。这
+就是为什么祂在等你。”他说，“当我在这里时，幼子
+向我展示了许多，都记录在我的录像带里。我给它们标
+上标签，尽量分类保存。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:43:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “你……就是我在附近看到那个人？”
+他停下来想了想。“那可能是我吧。或者，是我的
+一个版本。”
+ “什么？”
+ “我将自己奉献给幼子，”他说，“我是祂的家人。
+如果祂愿意，幼子就可以使用我的形貌。幼子有许多形
+貌，来自祂的牺牲奉献，过去的……与未来的。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:44:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 当你要结束谈话时，选择以下的选项：
+要对男人说他这是无稽之谈，转到 341 。
+要问他你如何才能安全离开，转到 350 。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:44:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你摇了摇头。“这些……这些都是无稽之谈。”
+ “相信我！”他恳求道，“我一开始也怀疑这一切，
+但幼子开示，我能拥有太多。”他朝你迈出一步。你倒
+退着躲开。
+“我要离开了，”你说。
+“等等！”一个声音在你身后喊道。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:44:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> “我怎么离开这里？”
+男人皱起眉头。“你是说离开？”
+ “是的，”你说，“我要离开这里回家。我再也不
+会来了。永远不会。”
+男人摇了摇头。“恐怕已经太迟了。幼子已选择了你。
+祂已经为你等待了太久。”
+你摇着头，“我才不在乎！我才不会留在这！”你
+转过身，正想跑走，却听到一个熟悉的声音响起。
+“等等！”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/619477249518862341/57f160ff4057d5d5c9272a7fe2d0470c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">xueyin.</span><span class="time">Sun Mar 30 2025 14:46:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> https://drive.google.com/file/d/1egwKxQrX8KWfXJ-_B6PgzR17tyoQcas5/view?usp=sharing</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
