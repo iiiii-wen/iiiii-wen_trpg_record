@@ -1,0 +1,538 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 44 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/1092064877033570365/7fbe78be4bbd637cc1f79c9deb2f3d7d.webp?size=80&quality=lossless" alt="">
+            <div class="titleInfo">
+              <p>機率學研討會</p>
+              <p>致命劇本三團場外</p>
+              <p style="font-size: 15px;">从 2025-01-24T14:58:26.240Z 到 2025-01-31T13:26:29.466Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Fri Jan 24 2025 23:15:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 那今天就差不多到這邊，剛好各位也都會合了！
+下次跑團時間是1/30的晚上9點到11點，或是各位1/26中午12點至2點可以的話也可以這個時段跑
+之後跑團時間就以各位都可以的時段為主都開團，爭取一個月內跑完，不知各位是否OK</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Fri Jan 24 2025 23:16:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 然後因為是秘密團，只要有任何不希望其他玩家想知道的行動或想偷壞壞或是個人行動都是直接用小窗！</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Fri Jan 24 2025 23:17:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好!</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Fri Jan 24 2025 23:17:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好的ww</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/225506432831848448/6f409f9fa58afb5eb795fcbcfe15a5f4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aki_inaba</span><span class="time">Fri Jan 24 2025 23:17:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 兩個時段我都可</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Fri Jan 24 2025 23:20:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 哇，我26號不行了，抱歉</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Wed Jan 29 2025 15:27:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> @everyone 各位新年快樂，提醒各位明天跟後天晚上9點到11點有團喔！</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/225506432831848448/6f409f9fa58afb5eb795fcbcfe15a5f4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aki_inaba</span><span class="time">Wed Jan 29 2025 15:42:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 新年快樂<:sui_hurray:831226765766557736></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Wed Jan 29 2025 15:50:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好的！新年快樂</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Wed Jan 29 2025 20:01:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 新年快樂</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 21:02:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 早安!</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/225506432831848448/6f409f9fa58afb5eb795fcbcfe15a5f4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aki_inaba</span><span class="time">Thu Jan 30 2025 21:02:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:emoji_98:696683923341705306></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Thu Jan 30 2025 21:02:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 午安（</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 21:02:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 午安！</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/541675771727577118/e055150691c5ab150f4e1ac0e7cd9f0a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aijius</span><span class="time">Thu Jan 30 2025 21:03:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 簽到啦👍</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/225506432831848448/6f409f9fa58afb5eb795fcbcfe15a5f4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aki_inaba</span><span class="time">Thu Jan 30 2025 21:22:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> KP看起來在忙<:emoji_98:696683923341705306> ?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 21:24:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 咩～</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Thu Jan 30 2025 21:33:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 抱歉抱歉！我來了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Thu Jan 30 2025 21:37:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我現在不在家裡，所以回覆速度會比較慢，臨時被抓去拜年團圓非常抱歉🙏</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 21:38:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好🫶</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:05:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 誒？</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:06:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 我們這個劇本是大概什麼時候開始演r</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:06:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 現在場內是幾點</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Thu Jan 30 2025 22:07:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 現在是下午一點左右</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 22:14:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 排練有點 不知從哪下手</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/541675771727577118/e055150691c5ab150f4e1ac0e7cd9f0a.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aijius</span><span class="time">Thu Jan 30 2025 22:24:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 排練的一開始就這麼尷尬嘛😀</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/225506432831848448/6f409f9fa58afb5eb795fcbcfe15a5f4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">aki_inaba</span><span class="time">Thu Jan 30 2025 22:24:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:word_kusa:869888798186692669></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 22:24:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> XD</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:24:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 有點恐怖誒</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:25:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 到底能不能透露劇本，完惹</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Thu Jan 30 2025 22:25:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沒事啦，總歸都是要排練的
+大家都要尷尬一輪（</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:40:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 😀</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 22:41:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好ㄌ</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:44:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 哇，你484有那個什麼狂笑症</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 22:44:12 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 怕</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 22:44:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 哪有 ~~很克制~~</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Thu Jan 30 2025 23:03:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 尷尬的空氣</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Thu Jan 30 2025 23:05:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 那11點了各位，我們可以明天再延續這份尷尬感（#</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Thu Jan 30 2025 23:29:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 哭阿XD下一場還是我</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Fri Jan 31 2025 20:55:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 各位不好意思，今天比較晚下班，我會遲個5-10分鐘左右🙏 
+有想做的行動可以先做！</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/223060307767984128/624dc75b285536377a647545a0f23e81.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">as_ce</span><span class="time">Fri Jan 31 2025 21:23:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 所以阿佩通加跟阿基萊打算要往哪逛去</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Fri Jan 31 2025 21:23:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理論上是往酒店外或是去吸菸室？</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/883169789458129007/f86d4c68186f6316e654e0a79465ca55.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">qingyu1076</span><span class="time">Fri Jan 31 2025 21:24:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 往外吧</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/941536363751305296/82218c5ddb8f2ba4993e50ed29410b54.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">lyz_9432</span><span class="time">Fri Jan 31 2025 21:24:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 那就往外吧</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    

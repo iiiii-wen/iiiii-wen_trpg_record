@@ -1,0 +1,1133 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 84 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/740485930355392554/a_81c4a6762929c3f2888b81ac3b2b75eb.webp?size=80&quality=lossless" alt="">
+            <div class="titleInfo">
+              <p>TRPG CoC調查局</p>
+              <p>無光燈塔</p>
+              <p style="font-size: 15px;">从 2025-03-25T16:10:33.415Z 到 2025-04-01T15:45:25.596Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Wed Mar 26 2025 00:10:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 【劇本名】──『 無光燈塔』
+ 
+舞台：美國-麻塞諸塞州-羅克波特(1926年 4月12日 星期一)
+推薦人數：2~4人
+推薦技能：戰鬥類技能、偵查類技能、駕駛(船)、追蹤、游泳、潛行、醫學、英語
+次要推薦：社交類技能、克蘇魯神話、神秘學、生物學、機械維修、開鎖
+推薦職業：古董商、聯邦探員、海洋生物學家、神秘學家、藝術家
+開團時間：4月1日(二)晚上八點半開團，跑至結束。期望一次結團，最晚十一點拉線。
+使用規則：COC 7th /部分房規/部分通俗克蘇魯
+團務時長：1~3小時
+
+【前言】
+4月12日晚上8點15分。大約15分鐘前，馬薩諸塞州愚人角外，信標島上的燈塔不再照亮附近危險的岩礁水域。
+結果，埃塞克斯郡號客貨混合船，在岩石上觸礁沉沒，船體受到相當大的損壞。
+這正是你們所乘坐的這艘船，原本預計前往羅克波特。然而船正在下沉，船員們急忙把你們送到充當救生艇的小船。
+當他們把你們送上船的時候，他們告訴你們，最好想辦法去信標島——由於新一波風暴要來了，抵達大陸地對你們來說是不可能的。而你們應該有足夠的時間在風暴襲擊前到達那個島。
+然後，他們就把船推入黑暗翻騰的水中。
+能指引你的，只有燈塔高聳輪廓下，微弱的室內燈光。
+
+報名：水滴、疑問、橙蟹赫特、喵喵的狐狸</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Wed Mar 26 2025 00:13:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1354126081082392606/7a710a9be659dbc6.png?ex=67ecb970&is=67eb67f0&hm=a169d4b8e43d51007a6761080ddcc8ef385dfbfa9918220e02c381eeac76f552&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Wed Mar 26 2025 00:14:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+科林·肯特-骨董商(疑問)(70) > 布茲道-記者(喵狐)(65) > 沃爾特·克拉克-FBI探員(水滴)(60) > 沃克-中介調查員(橙蟹赫特)(55)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Wed Mar 26 2025 00:21:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 調查員導入
+
+科林·肯特-骨董商(疑問)(70)
+科林·肯特曾惹過奧班尼翁幫，然而，如今他已改過自新，並經營起了一家骨董店。最近，他收到了一封來自老友喬治·卡西迪的信。喬治是信標島的燈塔守護人，信中詢問科林是否還在經營那些稀奇古怪的商品和異國貨品。
+科林不禁心想這次卡西迪又會給自己帶來什麼麻煩。他決定親自去弄清楚情況，看看能否再次幫老朋友擺平問題。
+
+
+布茲道-記者(喵狐)(65)
+布茲道目前正在撰寫一篇關於羅克波特當地海洋民俗的專題研究報告。只差最後一點數據，他就能將稿件提交給報社，而這正是他此次旅行的目的。
+
+
+沃爾特·克拉克-FBI探員(水滴)(60)
+沃爾特·克拉克探員目前被派往麻薩諸塞州，負責監控東海岸航道上的一切非法活動。
+他即將前往羅克波特，與同行探員沃倫·托馬斯會合並聽取其彙報。托馬斯目前化名邁克爾·特納，正在信標島擔任燈塔看守人，執行一項臥底任務。
+
+
+沃克-中介調查員(橙蟹赫特)(55)
+麻薩諸塞州的伊普斯威治灣海岸，有人零星撿到一些擁有高藝術價值的金幣。安東尼提到，有位雇主願意出高價收購這些金幣，如果能找到它們的來源則更是錦上添花。面對這份工作，沃克只能硬著頭皮接下來。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:12:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上八點 美國，羅德島州，麻塞諸塞州，愚人角</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:13:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 前往羅克波特的船是一艘小型貨客混合船，
+船員加上乘客，船上大約只有20來人，
+整個航程大約八個小時，
+傍晚五點上船，隔天凌晨三點上岸，
+在船上會過夜，所以可以好好休息。
+船速應該是穩定30碼。
+從紐約長島港岸上船，到羅克波特港口。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:18:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上八點十分 美國，羅德島州，麻塞諸塞州，愚人角</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:19:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356619001047814255/66.jpg?ex=67ed3966&is=67ebe7e6&hm=92a0fb11f14a4a9ccb961895e398a1549b594d9a97f4cc3dd24c527f261aea05&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:22:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這正是你們所乘坐的這艘船，原本預計前往羅克波特。
+然而船正在下沉，船員們急忙把你們送到充當救生艇的小船。
+
+當他們把你們送上船的時候，他們告訴你們，最好想辦法去信標島——由於新一波風暴要來了，抵達大陸地對你們來說是不可能的。而你們應該有足夠的時間在風暴襲擊前到達那個島。
+
+然後，他們就把船推入黑暗翻騰的水中。
+能指引你的，只有燈塔高聳輪廓下，微弱的室內燈光。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:26:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 扭曲的金屬嵌在附近與島嶼分離的沙洲上，而更多的金屬則隱沒在水下。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:26:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上八點十五分 美國，羅德島州，麻塞諸塞州，愚人角</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:26:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 調查員判別金屬可能是一艘船的部分殘骸，盡管調查員在很長一段時間內都不記得在這裡有任何沈船的事件。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:27:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 發現金屬上沒有任何識別標記，而且從海藻植蔓數量，殘片表面也沒有變質，顯然它在這裡存在的時間不長。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:27:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356621057116602368/856552e01a9fa0c9.png?ex=67ed3b50&is=67ebe9d0&hm=4ae7f74bea86afaf19df281d10e83f0fe1667fecd51c5e8afbeac4a5c090bdab&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:28:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 在一陣驚濤駭浪中之後，調查員成功著陸，他們經歷了寒冷、潮濕、傷痕累累。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:28:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這一路上，調查員都能清楚地看到聯接著燈塔的小屋以及燈塔結構內的燈光。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:28:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 橋墩通向一條被長草環繞的狹窄的土路。附近可以聽到機器輕微的轉動聲。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:30:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 它的前門微開著，從裡面可以看到穩定的光亮。門的兩邊各有一扇窗；兩邊都拉上了薄薄的窗簾，但一縷溫暖的光線從左邊的窗簾射進來。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:32:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 地面上有小小的，泥濘的，動物般的腳印，在小屋門前，但是，在這些腳印下，有一部分覆蓋了明顯的靴子印。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:36:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 離小路不遠，(2)燈塔後面有兩個木造棚屋。
+較小的(6)發電機房木造棚屋裡有一台正在運轉的發電機，還有大量的汽油和木柴。
+發電機棚的屋頂有個裂縫。雨滴濺落到下面的電氣設備上。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:37:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 修理屋頂所需的所有材料都可以在隔壁的工坊找到，這需要一個成功關的藝術/工藝(木工)或一個成功的機械修理。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:43:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 他們很快就會發現一具殘破不堪的屍體。
+
+一片凌亂狼藉的血腥場面。他的內臟被從身體裡摳出來，被割開，被踩入泥土裡。屍體旁邊有一盞破碎的燈。
+
+很明顯，他剛死不久。找到屍體會使調查員 1/ 1d4 +1 san 值。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:44:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如果調查員搜查屍體，他們會發現一個空的槍套和一個調查局的徽章。
+
+一把六發左輪手槍，是史密斯&威森公司生產的.38手槍，被翻攪的內臟覆蓋，它的彈膛只剩下五顆，還有一個空彈殼。
+
+不管什麼東西襲擊了他，他只來得及發射一發子彈。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:47:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 死者可能是被某種動物撕裂的，因為他的身上有奇怪的牙齒和爪印。
+他剛死不久，死亡時間一個小時內。
+有細小的針深深扎入他的皮膚。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:48:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如果當局探員發現屍體，那麼他的 san 會喪失1/1D6。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:49:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 上面顯示死者的真實姓名是沃倫·托馬斯。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:51:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 生物性的毒針。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:53:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 沃倫·托馬斯的屍體被拖到工具間。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:54:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上八點四十分 美國，羅德島州，麻塞諸塞州，愚人角，信標島</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:54:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356627733064712242/PL.png?ex=67ed4188&is=67ebf008&hm=190b7094c7fd98cda10da59b21dfecaa7539dfd813bc6e30d03f340437d0d44d&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:54:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 走廊目前沒有照明，所以書房的光線應該會把調查員吸引過去。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:55:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如果打開走廊的燈，人們首先注意到的是門邊的三個衣鉤，只有一個還掛著看上去用了很久的防風雨衣。
+
+兩雙雨鞋放在衣掛鉤下面的淺托盤裡，托盤旁邊還放著一雙室內鞋。
+兩個油燈掛在防風雨衣旁的鉤子上；還有一個空的掛鉤，說明少了一盞燈。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:56:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 只要燈亮著，會在走廊地板上發現兩顆子彈。
+濺出的血從廚房門一直流到樓梯上。發現這一點後，要求做一個 SC(0/1)。
+那裡有三枚較大的金幣被丟棄在地板上。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 21:57:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356628461141102832/image.png?ex=67ed4236&is=67ebf0b6&hm=1bc893292514305bdffae416d3e08a1a34b8d06ced0bd25c85ab81c7d2d73137&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:00:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 可以確定子彈是從旋轉樓梯兩級台階上的位置發射的。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:01:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上八點四十五分 美國，羅德島州，麻塞諸塞州，愚人角，信標島</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:02:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356629794615197896/db77cd434bdb5226.png?ex=67ed4373&is=67ebf1f3&hm=2672721c42667504f904b63a5b33c8fdd21c56166bec80a39fad303f0c842bb7&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:02:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 硬幣的一面似乎描繪了某種方尖碑，而另一面則覆蓋著奇怪的印記和令人不安的設計。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:03:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 調查員注意到這個印記有更深層次的意義，而目前已知的文獻中並沒有被記載，但紋樣類似相當偏遠的南海語系宗教信仰。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:07:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 書房
+書房裡有三把扶手椅，大致位於房間的中央。除了靠走廊的門，還有一扇門連接廚房。
+
+家具方面，除了扶手椅外，靠走廊門左側有一張桌子，靠近廚房門外的牆上有一個卷蓋寫字台。桌子都附椅。
+
+寫字台旁的那張椅子現在躺在地板上。
+
+桌子上放著幾本航海故事書、一本鳥類讀物、燈塔維修手冊、一根煙斗和一袋煙草、一副望遠鏡、一本寫生簿、鉛筆、水彩顏料、畫筆和紙。
+
+桌子上還有一幅剛剛完成的水彩畫，旁邊整齊地放著一疊其他的畫。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:07:51 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356631149526384733/a7e37d87a00aa865.png?ex=67ed44b7&is=67ebf337&hm=f2a68336bb8a72bc521cede4563768625876328b61154ec62da618a3b7ef3848&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:08:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356631194728534117/unknown_2.png?ex=67ed44c1&is=67ebf341&hm=0d2a5298f159bd17df1bd91c7a106cae2b90a9b9d8b84b5ab25dc2fe06010ddd&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:10:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 臥鋪
+床鋪間裡有三張收拾得整整齊齊的床。房間的一角整整齊齊地堆放著一大堆書。
+還有三個大櫥櫃，每個櫃子裡都放著肥皂、毛巾、新床上用品和多餘的毯子。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:11:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 能找到一個金幣，六個散裝子彈，和一個口袋大小的筆記本被塞在特納的床墊下。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:11:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356632050467078236/c64f555b057b485c.png?ex=67ed458d&is=67ebf40d&hm=f1e2a7eaef43a604902818ce78e9d81a629e32af49cd0c605eb23f63d0328a92&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:15:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上九點 美國，羅德島州，麻塞諸塞州，愚人角，信標島</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:16:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 大多數記錄都是例行檢察；然而，有一件事卻引人注目：1926年2月12日，電線問題導致燈塔的燈泡過早地燒壞了。
+日誌記錄了燈泡故障導致的電力短缺，再加上嚴重的風暴，阻礙了維修工作，這意味著燈塔在黑暗中度過了幾個小時。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:17:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 桌子上還有一幅剛剛完成的水彩畫，旁邊整齊地放著一疊其他的畫。這件作品似乎展示了一個窗口；一個藏匿在黑影中的大眼斜睨著玻璃窗。這扇窗戶很容易被畫者桌子旁邊的那扇窗作聯繫。觀看這幅畫時必須通過一個 SC(0/1)。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:20:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 當瀏覽那疊水彩畫時，又有一幅圖像吸引調查員的注意力。它描繪著熟悉的樹叢，這與燈塔和其他兩個小屋那都能看到。在通往樹叢的黑暗小路上，有一個男人的身影。
+
+與第一幅畫不同，這幅畫的日期是1926年2月14日。速寫本上有與該畫作前一個日期相對應的草圖。第一幅畫沒有對應的草圖。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:20:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356634266724729002/2020-08-12_priscr_007.jpg?ex=67ed479e&is=67ebf61e&hm=6bf86e2d8c0829d73708edb413014f149159680dd8e6b2adda06791eb87667d8&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:23:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 房間另一側的寫字台是關上的，但沒有上鎖。
+
+打開它會看到一個半空的，仍然溫熱的咖啡杯和許多文具：信封、郵票、紙、墨水瓶和鋼筆。
+
+一大堆羅克波特古董店的錢幣估價發票散落在桌面的其他地方；報價從 2 美元到 5 美元不等，所有報價的日期都是1926年 2月底。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:24:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 每封信都以「親愛的卡西迪先生」開頭，然後是道歉，解釋發件人無法確定收到的信件中描述的硬幣的來源；然而，所有的信件都表明，他們渴望看到一個真實的樣本，以便進行適當的、徹底的分析。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:24:51 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356635428563845210/a0f4005fb8222957.png?ex=67ed48b3&is=67ebf733&hm=e86979e5f209ad03ef2fe88fa6641559b8e2dce8a2ee9b2d5916b5b649d5607a&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:25:48 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 查閱信件後的顯示，這些信件大部分是按時間順序排列的；第一份是1926年3月8日，最近一份是1926年4月2日。來自紐波利波特協會的安娜·蒂爾頓小姐。
+寫字台也有兩個抽屜。左邊的抽屜是開著的，但鎖裡的鑰匙卻被折斷了。
+抽屜裡放著一個空木箱，裡面的綠色天鵝絨襯是用來裝左輪手槍的。六個子彈散落在同一個抽屜裡。
+右邊的抽屜是鎖著的，</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:35:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如果打開，抽屜裡會有一本屬於喬治·卡西迪的小日記。封面上有一塊方尖碑的草圖，與硬幣上的圖像相同。
+最後一段突然中斷，好像卡西迪在寫的時候被打斷了。
+如果古董商在場，他認出了卡西迪的筆跡。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:35:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356638071386407035/1.png?ex=67ed4b29&is=67ebf9a9&hm=c52e0dd460a1d0caf380c71dba123870fb15aa46489a16613885d2892dba8d27&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:35:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356638088893304923/2.png?ex=67ed4b2d&is=67ebf9ad&hm=3524858211f4fbfcde41dbf07104fbd63b3cf2ff4a16155d517a60a7cf8e2948&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:41:32 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 儲藏室
+燈塔的儲藏室架子上整齊地堆放著各種乾糧、罐頭的和醃製的食品。
+如果與大陸隔絕幾個月，足夠供三個人食用。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:42:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 廚房
+水槽裡有一些髒盤子和一個燉鍋，一張桌子有三把椅子，還有三扇門：一扇通向外面，一扇通向走廊，一扇通往書房。
+遠處的角落裡有一個小的燃木火爐；旁邊的爐子上放著一個還熱著的水壺。
+其中一把椅子碎在地板上；它旁邊的地板上有一小灘血。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:43:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356640152880939100/image.png?ex=67ed4d19&is=67ebfb99&hm=d1cf88bf883f43083957ef76d72c0b54eb2ff3cb72792093382fce7fa62bca58&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:45:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 那攤血是最近一小時內造成的；察覺血液有某種違和的異樣，能辨認出它不來自於人類。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:47:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 燈塔服務室
+調查員爬上走廊的樓梯，最終到達位於燈室正下方的燈塔服務室。
+
+用來轉動燈的機械裝置安裝在天花板上，從噪音來看，它似乎還在工作。另一組單獨的台階通過活板門通向上方的燈室。
+
+這裡有幾個箱子；每一個都有一個燈塔的備用燈具。還有一個小工作台和一個工具袋。工作台上是燈塔上執行的各種服務檢查的日誌。
+
+工作台對面是一張桌子，上面放著一台半失修的無線電收發器。無線電收發器桌的椅子被掀翻了，需要移動才能進入燈室的台階。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:48:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上九點十五分 美國，羅德島州，麻塞諸塞州，愚人角，信標島，燈塔服務室</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:49:15 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 燈房
+調查員到達燈塔頂時，映入眼簾的是一片潮濕、血腥的景像。
+燈房裡的兩塊玻璃不知怎麼打碎了；他們破碎的遺骸在腳下嘎吱作響。
+
+雨水從縫隙中吹進來，使得腳下的金屬板變得濕滑。
+更令人難以置信的是，房間內狹窄的空間裡，有兩具屍體血跡斑斑，還有兩種兩棲魚類生物的遺骸。
+
+其中一只已經死去的兩棲生物的牙齒咬住了死者的脖子，即使死了都未鬆開。
+
+目睹血淋淋的場面必須進行 SC1/ 1d4 +1 。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:49:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356641605305634926/eeae5eddda7fad25.png?ex=67ed4e73&is=67ebfcf3&hm=33ab5c2429f3b3b064be154d32a9e51ebd28f2dfb3e67bd766cf34a346c4d175&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:49:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 1/1D6 古董商，如果他在的話</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:51:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 離樓梯最近的屍體看起來很奇怪。
+這名男子穿著一件厚重的連帽雨衣，他的頭很窄，脖子和下巴上有明顯的皮膚褶。從他灰色粗糙的膚色就可以看出，他似乎患有某種皮膚疾病。
+
+他那腫脹突出、濕潤的眼睛仍茫然地望著燈塔看守人的屍體。
+
+一個有魚一樣的特徵的生物躺在這個怪異的人旁邊。
+
+它和另一具咬著燈塔看守人的屍體都被射穿了，一具穿過眼睛，另一具穿過腹部。
+
+這些奇怪的類魚生物看起來在陸地上也能靈活移動，因為它們擁有發達的雙腿，它們的鰭和鰓，顯示他們也能在水裡如常活動。
+
+最後一具屍體屬於燈塔看守人。在已故的燈塔看守人襯衫下藏著一個沉甸甸的錢包，裡面裝滿了奇怪的金幣，用一根粗皮繩系在他的脖子上。
+
+一隻六發柯爾特 M1877 手槍仍牢牢地握在他尚未完全失溫的手中。子彈都用完了。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:58:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356643800008753152/1fb0128982418ac1.png?ex=67ed507f&is=67ebfeff&hm=4a4ffb3fc5401a264edcd200d8ee46fa6be63e8c08b524a877b8bc38d9f5c851&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:58:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356643959559946250/unknown_8.png?ex=67ed50a5&is=67ebff25&hm=7a6fd5b45642fa4fa1fc3aafacd3379303eff4d37d33f92d62dc2fe1af7502ee&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 22:59:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 損失 1/1D4</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:00:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 一名雨衣男，以及八隻奇怪的魚怪。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:07:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 雨衣男被擊斃了。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:08:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+四隻魚怪(80) > 科林·肯特-骨董商(疑問)(70) > 布茲道-記者(喵狐)(65) > 沃爾特·克拉克-FBI探員(水滴)(60) > 沃克-中介調查員(橙蟹赫特)(55)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:16:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 一隻魚怪重傷倒地。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:18:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356648840433766551/PL.png?ex=67ed5530&is=67ec03b0&hm=ef958c3224c8de9409a68347e7ab929ebe8539333ef352710ea382f363c5a41b&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:18:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> Day1 1926年4月12日 星期一 晚上九點半 美國，羅德島州，麻塞諸塞州，愚人角，信標島，燈塔服務室</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:20:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 回合順序
+一隻魚怪(80) > 科林·肯特-骨董商(疑問)(70) > 布茲道-記者(喵狐)(65) > 沃爾特·克拉克-FBI探員(水滴)(60) > 沃克-中介調查員(橙蟹赫特)(55)</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:36:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 如果海岸警衛隊實施救援。依據答案，他們可能被帶回陸地去接受調查局的訊問，這是當局對該地區走私活動的調查任務。然而奇怪的是，局裡的探員很可能相信他們關於類魚生物的故事；然而，調查員的衣服將被燒毀，他們攜帶的物品將被沒收，並被要求發誓對1926年4月12日的事件絕對保密。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:38:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 獎勵
+殺死幼崽：+1D4 SAN 。
+找回卡西迪的金幣：+1D4 SAN。
+在幼崽的攻擊中倖存：+1D6 SAN。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:38:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 圖鑑
+混種深潛者
+幼崽</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:40:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 印斯茅斯，1927-1928
+為了摧毀盤踞在這個港口城市中的邪教社群，一隊由“異常龐大的人數”組成的美國聯邦軍隊曾進駐過印斯茅斯。這次行動被列為機密，並用當地爆發了“疾病”和“私酒戰爭”這樣的故事掩人耳目。“……而且囚犯的後續處置也疑點重重。沒有任何關於審訊的報導，甚至都沒有聽說明確的指控；逮捕的囚犯之後也沒有被關押進任何國內的普通監獄中。有些含糊其辭的陳述提到了某種疾病與一些集中營，之後又有報導提到囚犯被分散到了各個海軍與陸軍監獄之中，但這些報導全都沒有得到證實。”</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:42:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 遠古遺物：
+達貢金幣(THE DOLLARS OF DAGON)
+By BOBBY DERIE
+
+    在使用依靠黃金跟白銀保值的現代紙鈔之前，美國主要採用貴金屬硬幣來做為流通貨幣。政府在喬治亞州的達洛尼加、北卡羅來納州的夏洛特等地建立了造幣廠，以妥善運用當地的黃金產量。
+
+    馬薩諸塞州的印斯茅斯是位於新英格蘭，一個歷史悠久的貿易小鎮，因為附近沒有金礦，所以當地的造幣廠未被官方授權，但來自該地的金幣來源仍引起美國財政部的注意，並且在1860年時，財政部派員前往印斯茅斯造幣廠，並對該地生產的金幣進行測試。這些金幣最後被運回華盛頓特區，等待正式的批准。爾後南北戰爭的爆發，使得這個計畫被廢棄。
+
+    印斯茅斯金幣以及鑄造模具被下令銷毀。然而自1880年代以來一直有相關的流言流出。在1893年，從一艘海軍艦艇的遺骸中找到了一些損毀嚴重的印斯茅斯金幣，回收後被安置在達貢秘教的前廳展出。
+
+外觀描述
+印斯茅斯金幣發行的版本有以下美國金幣各兩種：四分之一鷹(2.5美金)、半鷹(5美金)、老鷹(10美金)、雙鷹(20美金)。每個金幣上面都註明製造年代為1860年，上面刻有一個小型「I」的鑄造符號。每顆金幣皆由90%黃金加上10%鉑類金屬組成，這些金幣皆比類似面額的金幣重上一些。
+
+    除了鑄造符號以外，金幣還有一些不同之處，原本的六芒星被替換成七芒星，而且沒有刻上格言「我們信仰上帝(In God We Trust)」。
+
+魔力
+    每枚金幣皆具有輕微、看起來像是「磁性」的性質。雖然測試上顯示金幣並無磁性，但會與其他印斯茅斯金幣互相吸引；將金幣貼合，會輕微的黏在一起，如果將一枚金幣繫在繩子上，金幣會微弱的傾向最近的印斯茅斯金幣(數量越多傾向越大)。根據調查員的位置所定，或許會將他指引向別的印斯茅斯金幣或者是深潛者都市。
+
+達貢金幣特別適合用來附魔，尤其是用來取代下列法術需求的石板：深潛者聯絡術(Contact Deep One)、石板詛咒(Curse of the stone)、石板附魔術(Enchant Stone Table)。
+
+將達貢金幣融入模組
+    這些金幣很容易就能流入使用美金購物的地方。它甚至可以出現在調查員的錢包裡，或者是某個錢幣收藏家的收藏裡。下列有幾個模組的引子：
+
+    一名著名的收藏家為了研究達貢金幣的奇妙歷史，他深入到影子繚繞的印斯茅斯，至此之後就沒人見過他。調查員則受雇去找尋他以及那些失蹤的金幣。
+
+    阿卡姆歷史協會在展覽上展出金幣。奧貝德·馬什(Obed Marsh)仍對財政部的銷毀命令耿耿於懷，他下令深潛者們去回收金幣。現在…金幣曝光，達貢的孩子們又在密斯卡托尼克河展開行動。
+
+波士頓著名賭徒赫伯特·懷特利·馬什(Herbert Whateley-Marsh)賭上了他手上的印斯茅斯雙鷹金幣，最後他輸了這場賭注。贏家不知道的是，這枚金幣已經被附上石板附魔術(Enchant Stone Table)，會致使持有者精神錯亂最終死亡，調查員被聘調查這個案件。
+
+    偽造者盜取了印斯茅斯金幣的模具，他們想偽造出一批新的美金。現在他們只缺少印斯茅斯黃金…</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:42:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1354125260705890434/1356654958098911262/c0d9029e0a677ed5.png?ex=67ed5ae3&is=67ec0963&hm=4a13fcc8a0d6b87cd05368f1f362bc24a7bf2c4ce8a257d3f9956f3dff0e67b3&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/309357156556210178/32d5330c8206557fc1fe05a062a8e1c6.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">blackheartbread</span><span class="time">Tue Apr 01 2025 23:45:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 故事架構及導入
+1926年2月12日，馬薩諸塞州的羅克波特附近，一場巨大的風暴摧毀了愚者岬。
+
+一艘沒有標記的船預計駛往印斯茅斯，它載著南太平洋達貢教徒的黃金，使用信標島的燈塔作為導航，以便避開正常的貿易路線，不被眼線發現。
+
+不幸的是，燈塔的燈故障了，導致船撞上了附近的礁岩，船身裂開，鍋爐發生輕微但毀滅性的暴炸，幾乎沒有留下任何痕跡，船就這麼沉沒了。
+
+自從沈船事件之後，印斯茅斯隱密的達貢教派試圖謹慎地從船上取回他們的黃金——這不是一件容易的事，因為船體靠近信標島和往來羅克波特的航道。
+
+雖然他們在他們努力之下回收的大部分的金幣，但仍有一些被沖到了大陸沿岸和信標島北岸的數個地點。
+
+喬治·卡西迪是島上的一名燈塔看守人，他在船沉沒後的第一天偶然發現了其中的一枚金幣。
+
+在過去的一個月裡，他通過在海灘上仔細而持續的搜尋，收集了大量的印斯茅斯金幣。
+
+他也一直想知道這些古物在古董市場上能賣多少錢，希望能把這些奇怪的硬幣轉換可觀的財物。
+
+到目前為止，教徒們都對燈塔的居住者置之不理，以為沒有人在島上發現任何丟失的金幣。
+
+雖然他們責怪燈塔看守人修理的太遲，導致他們的船撞毀，但他們認為沒有必要為他們的損失報仇，因為燈塔對他們的走私活動太有價值了，他們不能冒險干擾燈塔的日常運作。
+
+當信徒們收到來自卡西迪的信，請求幫助鑒定金幣並評估其價值時，事情發生了變化。
+
+教徒們決定找回那些丟失的金幣，因為卡西迪持續的深入調查，無疑會在不久的將來引起不必要的注意。
+
+他們已經將對該島的滲透時間定在了4月12日，也就是新月之夜，以使自己在攻擊期間獲得額外的力量。
+
+短暫地偵察後，兩名深潛者混血被派去執行任務，他們抓走了卡西迪的燈塔看守夥伴 塞繆爾·史密斯。
+
+他們審問後殺害了不幸的史密斯，史密斯證實了他們最初的發現：島上另外兩名居住者不會太麻煩。
+
+因此，在1926年4月12日的晚上，一個深潛者混血帶領一群危險的兩棲生物，也就是我們所知的“younglings”，處理掉剩下的燈塔看守者，並找到了卡西迪的錢幣收藏。
+
+另一個深潛者混血留守在羅克波特，隨時准備在需要時叫人支援。
+
+一到島上，一群“younglings”就追捕並殺害了臥底探員同時也是燈塔工人的邁克爾·特納，而另一群“younglings”則追捕卡西迪。
+
+卡西迪在燈塔的燈室英勇的戰鬥，成功的殺死了兩個“younglings”和一個深潛者混血，但在這個過程中失去了他的生命。
+
+在戰鬥中，一顆流彈擊毀了探照燈的鏡面和燈泡，使附近的海面陷入黑暗。
+
+“younglings”失去他們的領袖，沒有回到愚者岬尋求幫助的智力，繼續漫游在島上尋找硬幣。</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
