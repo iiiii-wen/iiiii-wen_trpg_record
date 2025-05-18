@@ -1,0 +1,2275 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 221 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/751669599124193341/86f19ac0fffaf62f414a1b5912574827.webp?size=80&quality=lossless" alt="">
+            <div class="titleInfo">
+              <p>亞弗戈蒙的幕中玩具</p>
+              <p>幻想中的噩夢之境-擲骰區域</p>
+              <p style="font-size: 15px;">从 2025-03-30T13:09:22.275Z 到 2025-05-04T15:51:45.930Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Mar 30 2025 21:09:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:09:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+失敗(85/5)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Mar 30 2025 21:09:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:09:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+極限成功(2/70)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Mar 30 2025 21:09:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 大成功?!</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Mar 30 2025 21:09:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 漂亮</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Mar 30 2025 21:09:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 果然要靠隊友</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun Mar 30 2025 21:10:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 65</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:10:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+成功(42/65)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 21:13:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 63</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:13:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+成功(32/63)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Mar 30 2025 21:35:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 26</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:35:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(87/26)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Mar 30 2025 21:58:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:58:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+失敗(92/84)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Mar 30 2025 21:59:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 孤注偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 21:59:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+孤注偵查:
+極限成功(8/84)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Mar 30 2025 22:25:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 80</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Mar 30 2025 22:25:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+成功(53/80)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 06 2025 21:02:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 59</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:02:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+困難成功(27/59)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 06 2025 21:16:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 69</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:16:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+失敗(85/69)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 06 2025 21:22:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 69</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:22:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+極限成功(11/69)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 06 2025 21:22:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:22:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+極限成功(5/84)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 06 2025 21:22:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 好了，大成功</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 06 2025 21:23:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 61</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:23:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+困難成功(14/61)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 06 2025 21:51:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 11</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:51:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(17/11)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 06 2025 21:51:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 26</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 21:51:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(71/26)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 06 2025 21:51:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 克蘇魯能燒嗎</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun Apr 06 2025 21:52:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 記得應該是不行</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 06 2025 22:30:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 14</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 06 2025 22:30:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(52/14)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 13 2025 20:22:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 85 1/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 20:22:41 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+失敗(90/85)
+減少了10(1D10) 現在是75</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:22:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:emoji_50HAHA:822129832493187143></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:22:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 草</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 13 2025 20:23:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj int 90</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 20:23:27 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+int:
+成功(88/90)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:23:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 那你瘋了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:23:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1124328708178714654/1360953661492297748/IMG_8644.png?ex=682339de&is=6821e85e&hm=b09ad36ae8cc82cdd95204b605aec7409896d62fabcbc0683cdd53e2d2f03a80&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 13 2025 20:24:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +crazy</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 20:24:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 臨時失控症狀: 1.失憶
+失控持續時間: 9輪</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:24:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> 用第一個瘋狂指令</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:24:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:emoji_50HAHA:822129832493187143></p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:24:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 草</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:24:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 9輪</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 13 2025 20:25:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@柒潣#4799</span> 失 憶</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 13 2025 20:27:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 1d100</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 20:27:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696>投擲:
+1d100: 92</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 13 2025 20:29:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 88 1/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 20:29:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+成功(88/88)
+減少了1(1) 現在是87</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 13 2025 20:29:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 0點</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 13 2025 20:29:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:emoji_dog:818782509646872636></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:30:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ㄛ</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:30:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 0.</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 13 2025 20:30:40 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 太好了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 13 2025 21:01:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 敏捷 50</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 13 2025 21:01:09 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+敏捷:
+失敗(53/50)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 20 2025 20:21:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 61</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:21:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+大成功(1/61)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 20 2025 20:21:28 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> ?</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 20 2025 20:33:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 61</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:33:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+困難成功(27/61)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 20 2025 20:34:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:34:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+失敗(88/84)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 20 2025 20:35:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 69</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:35:47 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+成功(39/69)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 20 2025 20:55:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:55:31 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+失敗(85/70)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 20 2025 20:58:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 歷史 63</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 20:58:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+歷史:
+極限成功(8/63)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 20 2025 21:07:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 靈感 85</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:07:08 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+靈感:
+成功(43/85)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 20 2025 21:08:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj int 85</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:08:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+int:
+成功(72/85)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 20 2025 21:13:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 88 0/1</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:13:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+成功(84/88)
+減少了0(0) 現在是88</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun Apr 20 2025 21:13:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj sc 51</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:13:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+sc:
+失敗(78/51)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 20 2025 21:54:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:54:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+失敗(81/70)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 20 2025 21:55:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 50</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:55:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+困難成功(22/50)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 20 2025 21:55:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 59</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:55:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+失敗(62/59)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 20 2025 21:58:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 圖書館使用 65</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 21:58:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+圖書館使用:
+困難成功(27/65)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 20 2025 22:18:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 69</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 22:19:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+成功(44/69)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 20 2025 22:30:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 84 0/1</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 20 2025 22:30:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+成功(82/84)
+減少了0(0) 現在是84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 27 2025 20:20:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 ８０</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 20:20:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+失敗(84/80)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 27 2025 20:21:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 61</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 20:21:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+成功(50/61)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 27 2025 20:30:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 神秘學 67</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 20:30:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+神秘學:
+失敗(95/67)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun Apr 27 2025 20:55:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj int 85</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 20:55:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+int:
+成功(82/85)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun Apr 27 2025 21:16:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 神祕學 60</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 21:16:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+神祕學:
+失敗(95/60)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 27 2025 21:16:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 神祕學 80</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 21:16:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+神祕學:
+成功(41/80)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun Apr 27 2025 21:16:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <:emoji_thinking:773398215860813824></p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 27 2025 21:18:25 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 神祕學 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 21:18:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+神祕學:
+失敗(10/5)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun Apr 27 2025 21:21:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 神秘學 27</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 21:21:02 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+神秘學:
+失敗(47/27)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun Apr 27 2025 22:18:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 敏捷 80</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun Apr 27 2025 22:18:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+敏捷:
+困難成功(26/80)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun Apr 27 2025 22:18:14 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 看起來跑的是真的快</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/582550044486533130/1fa81d9a9da4e44797e11956d39adbb4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rainydays6046</span><span class="time">Sun May 04 2025 21:12:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 1d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:12:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@rainydays6046#0</span> <@582550044486533130>投擲:
+1d4: 2</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 21:14:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 75 1d4/1d20</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:14:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+困難成功(19/75)
+減少了3(1D4) 現在是72</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 21:18:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:18:50 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+成功(53/70)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 21:19:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 50</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:19:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+失敗(68/50)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 21:19:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 59</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:19:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+失敗(86/59)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 21:19:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 聆聽 62</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:19:49 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+聆聽:
+困難成功(29/62)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 21:36:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 80</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:36:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+困難成功(39/80)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 21:38:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:38:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+極限成功(5/84)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 21:38:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 大成功</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 21:41:10 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 偵查 69</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:41:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+偵查:
+成功(38/69)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 21:45:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 72 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:45:16 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+困難成功(23/72)
+減少了2(1D3) 現在是70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 21:45:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 88 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:45:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+成功(81/88)
+減少了1(1D3) 現在是87</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 21:45:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 崔西•葛蕾絲: +sc 51 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 21:45:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 84 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:45:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+困難成功(41/84)
+減少了3(1D3) 現在是81</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 21:45:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 崔西•葛蕾絲:+SC 51 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 21:46:07 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iso_lin#0</span> 空格</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 21:46:34 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 崔西•葛蕾絲: +SC 51 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 21:46:46 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 喔我打錯字了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 21:46:51 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +SC 51 1d3/1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 21:46:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 理智判定:
+失敗(92/51)
+減少了1(1D10) 現在是50</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 21:47:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 你這失敗跟成功一樣</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 22:07:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克 15</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 22:07:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克:
+失敗(44/15)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 22:11:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 26</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 22:11:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(83/26)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 22:12:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +rj 克蘇魯 11</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 22:12:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 判定
+克蘇魯:
+失敗(25/11)</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 22:13:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 差一點點</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:36:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 2d6 理智恢復</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:36:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這個指令是錯的QwQ</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:36:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 理智 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:36:39 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲理智:
+2d6: 8</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 23:36:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:36:53 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@.liu1#0</span> <@735726900529463306>投擲:
+2d6: 6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:37:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:11 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲克蘇魯:
+2d6: 9</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:37:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲:
+2d6: 10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 23:37:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@.liu1#0</span> <@735726900529463306>投擲克蘇魯:
+2d6: 6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:37:42 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:43 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲克蘇魯:
+2d4: 7</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 23:37:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:54 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@.liu1#0</span> <@735726900529463306>投擲克蘇魯:
+2d4: 2</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:37:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 2d6 克蘇魯</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:37:56 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 這個指令是錯的QwQ</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:38:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:38:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲克蘇魯:
+2d6: 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:39:03 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 偵查 84</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:04 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 84/48
+可惜……偵查並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 23:39:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r SAN獎勵 2d6</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:39:22 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 聆聽 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 70/1
+可惜……聆聽並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:23 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696>投擲SAN獎勵:
+2d6: 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:39:33 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 大成功的1</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:39:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 笑死</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:39:48 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 偵查成功 1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:48 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲偵查成功:
+1d10: 5</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:39:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯 2d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/5730b894afecaee7b50e0be060550a66.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">高橋若月</span><span class="time">Sun May 04 2025 23:39:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 偵查成功 1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲克蘇魯:
+2d4: 7</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:39:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲偵查成功:
+1d10: 10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:40:18 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 偵查99了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 23:40:20 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@柒潣#4799</span> 笑死出bug了</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:40:21 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 漂亮</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:40:36 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iso_lin#0</span> 機器人的bug</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/735726900529463306/feb8d0df6bd39b6cbbf5c778fe88c425.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">.liu1</span><span class="time">Sun May 04 2025 23:40:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 歷史 70</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:40:37 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 70/33
+可惜……歷史並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/1160549466483462278/b6ac99780c0068769b491e450b502abc.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">阿爾托莉雅</span><span class="time">Sun May 04 2025 23:40:52 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 1</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:40:59 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 看看會不會變</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 23:41:00 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 克蘇魯神話獎勵 2d6+2d4</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:41:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iiiii_wen#0</span> <@274908858970013696>投擲克蘇魯神話獎勵:
+2d6+2d4: 14</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:41:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 偵查 61</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:41:19 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 61/59
+可惜……偵查並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 23:41:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@柒潣#4799</span> 草</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 23:42:57 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 偵查 80</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:42:58 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 80/37
+可惜……偵查並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:43:17 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iso_lin#0</span> 你還有一次大成功1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 23:43:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 聆聽 50</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:43:24 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 50/81
+聆聽增加了7!現在是57</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/274908858970013696/14c53620cffc8dd1c9e1dea869304872.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iiiii_wen</span><span class="time">Sun May 04 2025 23:43:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 歷史 63</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:43:44 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 63/13
+可惜……歷史並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/829496097121763378/89428cd7abcd06f151a5003556de060c.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">iso_lin</span><span class="time">Sun May 04 2025 23:43:55 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@fengguoshuiwuhen#0</span> 確實</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:44:13 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;">@iso_lin#0</span> 高橋已經推到99偵查了</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:44:26 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 話說這本都沒有戰鬥</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/614499485141434398/686d68e6dfa607cf309af5899bc2aa47.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">fengguoshuiwuhen</span><span class="time">Sun May 04 2025 23:44:35 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 戰鬥技能都沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:45:29 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 聆聽 59</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:45:30 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 59/97
+聆聽增加了9!現在是68</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:47:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +grow 歷史 65</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:47:01 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 65/13
+可惜……歷史並沒有成長</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://static-global.zingfront.com/extension/avator.png" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">崔西•格蕾絲</span><span class="time">Sun May 04 2025 23:51:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> +r 偵查大成功成長 1d10</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/680792660956807301/33cf81dd856e024142a465a090a5388e.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">柒潣</span><span class="time">Sun May 04 2025 23:51:45 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> <@1160549466483462278>投擲偵查大成功成長:
+1d10: 7</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
