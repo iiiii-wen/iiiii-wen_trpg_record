@@ -1,0 +1,162 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 2 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://cdn.discordapp.com/icons/473119593813245955/4cc0644fa6cee95840fe472b048144fb.webp?size=80&quality=lossless" alt="">
+            <div class="titleInfo">
+              <p>啊，新細明體</p>
+              <p>resources-資料</p>
+              <p style="font-size: 15px;">从 2024-11-29T15:31:06.128Z 到 2024-12-07T01:52:38.059Z</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/413310861688569887/25600ef5b0fe695cdcb152b0f368d1c5.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">towel_exia</span><span class="time">Fri Nov 29 2024 23:31:06 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> "迦樓羅[1]鳥——拜亞基的巨型親戚
+這些生物很少見，但有時從幻夢境跨越到清醒世界的西藏偏遠地區。
+它們居住在幻夢境卡達斯的山峰上，有時穿越喜馬拉雅高山進行旅行。
+迦樓羅鳥可以被召喚，並且一個成功的支配咒語能夠使它作為一匹最多可以載重四人的駿馬。驚人的力量和敏捷讓他們在戰鬥中極其兇殘。它們不是很聰明，然而，如果支配它們的話，它們還是可以理解簡單的命令。
+如果乘客準備了黃金蜂蜜酒，那迦樓羅鳥可以像拜亞基那樣在星空間飛行，並且如果可以指揮它們，它們可以載著乘客飛往幻夢境任何地方。</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/413310861688569887/25600ef5b0fe695cdcb152b0f368d1c5.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">towel_exia</span><span class="time">Sat Dec 07 2024 09:52:38 GMT+0800 (台北標準時間)</span></p>
+          <p><span style="color: skyblue;"></span> 施法條件：
+1. 一塊位於海拔500公尺、面積50*30平方公尺的空曠處作為「聖域」，周遭跟空中不能有任何障礙物，一根電線都不行
+2. 事前準備做好的話，可以在6小時內將聖域佈置好，接著在該處分配20名成員進行儀式，時間大約4小時，這段期間不能有任何人侵入這個空間</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
