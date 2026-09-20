@@ -1,0 +1,745 @@
+<!DOCTYPE html><html lang=en><head><title>泰坦圓桌語音團專用 - 場內</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__poll{box-sizing:border-box;width:100%;max-width:32rem;margin-top:0.35rem}.chatlog__poll-question{margin-bottom:0.6rem;color:#f2f3f5;font-size:1rem;font-weight:600;word-wrap:break-word}.chatlog__poll-answers{display:flex;flex-direction:column;gap:0.4rem}.chatlog__poll-answer{display:flex;position:relative;align-items:center;justify-content:space-between;min-height:2.25rem;padding:0.35rem 0.65rem;border:1px solid #4e5058;border-radius:0.5rem;background-color:#2b2d31;color:#dbdee1;overflow:hidden}.chatlog__poll-answer::before{position:absolute;inset:0 auto 0 0;width:var(--poll-answer-fill,0%);background-color:#3a3c42;content:""}.chatlog__poll-answer--winning{border-color:#23a559}.chatlog__poll-answer--winning::before{background-color:#2f5142}.chatlog__poll-answer--selected{border-color:#5865f2}.chatlog__poll-answer--selected::before{background-color:#3c4164}.chatlog__poll-answer-content{display:flex;position:relative;z-index:1;align-items:center;min-width:0}.chatlog__poll-answer-details{display:flex;position:relative;z-index:1;align-items:center;gap:0.5rem;margin-left:0.75rem}.chatlog__poll-answer-selected{display:inline-flex;align-items:center;justify-content:center;width:1.25rem;height:1.25rem;border-radius:50%;background-color:#f2f3f5;color:#313338;font-size:0.75rem;font-weight:700}.chatlog__poll-answer-emoji{width:1.25rem;height:1.25rem;margin-right:0.45rem;object-fit:contain}.chatlog__poll-answer-text{overflow-wrap:anywhere}.chatlog__poll-answer-count,.chatlog__poll-answer-percentage{color:#b5bac1;font-size:0.8rem;font-weight:600;white-space:nowrap}.chatlog__poll-answer-percentage{color:#f2f3f5;font-size:0.9rem}.chatlog__poll-footer{display:flex;flex-wrap:wrap;margin-top:0.45rem;color:#b5bac1;font-size:0.75rem}.chatlog__poll-footer-item + .chatlog__poll-footer-item::before{margin:0 0.35rem;content:"•"}.chatlog__poll-accessible-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.chatlog__poll-result{display:flex;box-sizing:border-box;align-items:center;justify-content:space-between;width:100%;max-width:25rem;min-height:3.5rem;margin-top:0.45rem;padding:0.45rem;border:1px solid #3f4147;border-radius:0.5rem;background-color:#2b2d31}.chatlog__poll-result-answer{display:flex;align-items:center;min-width:0}.chatlog__poll-result-emoji-container{display:flex;flex-shrink:0;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;margin-right:0.55rem;border-radius:0.4rem;background-color:#383a40}.chatlog__poll-result-emoji{width:1.65rem;height:1.65rem}.chatlog__poll-result-answer-info{min-width:0}.chatlog__poll-result-answer-text{color:#f2f3f5;font-size:0.9rem;font-weight:600;overflow-wrap:anywhere}.chatlog__poll-result-winner{display:inline-flex;align-items:center;justify-content:center;width:0.9rem;height:0.9rem;margin-left:0.15rem;border-radius:50%;background-color:#23a559;color:#ffffff;font-size:0.65rem;vertical-align:0.05rem}.chatlog__poll-result-answer-details{margin-top:0.1rem;color:#b5bac1;font-size:0.75rem}.chatlog__poll-result-button{flex-shrink:0;margin-left:0.75rem;padding:0.55rem 0.75rem;border-radius:0.25rem;background-color:#4e5058;color:#ffffff;font-size:0.8rem;font-weight:500}.chatlog__poll-result-button:hover{background-color:#6d6f78;text-decoration:none}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=poll-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="M2 3h2v2H2V3Zm4 0h10v2H6V3ZM2 8h2v2H2V8Zm4 0h10v2H6V8ZM2 13h2v2H2v-2Zm4 0h10v2H6v-2Z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/698169417321676820/5a60328daa49d46d87fce313b985de30.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>泰坦圓桌語音團專用</div><div class=preamble__entry>跑團用頻道 / coc-魔法少女的悲歌-九月週六 / 場內</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1545667200755441715 class=chatlog__message-container data-message-id=1545667200755441715><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 01:29"><a href=#chatlog__message-container-1545667200755441715>2026/9/5 下午 01:29</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>。</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545671068545581116 class=chatlog__message-container data-message-id=1545671068545581116><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 01:44"><a href=#chatlog__message-container-1545671068545581116>2026/9/5 下午 01:44</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【劇本名】──『契約者的悲歌』
+舞台：日本
+推薦人數：2～4人
+推薦技能：偵查、圖書館使用
+次要推薦：軍刀、德文
+推薦職業：無
+團務時長：8小時
+【前言】
+溫暖的初春，探索者們受到以前的朋友 or 超自然研究社團的團員一一傑克‧阿米蒂奇的邀請來到了他的家裡作客以及進行三天二夜的貓泣島之旅。</span></div></div></div></div><div id=chatlog__message-container-1545671311018426388 class=chatlog__message-container data-message-id=1545671311018426388><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 01:45">下午 01:45</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545671310741344306/image.png?ex=6a9e4f95&amp;is=6a9cfe15&amp;hm=18f74eface7668663c9c64510457dee5716fa27122d39a1fe9ddb00d572f598d&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545671310741344306/image.png?ex=6a9e4f95&amp;is=6a9cfe15&amp;hm=18f74eface7668663c9c64510457dee5716fa27122d39a1fe9ddb00d572f598d&amp;" alt="Image attachment" title="Image: image.png (248.81 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545671544271929426 class=chatlog__message-container data-message-id=1545671544271929426><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 01:46">下午 01:46</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>回合順序
+傑克‧阿米蒂奇-人類學研究生(80) &gt; 真島健一郎-市立高中體育老師(珊珊)(65) &gt; 璐娜忒‧三日月-偶像藝人(月牙)(50)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545766147067088927 class=chatlog__message-container data-message-id=1545766147067088927><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 08:02"><a href=#chatlog__message-container-1545766147067088927>2026/9/5 下午 08:02</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 上午九點 日本，千葉縣，勝浦市，鵜原漁港</span></div></div></div></div><div id=chatlog__message-container-1545766200850518187 class=chatlog__message-container data-message-id=1545766200850518187><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:03">下午 08:03</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545766200628224061/image.png?ex=6a9dff35&amp;is=6a9cadb5&amp;hm=eb252c34acb8c840a02c67fcbac344cc304c7b6c78b98ae6b084eb407a445bf5&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545766200628224061/image.png?ex=6a9dff35&amp;is=6a9cadb5&amp;hm=eb252c34acb8c840a02c67fcbac344cc304c7b6c78b98ae6b084eb407a445bf5&amp;" alt="Image attachment" title="Image: image.png (3.69 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545766282278862859 class=chatlog__message-container data-message-id=1545766282278862859><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:03">下午 08:03</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>〔鵜原漁港〕
+位於千葉縣的鵜原漁港是勝浦市裡一個比較偏僻安靜的小聚落，比市中心的勝浦漁港冷清很多。</span></div></div></div></div><div id=chatlog__message-container-1545766409143984218 class=chatlog__message-container data-message-id=1545766409143984218><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:03">下午 08:03</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>鵜原漁港還帶著點涼意，海面上飄著一層薄霧，空氣裡有淡淡的魚腥味跟海風的鹹味。你們一下車，就看到傑克站在碼頭邊，手插在口袋裡，一看到你們立刻笑著揮手，跑過來幫忙提行李。</span></div></div></div></div><div id=chatlog__message-container-1545766446058180698 class=chatlog__message-container data-message-id=1545766446058180698><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:03">下午 08:03</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545766445831557200/1.jpg?ex=6a9dff6f&amp;is=6a9cadef&amp;hm=76f62d12e3f10358d1b767c3ba24ea26eb8600c92e9a4b6ea272ba7cd3c1a561&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545766445831557200/1.jpg?ex=6a9dff6f&amp;is=6a9cadef&amp;hm=76f62d12e3f10358d1b767c3ba24ea26eb8600c92e9a4b6ea272ba7cd3c1a561&amp;" alt="Image attachment" title="Image: 1.jpg (69.62 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545766506753818695 class=chatlog__message-container data-message-id=1545766506753818695><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:04">下午 08:04</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>傑克‧阿米蒂奇，22歲，人類學研究生</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545768775616565349 class=chatlog__message-container data-message-id=1545768775616565349><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 08:13"><a href=#chatlog__message-container-1545768775616565349>2026/9/5 下午 08:13</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 上午十一點 日本，千葉縣，勝浦市，貓泣島，貓泣港</span></div></div></div></div><div id=chatlog__message-container-1545768851550245086 class=chatlog__message-container data-message-id=1545768851550245086><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:13">下午 08:13</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545768851462037635/image.png?ex=6a9e01ad&amp;is=6a9cb02d&amp;hm=69bd197084088a64b236f7a51a820b0ea24b8ab9f7d476078d840052533aca09&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545768851462037635/image.png?ex=6a9e01ad&amp;is=6a9cb02d&amp;hm=69bd197084088a64b236f7a51a820b0ea24b8ab9f7d476078d840052533aca09&amp;" alt="Image attachment" title="Image: image.png (299.05 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545768883489865748 class=chatlog__message-container data-message-id=1545768883489865748><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:13">下午 08:13</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔貓泣</strong>港<strong>〕</strong>
+
+港口只是一座簡陋的石造小碼頭，僅夠一艘船靠岸，看不到任何指標或告示。空氣濕鹹安靜，海浪拍打棧道的聲音格外清晰。岸邊岩石上隱約有幾道爪痕般的抓痕，不知是貓抓的，還是別的什麼。</span></div></div></div></div><div id=chatlog__message-container-1545769966756954142 class=chatlog__message-container data-message-id=1545769966756954142><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:17">下午 08:17</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 上午十一點半 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館</span></div></div></div></div><div id=chatlog__message-container-1545770052979007599 class=chatlog__message-container data-message-id=1545770052979007599><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:18">下午 08:18</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545770052576346132/image.png?ex=6a9e02cb&amp;is=6a9cb14b&amp;hm=7c96e6afa9c6d0cbca275e26ba9877ac835a9b30016ef31294da4fa5d10dc731&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545770052576346132/image.png?ex=6a9e02cb&amp;is=6a9cb14b&amp;hm=7c96e6afa9c6d0cbca275e26ba9877ac835a9b30016ef31294da4fa5d10dc731&amp;" alt="Image attachment" title="Image: image.png (1.77 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545770249281077278 class=chatlog__message-container data-message-id=1545770249281077278><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:19">下午 08:19</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔阿米蒂奇洋館〕</strong>
+
+紅磚三層洋樓，左右各有一座方塔與高聳煙囪，中央大門前是石階與對稱修剪的庭園。窗框以淺色石材收邊，磚牆帶著歲月沉澱的暗紅色澤。整體氣派工整，透著一股不容打擾的貴族氣息。</span></div></div></div></div><div id=chatlog__message-container-1545771121310302228 class=chatlog__message-container data-message-id=1545771121310302228><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:22">下午 08:22</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔阿米蒂奇洋館-餐廳〕</strong>
+
+餐廳長桌上擺滿豐盛餐點——嫩煎干貝與厚切鴨胸綴著莓果醬汁，紅酒燉牛肉裹著濃郁醬汁，一旁是鮮蔬沙拉與剛出爐的法式麵包，配著晶瑩的白葡萄酒。午後陽光透過落地窗灑落，映得整桌宴席格外誘人。</span></div></div></div></div><div id=chatlog__message-container-1545771585900908564 class=chatlog__message-container data-message-id=1545771585900908564><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:24">下午 08:24</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><span class="chatlog__markdown-mention" title="littlestar_aasta">@月牙</span> <span class="chatlog__markdown-mention" title="yishan_vliver">@珊珊</span></span></div></div></div></div><div id=chatlog__message-container-1545772166757220483 class=chatlog__message-container data-message-id=1545772166757220483><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:26">下午 08:26</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>就在午餐享用到尾聲，執事將法式甜點-金黃酥脆的國王餅端上來。</span></div></div></div></div><div id=chatlog__message-container-1545772278338420808 class=chatlog__message-container data-message-id=1545772278338420808><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:27">下午 08:27</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545772277793300520/image.png?ex=6a9e04de&amp;is=6a9cb35e&amp;hm=9e6bbcc75cc7be533ee3dc1374afeb1d7015ea13f7da734d6533fb95d29aac5e&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545772277793300520/image.png?ex=6a9e04de&amp;is=6a9cb35e&amp;hm=9e6bbcc75cc7be533ee3dc1374afeb1d7015ea13f7da734d6533fb95d29aac5e&amp;" alt="Image attachment" title="Image: image.png (889.37 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545772729683152978 class=chatlog__message-container data-message-id=1545772729683152978><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:28">下午 08:28</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>突然而來的地震使得大家措手不及，同時意識也跟著消失。</span></div></div></div></div><div id=chatlog__message-container-1545772817247764582 class=chatlog__message-container data-message-id=1545772817247764582><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:29">下午 08:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午一點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，餐廳</span></div></div></div></div><div id=chatlog__message-container-1545773172257988668 class=chatlog__message-container data-message-id=1545773172257988668><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:30">下午 08:30</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>再次醒來，你們各自還在原來的座位上，只是趴在餐桌上，看起來仍舊是原本的洋館，餐桌上放著那剛剛才烤好，看起來金黃酥脆的國王餅。
+
+但周遭只剩下你們幾位調查員們除此之外，原本洋館中的執事與女僕，還有你們的好友－傑克都不見了。</span></div></div></div></div><div id=chatlog__message-container-1545773543676190810 class=chatlog__message-container data-message-id=1545773543676190810><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:32">下午 08:32</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545773543311015936/image.png?ex=6a9e060b&amp;is=6a9cb48b&amp;hm=79ebbf28122d6bd2c4e21b4b7ecdba248c103de4c8146d5de6a6500061be11a8&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545773543311015936/image.png?ex=6a9e060b&amp;is=6a9cb48b&amp;hm=79ebbf28122d6bd2c4e21b4b7ecdba248c103de4c8146d5de6a6500061be11a8&amp;" alt="Image attachment" title="Image: image.png (948.65 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545774126004703312 class=chatlog__message-container data-message-id=1545774126004703312><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:34">下午 08:34</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>然後一震小女孩的笑聲傳來，San Check 0/1</span></div></div></div></div><div id=chatlog__message-container-1545775001741824060 class=chatlog__message-container data-message-id=1545775001741824060><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:37">下午 08:37</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>可以發現桌子下有一張紙條，以及有一塊很奇怪的石板。</span></div></div></div></div><div id=chatlog__message-container-1545775428378042470 class=chatlog__message-container data-message-id=1545775428378042470><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:39">下午 08:39</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>紙條
+“Ich widme alles, um 4,12,12,0.”</span></div></div></div></div><div id=chatlog__message-container-1545776366740307998 class=chatlog__message-container data-message-id=1545776366740307998><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:43">下午 08:43</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545776366379733114/image.png?ex=6a9e08ac&amp;is=6a9cb72c&amp;hm=ce8d8da56945e92c6e9f280b90ff2f5f30f551e7c74c97c622b2e5bcd8f61ed0&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545776366379733114/image.png?ex=6a9e08ac&amp;is=6a9cb72c&amp;hm=ce8d8da56945e92c6e9f280b90ff2f5f30f551e7c74c97c622b2e5bcd8f61ed0&amp;" alt="Image attachment" title="Image: image.png (1.11 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545776968002441266 class=chatlog__message-container data-message-id=1545776968002441266><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:45">下午 08:45</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>老師在國王餡餅裡拿到一把鑰匙。</span></div></div></div></div><div id=chatlog__message-container-1545777376099573873 class=chatlog__message-container data-message-id=1545777376099573873><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:47">下午 08:47</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545777375889850388/1dee810840cf7b17.jpg?ex=6a9e099d&amp;is=6a9cb81d&amp;hm=0cc3a8f7ef847d1d8d087acb3d9190c6d050e08dc8a6a4cbf719ea261def6858&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545777375889850388/1dee810840cf7b17.jpg?ex=6a9e099d&amp;is=6a9cb81d&amp;hm=0cc3a8f7ef847d1d8d087acb3d9190c6d050e08dc8a6a4cbf719ea261def6858&amp;" alt="Image attachment" title="Image: 1dee810840cf7b17.jpg (3.33 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545777966490067035 class=chatlog__message-container data-message-id=1545777966490067035><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:49">下午 08:49</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔阿米蒂奇洋館-</strong>門口大廳<strong>〕</strong>
+
+大廳挑高氣派，吊燈與畫框卻透著一絲說不出的違和感。推開厚重大門，門後是另一個一模一樣的大廳，窗外望去也只看到另一扇相同的窗與相同的房間，層層疊疊，無窮無盡。</span></div></div></div></div><div id=chatlog__message-container-1545778053467344916 class=chatlog__message-container data-message-id=1545778053467344916><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:50">下午 08:50</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>反覆比對後確認自己身處由無數同一洋館組成的巨大迷宮，San Check 1/1d2。</span></div></div></div></div><div id=chatlog__message-container-1545778446955708467 class=chatlog__message-container data-message-id=1545778446955708467><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:51">下午 08:51</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545778446662115428/2.jpg?ex=6a9e0a9c&amp;is=6a9cb91c&amp;hm=50ee6fe44ed5cfced85dd09c340eae4dc3456e4503095b6b77731bda306c1c61&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545778446662115428/2.jpg?ex=6a9e0a9c&amp;is=6a9cb91c&amp;hm=50ee6fe44ed5cfced85dd09c340eae4dc3456e4503095b6b77731bda306c1c61&amp;" alt="Image attachment" title="Image: 2.jpg (3.73 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545778765173624881 class=chatlog__message-container data-message-id=1545778765173624881><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:52">下午 08:52</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔圖書館〕</strong>
+
+長方形房間四面皆是頂天的書架，中央擺著一張大圓桌與五張椅子。紅髮少女靜靜坐在桌邊，拿著鋼筆專注書寫，見你們進來也沒有理會。空氣裡瀰漫著舊書特有的紙墨氣味，安靜得能聽見筆尖劃過紙面的沙沙聲。</span></div></div></div></div><div id=chatlog__message-container-1545778831250554900 class=chatlog__message-container data-message-id=1545778831250554900><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:53">下午 08:53</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545778830751436871/download20260906140709.png?ex=6a9e0af8&amp;is=6a9cb978&amp;hm=2183b00e715a306b247171672c9c682d2fcc1aac116e4cd227b54af2f8c5fd27&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545778830751436871/download20260906140709.png?ex=6a9e0af8&amp;is=6a9cb978&amp;hm=2183b00e715a306b247171672c9c682d2fcc1aac116e4cd227b54af2f8c5fd27&amp;" alt="Image attachment" title="Image: download20260906140709.png (154.88 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545779799539318785 class=chatlog__message-container data-message-id=1545779799539318785><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 08:57">下午 08:57</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>艾琳‧沃特雷，17歲</span></div></div></div></div><div id=chatlog__message-container-1545781410487599235 class=chatlog__message-container data-message-id=1545781410487599235><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:03">下午 09:03</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545781410361507860/d910fe8d4efc4206bf3aca1349a00520.png?ex=6a9e0d5f&amp;is=6a9cbbdf&amp;hm=2fb89c05626a8a25f161e6a149695c6b0094ca9041e9d95bef3bb728bf1e4656&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545781410361507860/d910fe8d4efc4206bf3aca1349a00520.png?ex=6a9e0d5f&amp;is=6a9cbbdf&amp;hm=2fb89c05626a8a25f161e6a149695c6b0094ca9041e9d95bef3bb728bf1e4656&amp;" alt="Image attachment" title="Image: d910fe8d4efc4206bf3aca1349a00520.png (1.66 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545781534110388354 class=chatlog__message-container data-message-id=1545781534110388354><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:03">下午 09:03</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>人面鼠，San Check 0/1。</span></div></div></div></div><div id=chatlog__message-container-1545781769163509892 class=chatlog__message-container data-message-id=1545781769163509892><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:04">下午 09:04</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《西勃•沃特雷手記》
+德文
+上面有著沃特雷家的全家照，看起來有點老舊的黑白照片。
+
+照片中，有中年的沃特雷先生和手上抱著小嬰兒的沃特雷夫人，在夫婦的前方有兩位小女孩，一位留著長髮，和剛剛見到的那位赤髮女孩很像的少女。而另一位則是有著短髮，看起來只有十多歲的女孩。看起來是一個幸福美滿的全家照呢。
+
+學時：淺讀 1分鐘 / 精讀 20分鐘</span></div></div></div></div><div id=chatlog__message-container-1545782380919525436 class=chatlog__message-container data-message-id=1545782380919525436><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:07">下午 09:07</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記01
+    
+    近段時間，這一帶因為流行病而大受打擊
+    
+    還活著就開始屍蠟化的怪病...
+    
+    聽都沒聽說過...
+    
+    每天都有無數的尋求幫助的病人
+    
+    被運到這個房子來
+    
+    可是就算我知道得再多，對這種怪病也...
+    
+    我自己也在為了預防而努力著...
+    
+    連發病原因都不知道的怪病
+    
+    以後會變成什麼樣誰也不知道
+    
+    只能祈禱我可愛的孩子們不要有什麼意外，別被感染
+    
+    不知道該怎麼辦的時候，我決定使用密室
+    
+    要進入密室必須解開一些機關
+    
+    以防萬一，我在這裡把解法記下來...
+    
+    換字式密碼
+    
+    把文字替換成別的東西的密碼
+    
+    也有變換成畫和記號的
+    
+    例如，把字母表換成26進制的數的密碼，就是把字母表換成從0到25的數
+    
+    凱薩密碼
+    
+    把字母往後移再替換成數字的密碼
+    
+    比如ABC裡，要把A推後寫成D
+    
+    也就是說從D開始寫起，代表的是A
+    
+    A變成D，B變成F，以此類推，D變成G</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782621718708274 class=chatlog__message-container data-message-id=1545782621718708274><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記02
+    
+    還活著就屍蠟化的怪病
+    
+    這是多麼的殘酷。
+    
+    由於皮膚的蠟化，
+    
+    試圖把蠟剝落的話，
+    
+    底下的是被剝了皮的肌肉的樣子。
+    
+    看到不能動、甚至也發不出聲音落淚的病人們，
+    
+    我的大腦也彷彿要開始壞掉。
+    
+    不...或許已經壞掉了。
+    
+    …並沒有治好的可能性。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782642707013672 class=chatlog__message-container data-message-id=1545782642707013672><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記03
+    
+    神到底給了我們多麼殘酷的試煉阿!
+    
+    我的女兒艾瑪，居然感染了這種怪病...
+    
+    儘管我苦苦追尋其他的治療辦法，
+    
+    卻怎麼也做不到。
+    
+    神啊......
+    
+    不，惡魔也好。
+    
+    請救救我的女兒吧......。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782662956978236 class=chatlog__message-container data-message-id=1545782662956978236><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記04
+    
+    為了把女兒從怪病中解救出來，我決定招喚惡魔。
+    
+    如果能讓女兒和惡魔簽訂契約成為魔女的話，
+    
+    那麼，她就不會這麼死去了。
+    
+    我決定在密室裡進行這樣禁忌的活動。
+    
+    開始準備......。
+    
+    女兒臉上的蠟也開始一點點脫落
+    
+    不趕快的話.....不趕快的話.....
+    
+    所幸妻子和兒子沒有感染。
+    
+    我讓他們逃到了遙遠的地方。
+    
+    不想讓他們被捲入這樣危險的計畫中。
+    
+    我把死掉的病人的手偽造成榮譽之手賣掉，
+    
+    獲得了大量錢財。
+    
+    然後交給妻子，和她做了告別。
+    
+    阿阿...
+    
+    對不起。對不起。對不起。對不起。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782684536545381 class=chatlog__message-container data-message-id=1545782684536545381><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記05
+    
+    惡魔沒有報上名號。
+    
+    他說，他們的名字如果被別人知道的話，
+    
+    就不得不服從對方的命令。
+    
+    .....但是，只要能實現我的願望，
+    
+    就算不知道名字也無所謂。
+    
+    惡魔說，想要獲得什麼就需要付出什麼樣的代價。
+    
+    但是是為了我的女兒的話，不管什麼代價我都願意。
+    
+    就這樣我的女兒成為了魔女。
+    
+    這麼一來，女兒就不會死了。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782708058202182 class=chatlog__message-container data-message-id=1545782708058202182><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記06
+    
+    變成魔女的女兒變得很能吃。
+    
+    曾經皮包骨的手腳也變得飽滿起來。
+    
+    她想吃的我都會給她。
+    
+    .......女兒變得很奇怪。
+    
+    開始不滿足於那樣的食物。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782737003348049 class=chatlog__message-container data-message-id=1545782737003348049><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記07
+    
+    當我問她想要吃什麼的時候，
+    
+    她說，想要血和內臟。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782755525267567 class=chatlog__message-container data-message-id=1545782755525267567><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記08
+    
+    嘗試著給女兒野獸的碎肉，她吃得很開心。
+    
+    她說下次想吃活得野獸。
+    
+    ......為了不傷害她，給了她瀕死的野獸。
+    
+    很明顯女兒變得異常。
+    
+    成為魔女的代價就是這個嗎?
+    
+    女兒說
+    
+    想要吃人</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782773866831963 class=chatlog__message-container data-message-id=1545782773866831963><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記09
+    
+    幸運的是，女兒吃飯的頻率並不高。
+    
+    吃一次就能維持數日。
+    
+    在那期間，為了女兒下頓飯，
+    
+    我去挖死人的墳墓，甚至向惡人購買屍體。
+    
+    偶而吃到帶有一點血緣關係的人的時候，
+    
+    女兒的眼裡就會大放光彩。
+    
+    她開始要求要吃有血緣關係的人。…
+    
+    …後來，女兒說想要吃我。</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545782795668955198 class=chatlog__message-container data-message-id=1545782795668955198><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:08">下午 09:08</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><ul><li>西勃•沃特雷手記10
+    
+    為了我死之後女兒能不挨餓，
+    
+    我對她下了詛咒。
+    
+    留著我的血的人啊，
+    
+    總會回到女兒身邊。
+    
+    然後服從於她，
+    
+    成為食糧。
+    
+    不可違抗。
+    
+    想要救女兒啊........</li></ul></span></div></div></div></div><div id=chatlog__message-container-1545783023239299102 class=chatlog__message-container data-message-id=1545783023239299102><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:09">下午 09:09</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午一點半 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館</span></div></div></div></div><div id=chatlog__message-container-1545784532022722590 class=chatlog__message-container data-message-id=1545784532022722590><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:15">下午 09:15</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>老師得知了4,12,12,0對應的是EMMA。</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545789937545257051 class=chatlog__message-container data-message-id=1545789937545257051><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 09:37"><a href=#chatlog__message-container-1545789937545257051>2026/9/5 下午 09:37</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>這是一本有點古老的黑色封皮的書本，看起來破破爛爛的，而且看起來只有半本，另一半似乎毀壞了。</span></div></div></div></div><div id=chatlog__message-container-1545791112252497975 class=chatlog__message-container data-message-id=1545791112252497975><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:42">下午 09:42</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午兩點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館</span> <span class=chatlog__edited-timestamp title="2026年9月5日 下午 09:42">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545793830526263348 class=chatlog__message-container data-message-id=1545793830526263348><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月5日 下午 09:52"><a href=#chatlog__message-container-1545793830526263348>2026/9/5 下午 09:52</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔地下室〕</strong>
+
+像是間辦公室的房間，僅有一張寬大的辦公桌與一座小書櫃，陳設簡樸得不合這棟洋館的氣派。辦公桌後的椅子上，坐著一位穿著白色洋裝、金髮短髮的女孩，年紀看起來不到十多歲。她安靜地望著你們，唇邊噙著一抹讓人捉摸不透的微笑。</span></div></div></div></div><div id=chatlog__message-container-1545793891113107627 class=chatlog__message-container data-message-id=1545793891113107627><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:53">下午 09:53</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545793890756329574/download20260906140033.png?ex=6a9e18ff&amp;is=6a9cc77f&amp;hm=7423171c1982dc6f67b0286c96543b8c8611cf135cf58d13704cf392cd32c397&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545793890756329574/download20260906140033.png?ex=6a9e18ff&amp;is=6a9cc77f&amp;hm=7423171c1982dc6f67b0286c96543b8c8611cf135cf58d13704cf392cd32c397&amp;" alt="Image attachment" title="Image: download20260906140033.png (186.06 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1545794610436112406 class=chatlog__message-container data-message-id=1545794610436112406><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月5日 下午 09:55">下午 09:55</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1545794610276597890/image.png?ex=6a9e19aa&amp;is=6a9cc82a&amp;hm=eb19de79b991f402ee96a4648c9a431f4677a0e895bd7d29d8a8d7a0648c862a&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1545794610276597890/image.png?ex=6a9e19aa&amp;is=6a9cc82a&amp;hm=eb19de79b991f402ee96a4648c9a431f4677a0e895bd7d29d8a8d7a0648c862a&amp;" alt="Image attachment" title="Image: image.png (1.06 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546044135042060398 class=chatlog__message-container data-message-id=1546044135042060398><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 02:27"><a href=#chatlog__message-container-1546044135042060398>2026/9/6 下午 02:27</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午兩點半 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館
+〔圖書館〕</span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 02:27">(edited)</span></div></div></div></div><div id=chatlog__message-container-1546044516035854376 class=chatlog__message-container data-message-id=1546044516035854376><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:28">下午 02:28</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《境界魔女1》
+德文
+一本大約一百頁的黑色封皮書
+
+學時：淺讀 1分鐘 / 精讀 20分鐘</span></div></div></div></div><div id=chatlog__message-container-1546044567525261412 class=chatlog__message-container data-message-id=1546044567525261412><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:29">下午 02:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 境界魔女1
+    
+    很久很久以前，有一種叫做魔女的工作。
+    
+    她們煎著藥草，是能夠超越境界，與妖精和龍說話的賢者。
+    
+    很久很久以前，有一種叫做魔女的生物。
+    
+    她們失去了心臟，抱著空空的胸膛，穿越生與死的境界。
+    
+    是悲哀的，不死的魔女。
+    
+    後來，魔女被人們日漸疏遠，現在已變得只存在於傳說之中了。
+    
+    很久很久以前，在某地，有一個境界魔女。
+    
+    魔女把心臟賣給了惡魔，換得了不死之身。
+    
+    但是永生的魔女總也孤身一人。
+    
+    不久後，為了填滿空空如也的胸膛。
+    
+    尋求新的心臟。她。
+    
+    開始襲擊人類。
+    
+    被人類驅逐的魔女，
+    
+    踏上了給有終點的旅程，
+    
+    擁有不死之身，
+    
+    行走於生死境界的那個魔女，
+    
+    至今仍在某處，
+    
+    繼續尋找著
+    
+    心臟。．．．END</code></span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 03:41">(edited)</span></div></div></div></div><div id=chatlog__message-container-1546044611599011840 class=chatlog__message-container data-message-id=1546044611599011840><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:29">下午 02:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《境界魔女2》
+德文
+一本大約五十頁的黑色封皮書
+
+學時：淺讀 1分鐘 / 精讀 10分鐘</span></div></div></div></div><div id=chatlog__message-container-1546044666997116969 class=chatlog__message-container data-message-id=1546044666997116969><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:29">下午 02:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 境界魔女2
+    
+    境界的魔女的故事
+    
+    故事的主人公是一個失去記憶被魔女撿回去的少女
+    
+    少女的記憶一直沒有恢復
+    
+    她就這樣和魔女生活在一起
+    
+    冉冉的時光沒有在少女身上留下痕跡
+    
+    不變老的不吉少女
+    
+    隨著時間的變遷
+    
+    人們越來越對少女心存疑念
+    
+    後來
+    
+    村里飽受瘟疫侵襲
+    
+    還沒等魔女研製出解藥
+    
+    屍體已經堆積如山
+    
+    這時
+    
+    曾經的懷疑和恐懼
+    
+    再次佔據了
+    
+    人們的頭腦
+    
+    人們認定
+    
+    少女就是瘟疫的病源
+    
+    人們將無從發洩的怒火
+    
+    瞄準了她
+    
+    「今天早晨，我姐姐的孩子…….死了…」來到魔女之家的男人這麼說道。
+    
+    「大家都在說，艾琳之所以一直長不大，都是因為奪走了亡者們的生命」
+    
+    「你胡說些什麼阿……！」年老的魔女反駁道。
+    
+    「我，心裡也是明白的。但我已經，怕你怕到了極點。」
+    
+    言畢，男人帶著絕望的表情，拔出了已經準備好的利刃，衝向了艾琳。
+    
+    此時此刻，刀沒入了血肉之中。
+    
+    阻擋在艾琳前的，那位年紀蒼老的魔女的胸口。
+    
+    淚水從少女的臉頰低落。
+    
+    『空空的胸膛中
+    
+    溢出了少女的記憶
+    
+    在白色的病房
+    
+    給予了病重的妹妹
+    
+    ──自己的心臟
+    
+    那也是為了
+    
+    治癒那個絕症』
+    
+    「快走吧
+    
+    聰慧溫柔的艾琳
+    
+    我可愛又自傲的女兒。」
+    
+    吊著最後一口氣，年老的魔女送走了扶養多年的養女。
+    
+    『她為了庇護我而死
+    
+    如果不和我扯上關係
+    
+    她根本不會死
+    
+    她是我…
+    
+    很重要的人…』
+    
+    她已失去全部
+    
+    唯一能取回的只有
+    
+    至今仍感受到
+    
+    存在於世間某處的
+    
+    自己的心臟
+    
+    少女選擇了前行
+    
+    這是無可奈何的選擇
+    
+    她已經無法在某地長待了。
+    
+    徘徊在生與死的境界線，
+    
+    見證無數陌生人的死亡，
+    
+    這是一場永無終焉的旅程。</code></span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 03:41">(edited)</span></div></div></div></div><div id=chatlog__message-container-1546044857313792111 class=chatlog__message-container data-message-id=1546044857313792111><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:30">下午 02:30</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午三點十分 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546050588121505802 class=chatlog__message-container data-message-id=1546050588121505802><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 02:53"><a href=#chatlog__message-container-1546050588121505802>2026/9/6 下午 02:53</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔房間3〕</strong>
+
+房間陳設簡單，衣櫃、書桌椅與床鋪一應俱全，浴室門半掩著。床上蜷著一隻雪白蓬鬆的小生物，長耳朵上懸浮著奇異的金黃色環狀物，一雙眼睛骨碌碌地盯著你們，一臉人畜無害的表情（◕‿‿◕）透出一股說不出的違和感。</span></div></div></div></div><div id=chatlog__message-container-1546050720896253963 class=chatlog__message-container data-message-id=1546050720896253963><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:53">下午 02:53</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546050720862707712/Kyubey_-_Puella_Magi_Madoka_Magica.jpg?ex=6a9e5f70&amp;is=6a9d0df0&amp;hm=5794073b5b3aa2845f5175b302a6c4a320803e5873f199b636f7490a88009267&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546050720862707712/Kyubey_-_Puella_Magi_Madoka_Magica.jpg?ex=6a9e5f70&amp;is=6a9d0df0&amp;hm=5794073b5b3aa2845f5175b302a6c4a320803e5873f199b636f7490a88009267&amp;" alt="Image attachment" title="Image: Kyubey_-_Puella_Magi_Madoka_Magica.jpg (35.49 KB)" loading=lazy> </a></div><div class=chatlog__reactions><div class=chatlog__reaction title=rofl><img class="chatlog__emoji chatlog__emoji--small" alt=🤣 src=https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg loading=lazy> <span class=chatlog__reaction-count>2</span></div></div></div></div></div><div id=chatlog__message-container-1546051268144013416 class=chatlog__message-container data-message-id=1546051268144013416><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:55">下午 02:55</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>QB，觀察者</span></div></div></div></div><div id=chatlog__message-container-1546052229533007942 class=chatlog__message-container data-message-id=1546052229533007942><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 02:59">下午 02:59</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>（◕‿‿◕）</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546057832955117600 class=chatlog__message-container data-message-id=1546057832955117600><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 03:21"><a href=#chatlog__message-container-1546057832955117600>2026/9/6 下午 03:21</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>魔法水晶
+一種彩色的石頭，由稀有的礦物所做成的魔法道具，是魔法師最珍視的物品之一，可以用來儲存魔力。
+並且還記載了魔法水晶的魔力注入與提取的方式以及水晶中魔力儲存量的判斷。從水晶提取魔力僅僅需要一瞬間就能完成。反之為水晶充能也是。
+※ 每次可以提取不超過魔法師最大的魔力上限的魔力，提取超過量的魔力只是在浪費魔力水晶中的魔力而已，對魔法師是無益的。</span></div></div></div></div><div id=chatlog__message-container-1546058774983213086 class=chatlog__message-container data-message-id=1546058774983213086><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:25">下午 03:25</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午三點半 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，房間1</span></div></div></div></div><div id=chatlog__message-container-1546058815953182772 class=chatlog__message-container data-message-id=1546058815953182772><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:25">下午 03:25</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔房間1〕</strong>
+這是一個有著衣櫃、書桌椅、床以及浴室的臥室
+
+但一開始來時不同，地上有很大的一個五芒星符號，五芒星的中間有一個燃燒的眼睛，並且有數團衣服、褲子、裙子落在這個五芒星中的地面上，而它們的主人們卻不知所蹤。</span></div></div></div></div><div id=chatlog__message-container-1546059869214474240 class=chatlog__message-container data-message-id=1546059869214474240><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:29">下午 03:29</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>調查員可以發現，衣褲旁邊有一個彩色的石頭，一只鉛筆以及紙條。</span></div></div></div></div><div id=chatlog__message-container-1546059997996392550 class=chatlog__message-container data-message-id=1546059997996392550><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:30">下午 03:30</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>紙條
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">紙條，用著鉛筆寫的，看起來像是男性的字跡
+
+＂她是披著人皮的怪物，這根本就是怪物阿…..
+
+這根本就不是我們能夠抵禦的存在．．
+
+我和我的同伴在這裡設下了舊印
+
+那個怪物，應該不能過來吧
+
+希望舊印能夠保護我們
+
+我們之中擁有魔法的梅蒂和我們走丟了
+
+祈禱她可以在怪物到來前
+
+趕來救我們吧
+
+希望可以…
+
+獲救…＂(最後的字體可以看得出來，撰寫的人，手已經顫抖不止了)
+
+看到了曾經的受害者的留言，了解受害者不知道遇到了什麼怪物而死去，感受到恐怖的你們，San Check 0/1d2
+
+看過【亨利‧阿米蒂奇的手記】，可以知道彩色的石頭是魔法水晶，魔法水晶的剩餘的魔力儲量：3d10</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546060085124534282 class=chatlog__message-container data-message-id=1546060085124534282><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/guilds/698169417321676820/users/565544038741049345/avatars/129ea17c9fe39e052104106d80f25388.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(240,215,114) title=littlestar_aasta data-user-id=565544038741049345>月牙</span> <span class=chatlog__timestamp title="2026年9月6日 下午 03:30"><a href=#chatlog__message-container-1546060085124534282>2026/9/6 下午 03:30</a></span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546060084583473284/dTyHvZi.png?ex=6a9e6828&amp;is=6a9d16a8&amp;hm=4f675f84b93bc85f378b07596959abe075cb8c2b04fc3884396fbb7030e4aeb6&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546060084583473284/dTyHvZi.png?ex=6a9e6828&amp;is=6a9d16a8&amp;hm=4f675f84b93bc85f378b07596959abe075cb8c2b04fc3884396fbb7030e4aeb6&amp;" alt="Image attachment" title="Image: dTyHvZi.png (134.41 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546061363477090374 class=chatlog__message-container data-message-id=1546061363477090374><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 03:35"><a href=#chatlog__message-container-1546061363477090374>2026/9/6 下午 03:35</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>〔儲物間〕
+
+這是一個空間不大的房間，四周堆滿了各式各樣的雜物——摺疊整齊的床單、備用的枕頭，還有幾個貼著標籤卻看不清字跡的紙箱。木質層架佔據了大半面牆，上面擺著清潔用具、幾罐備用蠟燭，以及一些看起來許久沒被動過的舊行李箱。
+
+空氣裡瀰漫著淡淡的樟腦丸與灰塵混合的氣味，光線昏暗，僅靠著門口透進來的一點微光照明。角落裡堆疊著幾把備用椅子，蒙著一層薄薄的灰。
+
+整體看起來，就是一間再普通不過、用來堆放雜物的儲物間，沒有什麼特別引人注目的地方。</span></div></div></div></div><div id=chatlog__message-container-1546061755447513088 class=chatlog__message-container data-message-id=1546061755447513088><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:37">下午 03:37</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>調查員找到一個攝影機。</span></div></div></div></div><div id=chatlog__message-container-1546062348454993920 class=chatlog__message-container data-message-id=1546062348454993920><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:39">下午 03:39</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>裡面只有一個影片，來自於偷拍攝電影放映的內容，內容看起來是一個小劇場。</span></div></div></div></div><div id=chatlog__message-container-1546062461629628516 class=chatlog__message-container data-message-id=1546062461629628516><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:40">下午 03:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《迷糊蟲與法式國王餅》
+
+學時：— / 精讀 5分鐘</span></div></div></div></div><div id=chatlog__message-container-1546062554407632896 class=chatlog__message-container data-message-id=1546062554407632896><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:40">下午 03:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 迷糊蟲與法式國王餅
+    
+    「某一天，蒂蒂有一個朋友生日，蒂蒂邀請她到自己家裡開派對...................」
+    
+    ＊＊＊＊
+    
+    「生日快樂~~   娜娜!!」蒂蒂與其他朋友高興得唱著生日歌慶祝娜娜的生日
+    
+    「謝謝!!  謝謝大家，為我舉辦生日派對!!  我好高興喔!」娜娜高興的說著
+    
+    「娜娜 ，今天特別為你的生日做了個Galette  des   Rois!!(法式國王餅)」蒂蒂高興的說道
+    
+    「那是什麼啊?」娜娜好奇的問
+    
+    「這個派裡，被我放進了一個硬幣..........」蒂蒂高興的說著，端起法式國王餅，放到桌子上
+    
+    「如果再吃派的時候，找到了硬幣，那個人就會得到一輩子的祝福喔!!」蒂蒂笑著說道
+    
+    「真是有趣呢!!」娜娜高興的說著
+    
+    「呵呵~!!   是吧?」蒂蒂說完走進廚房，拿起菜刀「那麼切一切，來平分吧!!」蒂蒂切完國王餅後說道「來吧!!   選自己想要吃的派吧!!」
+    
+    「呵呵~!  我們開動囉!!」朋友們異口同聲的說道，拿起自己選的餅，大口大口的吃了起來
+    
+    吃著吃著，突然，娜娜大叫了一聲「阿——————!!」
+    
+    「怎麼了呢?」蒂蒂疑惑的說
+    
+    「有什麼........硬硬的東西，被我吞下去了!」娜娜擔心的說
+    
+    「啊哈哈~!  娜娜真是個迷糊蟲，一定是硬幣吧!!」蒂蒂笑著說道
+    
+    「怎.....怎麼辦.....?」娜娜害怕的說著
+    
+    「放心.....硬幣很小的，不會有事的」蒂蒂拍著娜娜的肩膀說道
+    
+    「恩.....謝謝」娜娜有些擔心的說
+    
+    「那麼.....我去收拾一下」蒂蒂將刀子和盤子收拾後，走進了廚房，卻看見媽媽擔心的到處走動
+    
+    「媽媽，你怎麼了?」蒂蒂疑惑的問
+    
+    「蒂蒂，你知道放在桌子上的書房鑰匙跑去哪裡了嗎?」母親擔心的說道
+    
+    「書房鑰匙?  應該一直放在著個桌上的啊!!...........咦?....」蒂蒂拿著盤子說道 「硬幣..........這個硬幣........確實已經放進派了才對阿」蒂蒂看著桌上的硬幣說道「難....難道說....」
+    
+    「到底放到哪裡去了?  爸爸會生氣的」母親擔心的說著
+    
+    「怎麼辦......?」蒂蒂擔心的說，盤子上的刀子慢慢的掉了下來
+    
+    蒂蒂看著掉在地板上的刀子...........笑了笑
+    
+    「哎呀呀!!  我也真是個迷糊蟲啊!!」蒂蒂拿著刀子說道
+    
+    一陣一陣的刀子切碎聲~~~~~~~~~~
+    
+    「呵呵~! 鑰匙找到了」全身沾滿鮮血的蒂蒂高興的說道
+    
+    「現在可以開門了囉!!」蒂蒂拿著沾滿鮮血的鑰匙說道</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546063894831697980 class=chatlog__message-container data-message-id=1546063894831697980><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/guilds/698169417321676820/users/565544038741049345/avatars/129ea17c9fe39e052104106d80f25388.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(240,215,114) title=littlestar_aasta data-user-id=565544038741049345>月牙</span> <span class=chatlog__timestamp title="2026年9月6日 下午 03:45"><a href=#chatlog__message-container-1546063894831697980>2026/9/6 下午 03:45</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>水元素&#160;－&#160;水切刀
+Water jet cutter
+製造出高壓水刃切削你的目標。水刃僅能在施法者&#160;POW*3米的距離內使用
+詠唱一輪並消耗5点理智值和5点魔法值。製造出一發高壓水刃
+一發高壓水刃可以對目標造成1D10的傷害，其後每回合還會受到1D3流血傷害。</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546065045778202665 class=chatlog__message-container data-message-id=1546065045778202665><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 03:50"><a href=#chatlog__message-container-1546065045778202665>2026/9/6 下午 03:50</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>木棍 1D6</span></div></div></div></div><div id=chatlog__message-container-1546065207502184591 class=chatlog__message-container data-message-id=1546065207502184591><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:51">下午 03:51</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>燃燒的火炬 1D6+燃燒</span></div></div></div></div><div id=chatlog__message-container-1546065823221944422 class=chatlog__message-container data-message-id=1546065823221944422><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:53">下午 03:53</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔房間2〕</strong>
+
+看起來原本應該是臥室吧，不過所有的家具、以及床被破壞的不成樣，散落在房間周遭，而房間的中間插著一把細長的長劍，劍身與劍柄都是純白的長劍，然後有個穿著白色衣裙的女孩側躺在劍的旁邊。</span></div></div></div></div><div id=chatlog__message-container-1546065999206285332 class=chatlog__message-container data-message-id=1546065999206285332><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:54">下午 03:54</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>這是一位金色短髮的女孩，暗紅色的鮮血已經將白衣裙染紅，胸口插著一把小刀，臉部帶著笑容，解脫了一般的笑容。</span></div></div></div></div><div id=chatlog__message-container-1546066030806179920 class=chatlog__message-container data-message-id=1546066030806179920><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:54">下午 03:54</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>到了這莫名其妙的地方，還發現了人類的屍體，令人覺得不舒服。San check 1/1d3</span></div></div></div></div><div id=chatlog__message-container-1546066508743053352 class=chatlog__message-container data-message-id=1546066508743053352><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:56">下午 03:56</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>調查金髮女孩的屍體，可以發現在屍體的底下有本破舊的黑色日記、以及一顆彩色的石頭。</span></div></div></div></div><div id=chatlog__message-container-1546066747730436126 class=chatlog__message-container data-message-id=1546066747730436126><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:57">下午 03:57</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【聖劍】，物理傷害為1d8，對非地球原生神話生物有額外的2d6魔法傷害。</span></div></div></div></div><div id=chatlog__message-container-1546066878756159528 class=chatlog__message-container data-message-id=1546066878756159528><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:57">下午 03:57</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《神的祝福》
+一本破舊的黑色日記。
+
+學時：淺讀 1分鐘 / 精讀 5分鐘</span></div></div></div></div><div id=chatlog__message-container-1546066994032545792 class=chatlog__message-container data-message-id=1546066994032545792><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 03:58">下午 03:58</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 神的祝福
+    
+    少女嘆息著。
+    
+    少女向天空劃出了一柄劍。
+    
+    少女聽到嗚咽聲。
+    
+    一隻小狗被捕獸夾夾住了腿。
+    
+    少女用劍砍下了小狗的頭。
+    
+    &quot;給你神的祝福。祝你來世不會被夾到腳。&quot;
+    
+    少女回到天上
+    
+    少女聽到嗚咽。
+    
+    一個小孩的玩具被高年級的搶走了。
+    
+    少女用劍砍下了小孩的雙手。
+    
+    &quot;給你神的祝福。這樣無論有沒有玩具都不能玩了。&quot;
+    
+    少女回到天上
+    
+    少女聽到嚎哭。
+    
+    一位母親剛剛在事故中失去了她的兒子。
+    
+    少女用劍將母親砍成肉泥。
+    
+    &quot;給你神的祝福。把你和兒子混合在一起，就能永遠在一起了。&quot;
+    
+    少女回到天上。
+    
+    少女覺得充滿了幸福。</code></span></div></div></div></div><div id=chatlog__message-container-1546068132890812438 class=chatlog__message-container data-message-id=1546068132890812438><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:02">下午 04:02</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>匕首 1D4+DB</span></div></div></div></div><div id=chatlog__message-container-1546068644696424479 class=chatlog__message-container data-message-id=1546068644696424479><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:04">下午 04:04</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔打靶室〕</strong>
+
+狹長房間一端鋪著草皮，靶紙密布著彈孔痕跡；另一端則是木質走道，盡頭一扇門通往擺滿槍械與子彈的鐵櫃房。房內瀰漫著淡淡機油與金屬味，桌上工具整齊排列，透著一絲不尋常的講究。</span></div></div></div></div><div id=chatlog__message-container-1546069128182374440 class=chatlog__message-container data-message-id=1546069128182374440><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:06">下午 04:06</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔</strong>槍枝<strong>〕</strong>
+
+老舊的槍枝中，有把看起來還算堪用的FN-45，攻擊為每輪1D6，彈匣的容量為 <strong>15+1 發</strong>子彈。</span></div></div></div></div><div id=chatlog__message-container-1546069424740769824 class=chatlog__message-container data-message-id=1546069424740769824><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:07">下午 04:07</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔</strong>彈匣<strong>〕</strong>
+
+容量為 <strong>15 發</strong>子彈。</span></div></div></div></div><div id=chatlog__message-container-1546069944561827850 class=chatlog__message-container data-message-id=1546069944561827850><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:09">下午 04:09</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>〔暗房〕
+
+推開門，一股刺鼻的化學藥水味撲面而來，混雜著顯影劑特有的酸澀氣息。房間裡沒有一絲自然光，僅靠天花板懸掛的一盞紅色燈泡，將整個空間染成一片詭異的暗紅色。
+
+牆邊擺著幾個淺盤，盛裝著顏色各異的液體，旁邊晾衣繩上用夾子夾著一張張正在風乾的相片，隨著門扉開闔帶起的氣流輕輕搖晃。牆角則堆放著一台老式放大機，以及幾個裝著底片的鐵盒。
+
+在這片紅光的映照下，牆上那些懸掛的照片顯得格外模糊難辨——你們得靠近仔細看，才能勉強分辨出照片上拍的究竟是什麼。</span></div></div></div></div><div id=chatlog__message-container-1546071232716345374 class=chatlog__message-container data-message-id=1546071232716345374><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:15">下午 04:15</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>〔放映室〕
+這是一個長方形的房間，看起來很像電影院的配置，中間有好幾排紅色的戲院座椅，而周遭除了櫃子，還有冰箱，櫃子中看起來放滿了用來放映的電影。</span></div></div></div></div><div id=chatlog__message-container-1546071839015575573 class=chatlog__message-container data-message-id=1546071839015575573><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:17">下午 04:17</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>〔禱告室〕</strong>
+這是一個不大的房間，大概只放得下幾張椅子跟一座小小的講台，牆壁刷成單調的白色，沒有任何裝飾性的彩繪玻璃或雕像。
+房間正面擺著一張老舊的木製講台，上面攤開著一本厚重的黑色封面聖經，書頁已經泛黃捲邊，看得出被翻閱過無數次。講台後方的牆上，掛著一幅褪色的十字繡。
+
+房間左右兩側各擺著三張簡樸的木製長椅，椅背上還留著長年使用留下的包漿光澤。空氣中有股淡淡的舊書與蠟燭混合的氣味。</span></div></div></div></div><div id=chatlog__message-container-1546072174115160106 class=chatlog__message-container data-message-id=1546072174115160106><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:18">下午 04:18</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《聖奧古斯丁(Saint Augustine)的遺願》
+德文
+這是一本黃色封皮的書本，大約有兩三百頁。
+
+理智損失：1D8
+克蘇魯神話：+1% / +6%
+神話等級：15
+學時：淺讀 1小時 / 精讀 1天
+建議法術：治癒法（民俗）〔民〕、傷害偏轉術〔戰、保〕、舊印〔保〕。</span></div></div></div></div><div id=chatlog__message-container-1546072396526788639 class=chatlog__message-container data-message-id=1546072396526788639><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:19">下午 04:19</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546072396228857887/image.png?ex=6a9e739f&amp;is=6a9d221f&amp;hm=8563d32ab4f9d4b1b8d5a80913659da9206c126f46b8f09c17d59416b19b3367&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546072396228857887/image.png?ex=6a9e739f&amp;is=6a9d221f&amp;hm=8563d32ab4f9d4b1b8d5a80913659da9206c126f46b8f09c17d59416b19b3367&amp;" alt="Image attachment" title="Image: image.png (513.76 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1546073688250646539 class=chatlog__message-container data-message-id=1546073688250646539><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:24">下午 04:24</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>回合順序
+真島健一郎-市立高中體育老師(珊珊)(65) &gt; 璐娜忒‧三日月-偶像藝人(月牙)(50) &gt; 無形之子1(19)</span></div></div></div></div><div id=chatlog__message-container-1546074160063578202 class=chatlog__message-container data-message-id=1546074160063578202><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:26">下午 04:26</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午四點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館</span></div></div></div></div><div id=chatlog__message-container-1546075055027523654 class=chatlog__message-container data-message-id=1546075055027523654><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:30">下午 04:30</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>舊印〔保〕
+Elder sign
+消耗：10 點意志值
+施法用時：1小時
+本法術用來啟動舊印。舊印可以做成鉛封、雕刻在石頭上、鑄造在鋼材上，等等。當它在時空裂縫 (opening) 和時空門附近啟動時，它會令舊日支配者、外神的僕役以及它們本尊無法使用這些通道。沒有本法術，舊印本身毫無意義，沒有任何效果。
+除掉一些抄本敘述的內容不談，如果怪物和僕役能迴避舊印，它在個人防禦當中就是無用的。例如，把舊印戴在脖子上，可能會為它接觸的皮膚周圍幾平方英寸的肉體提供保護；但是，佩戴者的其他身體部位則是完全沒有保護的。有時人們會使用舊印作為警告的方法，提示無知的人前面有「危險」。
+別名：遠古之印、凶兆枝杈、智慧的五角星</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546077363995942912 class=chatlog__message-container data-message-id=1546077363995942912><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 04:39"><a href=#chatlog__message-container-1546077363995942912>2026/9/6 下午 04:39</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《死生花》
+德文
+一本有些厚的黑色封皮書
+
+學時：淺讀 1分鐘 / 精讀 1小時</span></div></div></div></div><div id=chatlog__message-container-1546077426797514753 class=chatlog__message-container data-message-id=1546077426797514753><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:39">下午 04:39</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 死生花
+    
+    內容介紹著一種異界植物，只會寄宿在已經死去的動物上，賦予動物在一次活動的生命，如果是人的話，那他仍舊會跟活著時一樣。
+    
+    賦予的壽命為十年，快到十年時，宿主的頭上會長出一朵花
+    
+    等到花完全開放，宿主的身體就會變成孢子，重新開始屬於死生花的生命週期。</code>`</span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 04:41">(edited)</span></div></div></div></div><div id=chatlog__message-container-1546077497299312690 class=chatlog__message-container data-message-id=1546077497299312690><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:40">下午 04:40</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午五點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館1F，圖書館</span></div></div></div></div><div id=chatlog__message-container-1546079221011578920 class=chatlog__message-container data-message-id=1546079221011578920><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:46">下午 04:46</div></div><div class=chatlog__message-primary><div class=chatlog__forwarded><div class=chatlog__forwarded-header><svg class=chatlog__forwarded-icon><use href=#forward-icon></use></svg> <em>Forwarded</em></div><div class="chatlog__forwarded-content chatlog__markdown"><span class=chatlog__markdown-preserve>猶格 - 索托斯之拳〔戰〕
+Fist of Yog-Sothoth
+消耗：可變的魔法值；1D6理智值
+施法用時：即時
+施法者創造一股巨大的無形力量打擊單體目標。目標必須在施法者視野範圍內。法術中每使用一點魔法值即產生 2D10 點 STR 的力量。施法者和目標的距離每增加 30 尺(超過第一個 30 尺的部分),就要額外消耗 1點魔法值。當目標被擊中時(如果他是活物的話),必須用法術的 STR 和目標的 CON 進行對抗檢定。如果成功,目標將被擊暈。不論目標有沒有被擊暈,他總會被撞離施法者一段距離,此距離為打擊的STR減去目標的SIZ,單位為尺。
+一本法術也可以用來打擊門和牆之類無生命的物體。結果可能很明顯,但有些情況必須由KP 基於物體的STR來決定結果。
+
+例如:施法者消耗5點魔法值打擊一個50尺之外的調查員。 1點用於支付距離。餘下4點產生8D10點STR,擲骰結果是57。調查員的困難難度CON檢定失敗(因為法術STR超過50), 他被打暈了。調查員的SIZ是45,這一下把他撞出了12尺遠。
+
+別名:連結開路者的力量、擊僕汝敵、邪惡者的醜惡一擊</span></div><div class=chatlog__forwarded-timestamp><span title="2026年9月5日 下午 09:30">Originally sent: 2026/9/5 下午 09:30</span></div></div></div></div></div><div id=chatlog__message-container-1546079380139417602 class=chatlog__message-container data-message-id=1546079380139417602><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:47">下午 04:47</div></div><div class=chatlog__message-primary><div class=chatlog__forwarded><div class=chatlog__forwarded-header><svg class=chatlog__forwarded-icon><use href=#forward-icon></use></svg> <em>Forwarded</em></div><div class="chatlog__forwarded-content chatlog__markdown"><span class=chatlog__markdown-preserve>阿撒托斯的恐怖詛咒〔戰〕
+Dread curse of Azathoth
+消耗：4 點魔法值；1D6理智值
+施法用時：１輪
+施法者利用外神的力量直接從目標身上抽取意志。透過反覆念誦阿撒托斯的名諱,可以讓任何精通克蘇魯神話的人敬畏,因為知道這個名諱,
+意味著這個人知道秘密的「最後音節 (the LastSyllable)」。 「最後音節」單獨念誦時可以對準一名敵人。施法者須和目標進行一次 POW 對抗檢定並勝出,法術才能生效。若施法成功,目標損失 3D6 點 POW。
+深層魔法:真正強大的巫師能獲得吸取的POW,以增加他們自己的 POW 值(和魔法值)。別名:最後音節的發聲、消沉吸取、假借真名,以竭汝力</span></div><div class=chatlog__forwarded-timestamp><span title="2026年9月5日 下午 09:30">Originally sent: 2026/9/5 下午 09:30</span></div></div></div></div></div><div id=chatlog__message-container-1546080212088004658 class=chatlog__message-container data-message-id=1546080212088004658><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:50">下午 04:50</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>回合順序
+真島健一郎-市立高中體育老師(珊珊)(65) &gt; 璐娜忒‧三日月-偶像藝人(月牙)(50) &gt; 無形之子1(19)</span></div></div></div></div><div id=chatlog__message-container-1546080565063721010 class=chatlog__message-container data-message-id=1546080565063721010><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:52">下午 04:52</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午五點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館BF，地下室</span></div></div></div></div><div id=chatlog__message-container-1546081321653108867 class=chatlog__message-container data-message-id=1546081321653108867><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:55">下午 04:55</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546081321363705917/download20260906140033.png?ex=6a9e7bef&amp;is=6a9d2a6f&amp;hm=a9b8ddb69449087aea5a3caa3c537b988611b85210e8e8707cb45b58f27e8a14&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546081321363705917/download20260906140033.png?ex=6a9e7bef&amp;is=6a9d2a6f&amp;hm=a9b8ddb69449087aea5a3caa3c537b988611b85210e8e8707cb45b58f27e8a14&amp;" alt="Image attachment" title="Image: download20260906140033.png (186.06 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1546081419833643080 class=chatlog__message-container data-message-id=1546081419833643080><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:55">下午 04:55</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>艾瑪‧沃特雷(80)與他的兩隻狗勾。</span></div></div></div></div><div id=chatlog__message-container-1546081525748080690 class=chatlog__message-container data-message-id=1546081525748080690><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:56">下午 04:56</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546081525424979998/image.png?ex=6a9e7c20&amp;is=6a9d2aa0&amp;hm=7dfa866a54afcb3ca5c4b4aa33fd794ea24abdb69175595975442bec8b916c14&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546081525424979998/image.png?ex=6a9e7c20&amp;is=6a9d2aa0&amp;hm=7dfa866a54afcb3ca5c4b4aa33fd794ea24abdb69175595975442bec8b916c14&amp;" alt="Image attachment" title="Image: image.png (1.06 MB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1546081574628360192 class=chatlog__message-container data-message-id=1546081574628360192><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:56">下午 04:56</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546081574217449583/image.png?ex=6a9e7c2c&amp;is=6a9d2aac&amp;hm=a35604f4d136438797d6b46fb92fdac57ea3fb1ac1a6972dd4a89e5ce373fc96&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546081574217449583/image.png?ex=6a9e7c2c&amp;is=6a9d2aac&amp;hm=a35604f4d136438797d6b46fb92fdac57ea3fb1ac1a6972dd4a89e5ce373fc96&amp;" alt="Image attachment" title="Image: image.png (314.87 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-1546082231938846760 class=chatlog__message-container data-message-id=1546082231938846760><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 04:58">下午 04:58</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>回合順序
+艾瑪‧沃特雷(80) &gt; 真島健一郎-市立高中體育老師(珊珊)(65) &gt; 璐娜忒‧三日月-偶像藝人(月牙)(50) &gt; 無形之子2(16) &gt; 無形之子3(15)</span></div></div></div></div><div id=chatlog__message-container-1546083668026458142 class=chatlog__message-container data-message-id=1546083668026458142><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 05:04">下午 05:04</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546083667460358174/LINE_NOTE_260905_1.jpg?ex=6a9e7e1f&amp;is=6a9d2c9f&amp;hm=ff27c00182f70eed78406b7137e691f56932ccba0bf83fe3bc0b708ca2e3429e&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546083667460358174/LINE_NOTE_260905_1.jpg?ex=6a9e7e1f&amp;is=6a9d2c9f&amp;hm=ff27c00182f70eed78406b7137e691f56932ccba0bf83fe3bc0b708ca2e3429e&amp;" alt="Image attachment" title="Image: LINE_NOTE_260905_1.jpg (39.29 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546085920845864970 class=chatlog__message-container data-message-id=1546085920845864970><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 05:13"><a href=#chatlog__message-container-1546085920845864970>2026/9/6 下午 05:13</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>〔地下室・戰鬥掩體〕
+傾倒的書架、成堆的木箱及酒桶、厚重的地毯與翻覆的桌椅、懸掛的吊燈</span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 05:13">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546097625026265089 class=chatlog__message-container data-message-id=1546097625026265089><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 05:59"><a href=#chatlog__message-container-1546097625026265089>2026/9/6 下午 05:59</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Day1 2026年7月30日 星期四 下午六點 日本，千葉縣，勝浦市，貓泣島，阿米蒂奇洋館2F，圖書館</span></div></div></div></div><div id=chatlog__message-container-1546097798779375788 class=chatlog__message-container data-message-id=1546097798779375788><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:00">下午 06:00</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>結局B【Normal End-神的祝福】</span></div></div></div></div><div id=chatlog__message-container-1546097926164578454 class=chatlog__message-container data-message-id=1546097926164578454><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:01">下午 06:01</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">Normal end - 神的祝福－條件：賜予艾瑪死亡
+
+探索者們按造他們得到的情報，決定學習魔導書，並殺死作為迷宮主人的艾瑪。
+
+在探索者們戰勝艾瑪並殺掉她後，
+
+你們聽到了不知道從哪裡來的聲音：「感謝你們幫助艾瑪完成了她的願望，
+
+給你們神的祝福，願你們可以繼續平凡的過活。」
+
+然後一道金光閃耀而過，你們的視線開始模糊，眼角的餘光看到了，艾瑪那終於解脫了一般的微笑。
+
+意識再次清醒時，你們發現你們躺在各自客房的床舖上，一切彷彿是一場夢一般，但剛剛所接觸到的褻瀆的知識，仍舊刻印在你們的腦海中，述說著剛剛是真實的。
+
+而在床的旁邊還擺著一枚圓形小吊飾，以及一封信。
+
+【感謝你們，讓我的妹妹得到真正的解脫。
+
+這是粗淺的謝禮，願你們不要再遭受這樣的恐怖事情了。
+
+艾琳‧沃特雷 敬上】
+
+回復SAN
+
+通關獎勵　2ｄ１０　Ｘ=2= PL 生還人數
+
+得到魔法道具 神的祝福-金色的圓形小吊飾：可以抵擋一次必死的攻擊。
+
+※副本中全部習得的咒文【全部忘卻】，但魔法少女契約保留。</code></span> <span class=chatlog__edited-timestamp title="2026年9月6日 下午 06:01">(edited)</span></div></div></div></div><div id=chatlog__message-container-1546099341398380635 class=chatlog__message-container data-message-id=1546099341398380635><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:06">下午 06:06</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- 劇本真相
+    
+    1640年 北美洲-敦威治村，爆發了一場怪病，人活著時就會屍蠟化的怪病。
+    
+    沃特雷家族的西勃•沃特雷為了救他自己的女兒-艾瑪，從而開始研究祖先流傳下來的黑魔術典籍，招喚了八英尺高的漆黑无面男子【奈亞拉托提普化身之一】，並與之簽訂契約，使得他的女兒艾瑪成為飢餓的魔女，並得以存活。
+    
+    然而這是悲劇的序幕
+    
+    溺愛艾瑪的父親，最終把自己獻給了自己的女兒
+    
+    作為女兒的………… 口糧
+    
+    經歷了無數世代的交替，1940年沃特雷家族的次子，為了擺脫成年後要作為祭品(口糧)犧牲的事情，從而拜託密斯卡托尼克大学的教授來將”飢餓的魔女”毀滅。
+    
+    於是以魔女被放逐到了異空間作為結束，直到…。
+    
+    異空間中漂流，時間與空間只有混亂的這裡，飢餓魔女與敦威治事件時被放逐的威尔伯的弟弟相遇，經過一翻爭鬥。
+    
+    吃掉帶有濃厚猶格索托斯血統的艾瑪，也得到了相應的禁忌知識與精神汙染。
+    
+    因為在異空間漂流太無聊，經過了無數的時間，終於和地球再次連結，而剛好連結的地方是阿米蒂奇家族的洋館，而故事就這麼開始了。</code></span></div></div></div></div><div id=chatlog__message-container-1546100653099712573 class=chatlog__message-container data-message-id=1546100653099712573><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:12">下午 06:12</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>------------------------------------------------------------------------------------------------團務結束</span></div></div></div></div><div id=chatlog__message-container-1546100682946510868 class=chatlog__message-container data-message-id=1546100682946510868><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:12">下午 06:12</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- **結局A【Happy End-姉妹】**
+    
+    1.happy end  –姊妹－條件：許下讓艾瑪魔女的契約消失的願望，完成艾瑪的願望，不再被魔女的身分束縛。
+    
+    你們聽到了不知道從哪裡來的聲音：
+    
+    「感謝你們幫助艾瑪完成了她的願望，
+    
+    給你們神的祝福，願你們不再是無力之人。」
+    
+    意識再次清醒時，你們發現你們躺在各自客房的床舖上，一切彷彿是一場夢一般，但剛剛所接觸到的褻瀆的知識，仍舊刻印在你們的腦海中，述說著剛剛是現實。
+    
+    而在床的旁邊還擺著一枚銀色的戒指和圓形小吊飾，以及一封信。
+    
+    【感謝你們，讓我的妹妹脫離惡魔的契約。
+    
+    這是粗淺的謝禮，願來日能報答此大恩。
+    
+    艾琳‧沃特雷 敬啟】
+    
+    回復SAN
+    
+    通關獎勵　１０＋Ｘｄ１０　Ｘ= PL 生還人數
+    
+    魔法道具 神的祝福-金色圓形小吊飾：可以抵擋一次必死的攻擊。
+    
+    魔法道具 無力的證明-銀色戒指：注入魔力後可以變成與注入魔力相等體積的冷兵器，對非地球原生的神話生物有額外2d6傷害。
+    
+    ※【保留副本中全部習得的咒文以及物品】魔法少女契約保留。</code></span></div></div></div></div><div id=chatlog__message-container-1546101082529206354 class=chatlog__message-container data-message-id=1546101082529206354><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:13">下午 06:13</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- **結局C【Bad End-惡魔之館】**
+    1. Bad end 惡魔之館-　與奈亞戰鬥、猶格索托斯戰鬥、或是與艾瑪戰鬥時全體陣亡。
+    
+    探索者們最終全部死於迷宮之中。
+    
+    你們聽到了不知道從哪裡來的聲音：
+    
+    「給你們神的祝福，願來世不要再遇到魔女與惡魔了。」
+    
+    根據當地報導：阿米蒂奇洋館的神隱
+    
+    一夜之間，洋館中的人們不知所蹤，警察將此地完全封鎖後展開調查。
+    
+    然而調查並沒有結果，有幾名警察同人卻彷彿遭遇到了什麼東西一般，有精神上的創傷，需要進行休養。
+    
+    於此，洋館也成為了一個新的靈異現象發生地。
+    
+    究竟有怎麼樣的惡魔、幽靈徘徊於此地呢。
+    
+    有許多靈異專家來此地探詢，但最終的結果都是音訊全無。
+    
+    究竟這有惡魔的洋館還會發生些什麼慘絕人寰的事情呢？</code></span></div></div></div></div><div id=chatlog__message-container-1546101238838599730 class=chatlog__message-container data-message-id=1546101238838599730><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:14">下午 06:14</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- **結局D【Sad End-人不為己、天詞地灭】**
+    1. Sad end 人不為己，天誅地滅- 探索者們許下讓我們出去的願望
+    
+    探索者們出去了，脫離了這個異空間，真是可喜可賀。
+    
+    意識再次清醒時，你發現你躺在自家的床舖上，彷彿是一場夢一般，但在你的腦海中，那邊身成為魔法少女的咒文仍舊存在著，也述說著剛剛是真實的。
+    
+    回復SAN
+    
+    逃脫獎勵　＋１ｄ６
+    
+    ※副本中全部習得的咒文【全部忘卻】，但魔法少女契約保留。</code></span></div></div></div></div><div id=chatlog__message-container-1546101480593952808 class=chatlog__message-container data-message-id=1546101480593952808><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:15">下午 06:15</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">- **結局E【Normal End-與惡魔的契約】**
+    1. Normal end - 與惡魔的契約－條件：取代艾瑪成為迷宮之主
+    
+    探索者們意識到迷宮的主人艾瑪，希望擺脫魔女的不死性真正的死去，從而想到了要和艾瑪交換成為魔女。
+    
+    你們聽到了不知道從哪裡來的聲音：
+    
+    「感謝你們幫助艾瑪完成了她的願望，
+    
+    給你們神的祝福，願你們心想事成。」
+    
+    回復SAN
+    
+    生還，每生還一人san＋1d10
+    
+    得到魔法道具 神的祝福-金色的圓形小吊飾：可以抵擋一次必死的攻擊。
+    
+    ※副本中全部習得的咒文【全部忘卻】，但魔法少女契約不保留。
+    
+    成為魔女的探索者例外，且成為奈亞的魔女的探索者習得【幽影剃刀】【戈尔&#183;格罗斯之身体变形】 克蘇魯神話+20%，MP上限+30</code></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546105995703357500 class=chatlog__message-container data-message-id=1546105995703357500><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/274908858970013696/371546e73faa455f368fb37a61c13bcc.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=iiiii_wen data-user-id=274908858970013696>疑問</span> <span class=chatlog__timestamp title="2026年9月6日 下午 06:33"><a href=#chatlog__message-container-1546105995703357500>2026/9/6 下午 06:33</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">依據你提供的規則（A-&gt;D, B-&gt;F, D-&gt;G，即 +3, +4 交替移位）：
+
+解密步驟：
+1. 數字轉字母 (以 A=0 計算)：
+   4 -&gt; E
+   12 -&gt; M
+   12 -&gt; M
+   0 -&gt; A
+
+2. 反向推回原本字母（依序減 3, 減 4）：
+   第 1 位 (E) - 3 = B (1)
+   第 2 位 (M) - 4 = I (8)
+   第 3 位 (M) - 3 = J (9)
+   第 4 位 (A) - 4 = W (22)
+
+最終解密結果：BIJW</code></span></div></div></div></div><div id=chatlog__message-container-1546106163240763422 class=chatlog__message-container data-message-id=1546106163240763422><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2026年9月6日 下午 06:33">下午 06:33</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1545667196657868810/1546106162783723540/image.png?ex=6a9e9312&amp;is=6a9d4192&amp;hm=c34f401bff9586bb253fbe19c90546833d70aec25ed04c810e8f689da55c1f90&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1545667196657868810/1546106162783723540/image.png?ex=6a9e9312&amp;is=6a9d4192&amp;hm=c34f401bff9586bb253fbe19c90546833d70aec25ed04c810e8f689da55c1f90&amp;" alt="Image attachment" title="Image: image.png (27.39 KB)" loading=lazy> </a></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 124 message(s)</div><div class=postamble__entry>Timezone: UTC+8</div></div>
